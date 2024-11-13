@@ -1,0 +1,203 @@
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: who plays ken barlow in coronation street 
+INFO:root:Topic Entity: m.01_2n
+INFO:root:True Path: tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+INFO:root:True answer: ['m.01j_gs'],  Labels: ['William Roache']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.01_2n
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.01_2n', 'relation': 'film.actor.film', 'score': 0.4, 'head': True}, {'entity': 'm.01_2n', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.35, 'head': True}, {'entity': 'm.01_2n', 'relation': 'tv.tv_program.regular_cast', 'score': 0.25, 'head': True}]
+INFO:root:		 Entity: {'entity': 'm.01_2n', 'relation': 'film.actor.film', 'score': 0.4, 'head': True}
+INFO:root:			entity_candidates for film.actor.film: [('m.0hr4gkg', 0.4142155647277832), ('m.05hn86y', 0.2854247987270355), ('m.03j17x0', 0.1972401738166809), ('m.02ps_k5', 0.022157059982419014), ('m.04y7_yr', 0.015834543853998184), ('m.02_286', 0.015165179967880249), ('m.063ssx7', 0.01420349907130003), ('m.06tptb', 0.00592968100681901), ('m.01xrwvx', 0.004248369950801134), ('m.02qlltx', 0.003947330638766289)]
+INFO:root:			"Entity: m.01_2n
+INFO:root:			"Relation: film.actor.film
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Alela Diane', 'Atlas Slave', 'Cresco', 'Ivan Lietava', 'Jim Kelly', 'Mały Szyszak', 'New York City'] and Scores: [0.2854247987270355, 0.4142155647277832, 0.1972401738166809, 0.022157059982419014, 0.01420349907130003, 0.015165179967880249, 0.015834543853998184]
+INFO:root:		 Entity: {'entity': 'm.01_2n', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.35, 'head': True}
+INFO:root:			entity_candidates for tv.tv_actor.starring_roles: [('m.0lnfy', 0.9830962419509888), ('m.0342h', 0.016875339671969414), ('m.09c7w0', 2.0689520169980824e-05), ('m.0vzm', 4.7264820750569925e-06), ('m.04pk9', 8.141599323607807e-07), ('m.076_50r', 5.955600954621332e-07), ('m.0sjx5gg', 4.771733301822678e-07), ('m.08084yt', 4.6735885916859843e-07), ('m.0c39nw', 1.6515853928922297e-07), ('m.011_tnq4', 1.6208645092774532e-07)]
+INFO:root:			"Entity: m.01_2n
+INFO:root:			"Relation: tv.tv_actor.starring_roles
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Austin', 'Franz Beyer', 'Lagos', 'Lutheranism', 'Ron Korb', 'United States of America', 'guitar'] and Scores: [4.7264820750569925e-06, 4.771733301822678e-07, 0.9830962419509888, 8.141599323607807e-07, 5.955600954621332e-07, 2.0689520169980824e-05, 0.016875339671969414]
+INFO:root:		 Entity: {'entity': 'm.01_2n', 'relation': 'tv.tv_program.regular_cast', 'score': 0.25, 'head': True}
+INFO:root:			entity_candidates for tv.tv_program.regular_cast: [('m.05lgy3b', 1.0), ('m.0x0m220', 1.0), ('m.0bvv2dt', 1.0), ('m.0k3p', 0.7650418877601624), ('m.0_hlydg', 0.16268469393253326), ('m.02h7sch', 0.03685329109430313), ('m.0h67_x2', 0.017680378630757332), ('m.06zrbsf', 0.009317331947386265), ('m.0hqxf', 0.0041006989777088165), ('m.0j4vrw2', 0.0015723176766186953)]
+INFO:root:			"Entity: m.01_2n
+INFO:root:			"Relation: tv.tv_program.regular_cast
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Amsterdam', 'John Knapp', 'Thomas Kossendey', "children's film"] and Scores: [1.0, 1.0, 1.0, 0.7650418877601624]
+INFO:root:			"Total Entity Candidates: ['Alela Diane', 'Atlas Slave', 'Cresco', 'Ivan Lietava', 'Jim Kelly', 'Mały Szyszak', 'New York City', 'Austin', 'Franz Beyer', 'Lagos', 'Lutheranism', 'Ron Korb', 'United States of America', 'guitar', 'Amsterdam', 'John Knapp', 'Thomas Kossendey', "children's film"] and Scores: [0.2854247987270355, 0.4142155647277832, 0.1972401738166809, 0.022157059982419014, 0.01420349907130003, 0.015165179967880249, 0.015834543853998184, 4.7264820750569925e-06, 4.771733301822678e-07, 0.9830962419509888, 8.141599323607807e-07, 5.955600954621332e-07, 2.0689520169980824e-05, 0.016875339671969414, 1.0, 1.0, 1.0, 0.7650418877601624]
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: who plays ken barlow in coronation street 
+INFO:root:Topic Entity: m.01_2n
+INFO:root:True Path: tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+INFO:root:True answer: ['m.01j_gs'],  Labels: ['William Roache']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.01_2n
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.01_2n', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.5, 'head': True}, {'entity': 'm.01_2n', 'relation': 'tv.tv_program.regular_cast', 'score': 0.3, 'head': True}, {'entity': 'm.01_2n', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.2, 'head': True}]
+INFO:root:		 Entity: {'entity': 'm.01_2n', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.5, 'head': True}
+INFO:root:			entity_candidates for tv.tv_actor.starring_roles: [('m.0lnfy', 0.9985145926475525), ('m.09c7w0', 0.0010284855961799622), ('m.04y7_yr', 0.0004557978536467999), ('m.0342h', 1.0402065981907072e-06), ('m.02fw3h', 1.7153164222349915e-08), ('m.04c2xsh', 1.1004313016371725e-08), ('m.0wbhcc2', 7.849187078079467e-09), ('m.07nnrsn', 4.105616291383285e-09), ('m.0bd31kj', 2.337646076711053e-09), ('m.02ps_k5', 2.054334924395107e-09)]
+INFO:root:			"Entity: m.01_2n
+INFO:root:			"Relation: tv.tv_actor.starring_roles
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Cresco', 'Grzegorz Rosiński', 'Ivan Lietava', 'Lagos', 'The System', 'United States of America', 'guitar'] and Scores: [7.849187078079467e-09, 1.7153164222349915e-08, 0.0004557978536467999, 0.9985145926475525, 1.1004313016371725e-08, 0.0010284855961799622, 1.0402065981907072e-06]
+INFO:root:		 Entity: {'entity': 'm.01_2n', 'relation': 'tv.tv_program.regular_cast', 'score': 0.3, 'head': True}
+INFO:root:			entity_candidates for tv.tv_program.regular_cast: [('m.05lgy3b', 1.0), ('m.0x0m220', 1.0), ('m.0bvv2dt', 1.0), ('m.0bd31kj', 0.9248412847518921), ('m.03_f0', 0.07515546679496765), ('m.02plv2v', 2.288805035277619e-06), ('m.02ps_k5', 4.452089967799111e-07), ('m.0c1n2sw', 3.644163371063769e-07), ('m.049f34z', 2.732607811140042e-07), ('m.011_tnq4', 3.088603861556294e-08)]
+INFO:root:			"Entity: m.01_2n
+INFO:root:			"Relation: tv.tv_program.regular_cast
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Cinzia Mascoli', 'Cresco', 'Irina Arkhipova', 'Johann Sebastian Bach', 'Rudolph Nickolsburger'] and Scores: [0.9248412847518921, 1.0, 0.07515546679496765, 1.0, 1.0]
+INFO:root:		 Entity: {'entity': 'm.01_2n', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.2, 'head': True}
+INFO:root:			entity_candidates for tv.tv_character.appeared_in_tv_program: [('m.02p_hlt', 0.42364388704299927), ('m.0342h', 0.34090447425842285), ('m.0499xh1', 0.06450381875038147), ('m.01ly5m', 0.06412757933139801), ('m.03h34jl', 0.0453902930021286), ('m.04tgp', 0.012467067688703537), ('m.02822', 0.005955001339316368), ('m.01699', 0.004925789777189493), ('m.010wzgny', 0.0003964266797993332), ('m.09b3v', 0.0002966002793982625)]
+INFO:root:			"Entity: m.01_2n
+INFO:root:			"Relation: tv.tv_character.appeared_in_tv_program
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Abdullah Ensour', 'Buenos Aires', 'Burkina Faso', 'Mississippi', 'The Walt Disney Company', 'Villa Rides', 'drama', 'guitar'] and Scores: [0.42364388704299927, 0.06450381875038147, 0.005955001339316368, 0.0453902930021286, 0.004925789777189493, 0.06412757933139801, 0.21246706768870355, 0.34090447425842285]
+INFO:root:			"Total Entity Candidates: ['Cresco', 'Grzegorz Rosiński', 'Ivan Lietava', 'Lagos', 'The System', 'United States of America', 'guitar', 'Cinzia Mascoli', 'Cresco', 'Irina Arkhipova', 'Johann Sebastian Bach', 'Rudolph Nickolsburger', 'Abdullah Ensour', 'Buenos Aires', 'Burkina Faso', 'Mississippi', 'The Walt Disney Company', 'Villa Rides', 'drama', 'guitar'] and Scores: [7.849187078079467e-09, 1.7153164222349915e-08, 0.0004557978536467999, 0.9985145926475525, 1.1004313016371725e-08, 0.0010284855961799622, 1.0402065981907072e-06, 0.9248412847518921, 1.0, 0.07515546679496765, 1.0, 1.0, 0.42364388704299927, 0.06450381875038147, 0.005955001339316368, 0.0453902930021286, 0.004925789777189493, 0.06412757933139801, 0.21246706768870355, 0.34090447425842285]
+INFO:root:	 After entity pruning: [[('Coronation Street', 'tv.tv_program.regular_cast', 'Cresco'), ('Coronation Street', 'tv.tv_program.regular_cast', 'Johann Sebastian Bach'), ('Coronation Street', 'tv.tv_program.regular_cast', 'Rudolph Nickolsburger')]]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, the actor who plays Ken Barlow in Coronation Street is not mentioned. Therefore, additional knowledge about the cast of Coronation Street is needed to answer the question.
+INFO:root:depth 1 still not find the answer.
+INFO:root:	 At depth: 2
+INFO:root:		Topic entity: m.0bvv2dt
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0bvv2dt', 'relation': 'film.actor.film', 'score': 0.5, 'head': True}, {'entity': 'm.0bvv2dt', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.3, 'head': True}, {'entity': 'm.0bvv2dt', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.05lgy3b
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.05lgy3b', 'relation': 'film.performance.actor', 'score': 0.6, 'head': True}, {'entity': 'm.05lgy3b', 'relation': 'film.performance.character', 'score': 0.3, 'head': True}, {'entity': 'm.05lgy3b', 'relation': 'tv.tv_program.regular_cast', 'score': 0.1, 'head': True}]
+INFO:root:		Topic entity: m.0x0m220
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0x0m220', 'relation': 'film.actor.film', 'score': 0.4, 'head': True}, {'entity': 'm.0x0m220', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.35, 'head': True}, {'entity': 'm.0x0m220', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.25, 'head': True}]
+INFO:root:		 Entity: {'entity': 'm.0bvv2dt', 'relation': 'film.actor.film', 'score': 0.5, 'head': True}
+INFO:root:			entity_candidates for film.actor.film: [('m.0b894q', 0.8468271493911743), ('m.02rwvp3', 0.15180689096450806), ('m.0kns99b', 0.00028662383556365967), ('m.01vx3m', 0.00021541248133871704), ('m.0f93jp', 0.00015459275164175779), ('m.02fp48', 9.561589104123414e-05), ('m.05sxg2', 8.189996151486412e-05), ('m.04ykg', 7.569568697363138e-05), ('m.09s0l9x', 7.336663111345842e-05), ('m.06t4q7j', 6.913328252267092e-05)]
+INFO:root:			"Entity: m.0bvv2dt
+INFO:root:			"Relation: film.actor.film
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Bristol Cathedral Choir School', 'Guy Michelmore', 'Hissatsu: Sure Death', 'Liz Fielding', 'Minnesota', 'Union', 'Woking', 'theatrical producer'] and Scores: [0.8468271493911743, 0.00015459275164175779, 0.00028662383556365967, 0.15180689096450806, 7.569568697363138e-05, 9.561589104123414e-05, 0.00021541248133871704, 8.189996151486412e-05]
+INFO:root:		 Entity: {'entity': 'm.0bvv2dt', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.3, 'head': True}
+INFO:root:			entity_candidates for tv.tv_actor.starring_roles: [('m.0f8l9c', 0.6084513664245605), ('m.0yvn5ck', 0.28250640630722046), ('m.06w7rx2', 0.07523664087057114), ('m.04m2px', 0.004684386774897575), ('m.02q97p7', 0.003543887287378311), ('m.048_hqm', 0.003156607039272785), ('m.04523f', 0.0012921805027872324), ('m.0c40z2_', 0.001165654743090272), ('m.0f8_75h', 0.0009024359751492739), ('m.0_mvp8w', 0.0007701700087636709)]
+INFO:root:			"Entity: m.0bvv2dt
+INFO:root:			"Relation: tv.tv_actor.starring_roles
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Arthur M. Poskanzer', 'Bellshill', 'France', 'LaDainian Tomlinson', 'Madhav Chavan', 'Ransom A. Myers', 'Tehov'] and Scores: [0.0012921805027872324, 0.003543887287378311, 0.6084513664245605, 0.07523664087057114, 0.003156607039272785, 0.004684386774897575, 0.28250640630722046]
+INFO:root:		 Entity: {'entity': 'm.0bvv2dt', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.2, 'head': True}
+INFO:root:			entity_candidates for tv.tv_character.appeared_in_tv_program: [('m.0pswc', 0.3679875135421753), ('m.0w7q6n6', 0.2423219382762909), ('m.011r1vrp', 0.13409309089183807), ('m.0n5szg6', 0.07884925603866577), ('m.03gws6_', 0.020201845094561577), ('m.0mnz0', 0.00867417547851801), ('m.07ht2xf', 0.006137275602668524), ('m.0c9cpt', 0.004781151656061411), ('m.03_d0', 0.0041645788587629795), ('m.0r62z9g', 0.003855806542560458)]
+INFO:root:			"Entity: m.0bvv2dt
+INFO:root:			"Relation: tv.tv_character.appeared_in_tv_program
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Dagný Brynjarsdóttir', 'Fairfax County', 'Gennaro Ruggiero', 'Jennifer Roberson', 'Tijuana', 'jazz'] and Scores: [0.2423219382762909, 0.07884925603866577, 0.13409309089183807, 0.020201845094561577, 0.3679875135421753, 0.00867417547851801]
+INFO:root:		 Entity: {'entity': 'm.05lgy3b', 'relation': 'film.performance.actor', 'score': 0.6, 'head': True}
+INFO:root:			entity_candidates for film.performance.actor: [('m.0dzt9', 0.9350808262825012), ('m.01tfq1', 0.048337504267692566), ('m.0df3pd', 0.012099632993340492), ('m.0fpjc8b', 0.0018053095554932952), ('m.0zdbxln', 0.0008211131789721549), ('m.03h64', 0.0002678720047697425), ('m.0cw896', 0.0002625283959787339), ('m.0sjx5gg', 0.00014565963647328317), ('m.0d5v_', 9.773531201062724e-05), ('m.0bfmht4', 6.865378963993862e-05)]
+INFO:root:			"Entity: m.05lgy3b
+INFO:root:			"Relation: film.performance.actor
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ["Geraldine's Fortune", 'Hong Kong', 'Katherine Clark', 'Mateus Galiano da Costa', 'Mercedes Lackey', 'Richmond', 'William Stamps Farish II'] and Scores: [0.0002678720047697425, 0.0008211131789721549, 0.0018053095554932952, 0.012099632993340492, 0.0002625283959787339, 0.9350808262825012, 0.6483375042676925]
+INFO:root:		 Entity: {'entity': 'm.05lgy3b', 'relation': 'film.performance.character', 'score': 0.3, 'head': True}
+INFO:root:			entity_candidates for film.performance.character: [('m.0jwjsd4', 0.9218758940696716), ('m.0dzt9', 0.06602688133716583), ('m.06ds9hb', 0.0024067864287644625), ('m.0f8l9c', 0.0023189056664705276), ('m.02z9318', 0.0022699800319969654), ('m.02rg661', 0.001366119016893208), ('m.0jtbvf', 0.0007478408515453339), ('m.04y7_yr', 0.0006325584254227579), ('m.0b894q', 0.00040151149732992053), ('m.0ksf3f', 0.000366392225259915)]
+INFO:root:			"Entity: m.05lgy3b
+INFO:root:			"Relation: film.performance.character
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Bristol Cathedral Choir School', 'Fang Mitchell', 'France', 'Ivan Lietava', 'Marc Moss', 'Poza de la Vega', 'Richmond', 'William Sebring Kirkpatrick'] and Scores: [0.0007478408515453339, 0.0023189056664705276, 0.06602688133716583, 0.001366119016893208, 0.0022699800319969654, 0.0024067864287644625, 0.9218758940696716, 0.0006325584254227579]
+INFO:root:		 Entity: {'entity': 'm.05lgy3b', 'relation': 'tv.tv_program.regular_cast', 'score': 0.1, 'head': True}
+INFO:root:			entity_candidates for tv.tv_program.regular_cast: [('m.0d5v_', 0.48005566000938416), ('m.02h6nn_', 0.4600520133972168), ('m.068p2', 0.029934771358966827), ('m.0282q2v', 0.01025129109621048), ('m.0ckyqm', 0.006697593256831169), ('m.0jt737y', 0.00596615020185709), ('m.04y7_yr', 0.002529862802475691), ('m.0_s0c1w', 0.0010827885707840323), ('m.0crvh2z', 0.0003474729892332107), ('m.01152_qv', 0.0003218832425773144)]
+INFO:root:			"Entity: m.05lgy3b
+INFO:root:			"Relation: tv.tv_program.regular_cast
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Ivan Lietava', 'Megan McCafferty', 'Mercedes Lackey', 'Pittsburgh', 'Scott Township', 'Tini', 'William Burt', 'racing automobile driver'] and Scores: [0.002529862802475691, 0.006697593256831169, 0.48005566000938416, 0.029934771358966827, 0.01025129109621048, 0.00596615020185709, 0.10108278857078404, 0.4600520133972168]
+INFO:root:		 Entity: {'entity': 'm.0x0m220', 'relation': 'film.actor.film', 'score': 0.4, 'head': True}
+INFO:root:			entity_candidates for film.actor.film: [('m.01f62', 0.9446977376937866), ('m.010ngx13', 0.05079800263047218), ('m.02h7s78', 0.0025952886790037155), ('m.03h64', 0.000417135888710618), ('m.0fpzwf', 0.00031628276337869465), ('m.011kh46r', 0.00020507558656390756), ('m.099md', 0.00019931656424887478), ('m.04y7_yr', 0.00019412979600019753), ('m.06s85b', 0.000180578586878255), ('m.0k3p', 8.680614701006562e-05)]
+INFO:root:			"Entity: m.0x0m220
+INFO:root:			"Relation: film.actor.film
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['1981 Major League Baseball season', 'Amsterdam', 'Barcelona', 'Hong Kong', 'Ivan Lietava', 'Minneapolis', 'Ranko Marinković', 'soldier'] and Scores: [0.05079800263047218, 0.00019412979600019753, 0.9446977376937866, 0.0025952886790037155, 0.00020507558656390756, 0.000417135888710618, 0.00019931656424887478, 0.00031628276337869465]
+INFO:root:		 Entity: {'entity': 'm.0x0m220', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.35, 'head': True}
+INFO:root:			entity_candidates for tv.tv_actor.starring_roles: [('m.0zdbxln', 0.8755975365638733), ('m.0qjr0', 0.06115894764661789), ('m.01mjq', 0.030509259551763535), ('m.0k3ff1g', 0.005809548310935497), ('m.04jfdcc', 0.005279383156448603), ('m.0whd21k', 0.0026537696830928326), ('m.064t9', 0.002636721357703209), ('m.02wbc43', 0.0025130948051810265), ('m.03cf31q', 0.0014959991676732898), ('m.040604y', 0.0011772303842008114)]
+INFO:root:			"Entity: m.0x0m220
+INFO:root:			"Relation: tv.tv_actor.starring_roles
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Aleksandro Petrović', 'Czech Republic', 'Edmund de la Pole, 3rd Duke of Suffolk', 'Jose de Creeft', 'Kongkiat Khomsiri', 'Madison Square Garden Sports', 'pop music'] and Scores: [0.030509259551763535, 0.06115894764661789, 0.8755975365638733, 0.002636721357703209, 0.005279383156448603, 0.0026537696830928326, 0.005809548310935497]
+INFO:root:		 Entity: {'entity': 'm.0x0m220', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.25, 'head': True}
+INFO:root:			entity_candidates for tv.tv_character.appeared_in_tv_program: [('m.01z1p9h', 0.5763128399848938), ('m.05n6dfv', 0.2904611825942993), ('m.0d64mj', 0.09087201207876205), ('m.02822', 0.021516749635338783), ('m.0dbf6m', 0.003512888215482235), ('m.02796j_', 0.0022041366901248693), ('m.0gvmg_', 0.002152244560420513), ('m.02pj_dz', 0.0018765603890642524), ('m.03h34jl', 0.001455057063139975), ('m.06rcv6r', 0.0002908249443862587)]
+INFO:root:			"Entity: m.0x0m220
+INFO:root:			"Relation: tv.tv_character.appeared_in_tv_program
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Alan Tern', 'Big Lake', 'Carl Saltzmann', 'Dave Osborn', 'Jan Fridegård', 'Jean Macnamara', 'Villa Rides', 'drama'] and Scores: [0.25351288821548223, 0.5763128399848938, 0.021516749635338783, 0.002152244560420513, 0.2904611825942993, 0.0022041366901248693, 0.0018765603890642524, 0.09087201207876205]
+INFO:root:			"Total Entity Candidates: ['Bristol Cathedral Choir School', 'Guy Michelmore', 'Hissatsu: Sure Death', 'Liz Fielding', 'Minnesota', 'Union', 'Woking', 'theatrical producer', 'Arthur M. Poskanzer', 'Bellshill', 'France', 'LaDainian Tomlinson', 'Madhav Chavan', 'Ransom A. Myers', 'Tehov', 'Dagný Brynjarsdóttir', 'Fairfax County', 'Gennaro Ruggiero', 'Jennifer Roberson', 'Tijuana', 'jazz', "Geraldine's Fortune", 'Hong Kong', 'Katherine Clark', 'Mateus Galiano da Costa', 'Mercedes Lackey', 'Richmond', 'William Stamps Farish II', 'Bristol Cathedral Choir School', 'Fang Mitchell', 'France', 'Ivan Lietava', 'Marc Moss', 'Poza de la Vega', 'Richmond', 'William Sebring Kirkpatrick', 'Ivan Lietava', 'Megan McCafferty', 'Mercedes Lackey', 'Pittsburgh', 'Scott Township', 'Tini', 'William Burt', 'racing automobile driver', '1981 Major League Baseball season', 'Amsterdam', 'Barcelona', 'Hong Kong', 'Ivan Lietava', 'Minneapolis', 'Ranko Marinković', 'soldier', 'Aleksandro Petrović', 'Czech Republic', 'Edmund de la Pole, 3rd Duke of Suffolk', 'Jose de Creeft', 'Kongkiat Khomsiri', 'Madison Square Garden Sports', 'pop music', 'Alan Tern', 'Big Lake', 'Carl Saltzmann', 'Dave Osborn', 'Jan Fridegård', 'Jean Macnamara', 'Villa Rides', 'drama'] and Scores: [0.8468271493911743, 0.00015459275164175779, 0.00028662383556365967, 0.15180689096450806, 7.569568697363138e-05, 9.561589104123414e-05, 0.00021541248133871704, 8.189996151486412e-05, 0.0012921805027872324, 0.003543887287378311, 0.6084513664245605, 0.07523664087057114, 0.003156607039272785, 0.004684386774897575, 0.28250640630722046, 0.2423219382762909, 0.07884925603866577, 0.13409309089183807, 0.020201845094561577, 0.3679875135421753, 0.00867417547851801, 0.0002678720047697425, 0.0008211131789721549, 0.0018053095554932952, 0.012099632993340492, 0.0002625283959787339, 0.9350808262825012, 0.6483375042676925, 0.0007478408515453339, 0.0023189056664705276, 0.06602688133716583, 0.001366119016893208, 0.0022699800319969654, 0.0024067864287644625, 0.9218758940696716, 0.0006325584254227579, 0.002529862802475691, 0.006697593256831169, 0.48005566000938416, 0.029934771358966827, 0.01025129109621048, 0.00596615020185709, 0.10108278857078404, 0.4600520133972168, 0.05079800263047218, 0.00019412979600019753, 0.9446977376937866, 0.0025952886790037155, 0.00020507558656390756, 0.000417135888710618, 0.00019931656424887478, 0.00031628276337869465, 0.030509259551763535, 0.06115894764661789, 0.8755975365638733, 0.002636721357703209, 0.005279383156448603, 0.0026537696830928326, 0.005809548310935497, 0.25351288821548223, 0.5763128399848938, 0.021516749635338783, 0.002152244560420513, 0.2904611825942993, 0.0022041366901248693, 0.0018765603890642524, 0.09087201207876205]
+INFO:root:	 After entity pruning: [[('UnName_Entity', 'film.actor.film', 'Barcelona'), ('UnName_Entity', 'film.performance.actor', 'Richmond'), ('UnName_Entity', 'film.performance.character', 'Richmond')]]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, there is no information about who plays the character Ken Barlow in Coronation Street. Therefore, additional knowledge is needed to answer this question.
+INFO:root:depth 2 still not find the answer.
+INFO:root:	 At depth: 3
+INFO:root:		Topic entity: m.01f62
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.01f62', 'relation': 'film.actor.film', 'score': 0.5, 'head': True}, {'entity': 'm.01f62', 'relation': 'film.performance.character', 'score': 0.3, 'head': True}, {'entity': 'm.01f62', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.0dzt9
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0dzt9', 'relation': 'film.film.starring', 'score': 0.5, 'head': True}, {'entity': 'm.0dzt9', 'relation': 'film.performance.actor', 'score': 0.3, 'head': True}, {'entity': 'm.0dzt9', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.0jwjsd4
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0jwjsd4', 'relation': 'film.actor.film', 'score': 0.5, 'head': True}, {'entity': 'm.0jwjsd4', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.3, 'head': True}, {'entity': 'm.0jwjsd4', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.2, 'head': True}]
+INFO:root:		 Entity: {'entity': 'm.01f62', 'relation': 'film.actor.film', 'score': 0.5, 'head': True}
+INFO:root:			entity_candidates for film.actor.film: [('m.018j2', 0.026147183030843735), ('m.0_pyp', 0.011476482264697552), ('m.0v3j8r1', 0.0067979441955685616), ('m.0jsvrv', 0.003666904754936695), ('m.05148p4', 0.0025933426804840565), ('m.0f2r6', 0.0011164224706590176), ('g.11h1tsfvy', 0.0011160168796777725), ('m.02h6fbs', 0.0010117654455825686), ('g.122p31pb', 0.000605157867539674), ('m.04dcdr3', 0.0006031407392583787)]
+INFO:root:			"Entity: m.01f62
+INFO:root:			"Relation: film.actor.film
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Bristol', 'Salt Lake City', 'banjo', 'keyboard instrument', 'philosopher'] and Scores: [0.011476482264697552, 0.003666904754936695, 0.026147183030843735, 0.0067979441955685616, 0.0025933426804840565]
+INFO:root:		 Entity: {'entity': 'm.01f62', 'relation': 'film.performance.character', 'score': 0.3, 'head': True}
+INFO:root:			entity_candidates for film.performance.character: [('m.076_50r', 0.8043290972709656), ('m.0jcnk60', 0.1589546799659729), ('m.02b8_4', 0.014664125628769398), ('m.0sl5wpj', 0.00869100820273161), ('m.04077v2', 0.004122714977711439), ('m.08_0z_', 0.0017198623390868306), ('m.0df3pd', 0.0010319898137822747), ('m.0byb03', 0.0005393836181610823), ('m.08c50s', 0.0005224306369200349), ('m.0497z3v', 0.0003317055234219879)]
+INFO:root:			"Entity: m.01f62
+INFO:root:			"Relation: film.performance.character
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['David Roselle', 'Djaduk Ferianto', 'Grigol Robakidze', 'Igor Semshov', 'Karen David', 'Lou Bierbauer', 'Mateus Galiano da Costa'] and Scores: [0.0017198623390868306, 0.8043290972709656, 0.1589546799659729, 0.00869100820273161, 0.014664125628769398, 0.0010319898137822747, 0.004122714977711439]
+INFO:root:		 Entity: {'entity': 'm.01f62', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.2, 'head': True}
+INFO:root:			entity_candidates for tv.tv_actor.starring_roles: [('m.04kxdj', 0.0009499333682470024), ('m.0ck1mxj', 0.0004475207533687353), ('m.03m_gk', 0.00030766541021876037), ('m.025xwjv', 0.00019372558745089918), ('m.04c775b', 0.00017578645201865584), ('m.0266l83', 0.00011204852489754558), ('m.02z8m4_', 0.00010209059109911323), ('m.0403l32', 9.91238048300147e-05), ('m.0vy9gph', 9.165744268102571e-05), ('m.07l5nj', 8.843858813634142e-05)]
+INFO:root:			"Entity: m.01f62
+INFO:root:			"Relation: tv.tv_actor.starring_roles
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['1944 NFL Championship Game', 'Hello Sailor', 'Margaret Sinclair', 'Mike Mordecai', 'Roger Loyer', 'Violet Barclay'] and Scores: [0.00030766541021876037, 0.0004475207533687353, 0.00017578645201865584, 0.00011204852489754558, 0.0009499333682470024, 0.00019372558745089918]
+INFO:root:		 Entity: {'entity': 'm.0dzt9', 'relation': 'film.film.starring', 'score': 0.5, 'head': True}
+INFO:root:			entity_candidates for film.film.starring: [('m.01n7q', 0.005634570959955454), ('m.07yqj3', 0.0025712111964821815), ('m.01z1p9h', 0.0018165934598073363), ('m.08084yt', 0.001660163514316082), ('m.0521tpf', 0.0007315253606066108), ('m.0wfdd5_', 0.0007140491507016122), ('m.06r5_p4', 0.0006079370505176485), ('m.01102g3j', 0.0004480272764340043), ('m.0d3f8t', 0.0003585792728699744), ('m.02qfgjq', 0.0002898881502915174)]
+INFO:root:			"Entity: m.0dzt9
+INFO:root:			"Relation: film.film.starring
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Axel Lawarée', 'Big Lake', 'California', 'John Callaghan', 'Paul Okon', 'Ron Korb', 'Segart'] and Scores: [0.0007315253606066108, 0.0018165934598073363, 0.005634570959955454, 0.0007140491507016122, 0.0025712111964821815, 0.001660163514316082, 0.0006079370505176485]
+INFO:root:		 Entity: {'entity': 'm.0dzt9', 'relation': 'film.performance.actor', 'score': 0.3, 'head': True}
+INFO:root:			entity_candidates for film.performance.actor: [('m.08c939', 0.991884708404541), ('m.07zkdxc', 9.315005445387214e-05), ('m.03h_y9p', 3.136308441753499e-05), ('m.0gk4g', 1.490113754698541e-05), ('m.02pqw_6', 1.466836783947656e-05), ('m.05l5n', 9.253209100279491e-06), ('m.04mtz7', 9.088344086194411e-06), ('m.04b4myh', 7.690495294809807e-06), ('m.04gcs8b', 7.563998224213719e-06), ('m.06x706', 7.203383574960753e-06)]
+INFO:root:			"Entity: m.0dzt9
+INFO:root:			"Relation: film.performance.actor
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Beenie Man', 'Blackhawk Township', 'Margaret Fiedler McGinnis', 'Oxford', 'Prepple Houmb', 'Richard Dembo', 'myocardial infarction'] and Scores: [9.315005445387214e-05, 1.490113754698541e-05, 9.088344086194411e-06, 1.466836783947656e-05, 0.991884708404541, 9.253209100279491e-06, 0.3000313630844175]
+INFO:root:		 Entity: {'entity': 'm.0dzt9', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.2, 'head': True}
+INFO:root:			entity_candidates for tv.tv_actor.starring_roles: [('m.05hj__k', 0.9258800148963928), ('m.05w4zbj', 0.007515651173889637), ('m.09b3v', 0.0069883158430457115), ('m.0499xh1', 0.005754783283919096), ('m.0j1z8', 0.0029365771915763617), ('m.0j4zm5w', 0.0012299094814807177), ('m.06zstsz', 0.0009388317121192813), ('m.05b2h7h', 0.000795613625086844), ('m.011_tnq4', 0.0007066380348987877), ('m.0csbzd', 0.0006540259346365929)]
+INFO:root:			"Entity: m.0dzt9
+INFO:root:			"Relation: tv.tv_actor.starring_roles
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Daniel Mullings', 'Sandra Fredman', 'Tales That Witness Madness', 'Terasa Livingstone', 'The Walt Disney Company', 'United Arab Emirates', 'Woodford', 'film editor'] and Scores: [0.0029365771915763617, 0.007515651173889637, 0.0009388317121192813, 0.000795613625086844, 0.0069883158430457115, 0.005754783283919096, 0.0012299094814807177, 0.9258800148963928]
+INFO:root:		 Entity: {'entity': 'm.0jwjsd4', 'relation': 'film.actor.film', 'score': 0.5, 'head': True}
+INFO:root:			entity_candidates for film.actor.film: [('m.0_x90qk', 0.07263985276222229), ('m.0hpp1z2', 0.05433354526758194), ('m.04y7_yr', 0.036463312804698944), ('m.0g284', 0.015148738399147987), ('m.0w_l0wv', 0.00571582792326808), ('m.0ch3y23', 0.005156173370778561), ('m.0289cml', 0.004588318523019552), ('m.04c2m_7', 0.004280238877981901), ('m.02z9318', 0.004189381375908852), ('m.0bmj_6p', 0.0041656531393527985)]
+INFO:root:			"Entity: m.0jwjsd4
+INFO:root:			"Relation: film.actor.film
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Delaware Township', "Holly Finale' Finley", 'Ivan Lietava', 'Johannesburg', 'José Bordalás', 'Michael S. Rosenfeld', 'Poza de la Vega', 'Tommy Kelly'] and Scores: [0.005156173370778561, 0.07263985276222229, 0.036463312804698944, 0.015148738399147987, 0.00571582792326808, 0.004280238877981901, 0.004588318523019552, 0.05433354526758194]
+INFO:root:		 Entity: {'entity': 'm.0jwjsd4', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.3, 'head': True}
+INFO:root:			entity_candidates for tv.tv_actor.starring_roles: [('m.04y7_yr', 0.9413637518882751), ('m.02q1fqt', 0.021807165816426277), ('m.0k3p', 0.0044045946560800076), ('m.0cgvwx', 0.0005733944126404822), ('m.04t__t3', 0.00013294738892000169), ('m.0g2dnh', 6.248745194170624e-05), ('m.02pq5lk', 3.638009002315812e-05), ('m.0gw5m91', 2.8505650334409438e-05), ('m.0hpsdxh', 2.530704477976542e-05), ('m.04gc2', 2.1726385966758244e-05)]
+INFO:root:			"Entity: m.0jwjsd4
+INFO:root:			"Relation: tv.tv_actor.starring_roles
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Amsterdam', 'Brian Haner', 'Dollnstein', 'Ivan Lietava', 'National League of Cities v. Usery', 'lawyer', 'romance film'] and Scores: [0.0044045946560800076, 0.00013294738892000169, 0.021807165816426277, 0.9413637518882751, 0.0005733944126404822, 3.638009002315812e-05, 6.248745194170624e-05]
+INFO:root:		 Entity: {'entity': 'm.0jwjsd4', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.2, 'head': True}
+INFO:root:			entity_candidates for tv.tv_character.appeared_in_tv_program: [('m.0c9cpt', 0.7805833220481873), ('m.03_f0', 0.10570456087589264), ('m.0cnnj9q', 0.025686895474791527), ('m.026k3q5', 0.02300683781504631), ('m.0b894q', 0.018245786428451538), ('m.011r1vrp', 0.01529210340231657), ('m.09cplj', 0.010068556293845177), ('m.02rwvp3', 0.003210808150470257), ('m.06t4q7j', 0.002610428025946021), ('m.02hqb47', 0.0019689069595187902)]
+INFO:root:			"Entity: m.0jwjsd4
+INFO:root:			"Relation: tv.tv_character.appeared_in_tv_program
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			"Entity Candidates: ['Bristol Cathedral Choir School', 'Jennifer Roberson', 'Johann Sebastian Bach', 'John Calvin Jureit', 'Joseph Henry Sharp', 'Liz Fielding'] and Scores: [0.02300683781504631, 0.7805833220481873, 0.10570456087589264, 0.018245786428451538, 0.025686895474791527, 0.01529210340231657]
+INFO:root:			"Total Entity Candidates: ['Bristol', 'Salt Lake City', 'banjo', 'keyboard instrument', 'philosopher', 'David Roselle', 'Djaduk Ferianto', 'Grigol Robakidze', 'Igor Semshov', 'Karen David', 'Lou Bierbauer', 'Mateus Galiano da Costa', '1944 NFL Championship Game', 'Hello Sailor', 'Margaret Sinclair', 'Mike Mordecai', 'Roger Loyer', 'Violet Barclay', 'Axel Lawarée', 'Big Lake', 'California', 'John Callaghan', 'Paul Okon', 'Ron Korb', 'Segart', 'Beenie Man', 'Blackhawk Township', 'Margaret Fiedler McGinnis', 'Oxford', 'Prepple Houmb', 'Richard Dembo', 'myocardial infarction', 'Daniel Mullings', 'Sandra Fredman', 'Tales That Witness Madness', 'Terasa Livingstone', 'The Walt Disney Company', 'United Arab Emirates', 'Woodford', 'film editor', 'Delaware Township', "Holly Finale' Finley", 'Ivan Lietava', 'Johannesburg', 'José Bordalás', 'Michael S. Rosenfeld', 'Poza de la Vega', 'Tommy Kelly', 'Amsterdam', 'Brian Haner', 'Dollnstein', 'Ivan Lietava', 'National League of Cities v. Usery', 'lawyer', 'romance film', 'Bristol Cathedral Choir School', 'Jennifer Roberson', 'Johann Sebastian Bach', 'John Calvin Jureit', 'Joseph Henry Sharp', 'Liz Fielding'] and Scores: [0.011476482264697552, 0.003666904754936695, 0.026147183030843735, 0.0067979441955685616, 0.0025933426804840565, 0.0017198623390868306, 0.8043290972709656, 0.1589546799659729, 0.00869100820273161, 0.014664125628769398, 0.0010319898137822747, 0.004122714977711439, 0.00030766541021876037, 0.0004475207533687353, 0.00017578645201865584, 0.00011204852489754558, 0.0009499333682470024, 0.00019372558745089918, 0.0007315253606066108, 0.0018165934598073363, 0.005634570959955454, 0.0007140491507016122, 0.0025712111964821815, 0.001660163514316082, 0.0006079370505176485, 9.315005445387214e-05, 1.490113754698541e-05, 9.088344086194411e-06, 1.466836783947656e-05, 0.991884708404541, 9.253209100279491e-06, 0.3000313630844175, 0.0029365771915763617, 0.007515651173889637, 0.0009388317121192813, 0.000795613625086844, 0.0069883158430457115, 0.005754783283919096, 0.0012299094814807177, 0.9258800148963928, 0.005156173370778561, 0.07263985276222229, 0.036463312804698944, 0.015148738399147987, 0.00571582792326808, 0.004280238877981901, 0.004588318523019552, 0.05433354526758194, 0.0044045946560800076, 0.00013294738892000169, 0.021807165816426277, 0.9413637518882751, 0.0005733944126404822, 3.638009002315812e-05, 6.248745194170624e-05, 0.02300683781504631, 0.7805833220481873, 0.10570456087589264, 0.018245786428451538, 0.025686895474791527, 0.01529210340231657]
+INFO:root:	 After entity pruning: [[('Richmond', 'film.performance.actor', 'Prepple Houmb'), ('UnName_Entity', 'tv.tv_actor.starring_roles', 'Ivan Lietava'), ('Richmond', 'tv.tv_actor.starring_roles', 'film editor')]]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, there is no information about who plays the character Ken Barlow in Coronation Street. Therefore, additional information is needed to answer this question.
+INFO:root:depth 3 still not find the answer.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:pure_LLM_answers: 0
+INFO:root:LLM_calls count: 32
+INFO:root:Hits@1: 0.0
+INFO:root:+ ----------------------------------------------------------------- +

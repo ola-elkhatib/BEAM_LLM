@@ -1,0 +1,110 @@
+Extract_relation_prompt:#######################################################################################Extract_relation_prompt:##########################################
+
+True Path: location.country.languages_spoken
+INFO:root:True answer: ['m.01428y', 'm.04ygk0']
+
+
+
+'Please retrieve 3 relations (separated by semicolon) that contribute to the question and rate their contribution on a scale from 0 to 1 (the sum of the scores of 3 relations is 1).
+Q1: Name the president of the country whose main spoken language was Brahui in 1980?
+Topic Entity: Brahui Language
+Relations: language.human_language.main_country; language.human_language.language_family; language.human_language.iso_639_3_code; base.rosetta.languoid.parent; language.human_language.writing_system; base.rosetta.languoid.languoid_class; language.human_language.countries_spoken_in; kg.object_profile.prominent_type; base.rosetta.languoid.document; base.ontologies.ontology_instance.equivalent_instances; base.rosetta.languoid.local_name; language.human_language.region
+
+A1: 1. {language.human_language.main_country (Score: 0.4))}: This relation is highly relevant as it directly relates to the country whose president is being asked for, and the main country where Brahui language is spoken in 1980.
+2. {language.human_language.countries_spoken_in (Score: 0.3)}: This relation is also relevant as it provides information on the countries where Brahui language is spoken, which could help narrow down the search for the president.
+3. {base.rosetta.languoid.parent (Score: 0.2)}: This relation is less relevant but still provides some context on the language family to which Brahui belongs, which could be useful in understanding the linguistic and cultural background of the country in question.
+
+Q2: what does jamaican people speak 
+Topic Entity of Q2: Jamaica
+For Q2, retrieve from the following relations:: base.aareas.schema.administrative_area.administrative_area_type; base.aareas.schema.administrative_area.administrative_children; base.aareas.schema.administrative_area.administrative_children; base.aareas.schema.administrative_area.administrative_parent; base.aareas.schema.administrative_area.administrative_parent; base.aareas.schema.administrative_area.short_name; base.biblioness.bibs_location.country; base.culturalevent.event.entity_involved; base.locations.continents.countries_within; base.locations.countries.continent; base.schemastaging.phone_sandbox.service_location; book.book_subject.works; common.topic.notable_types; fictional_universe.fictional_character.place_of_birth; film.film.country; film.film.featured_film_locations; finance.currency.countries_used; geography.river.basin_countries; government.government_position_held.jurisdiction_of_office; government.governmental_jurisdiction.governing_officials; language.human_language.countries_spoken_in; language.human_language.main_country; location.administrative_division.country; location.administrative_division.first_level_division_of; location.country.capital; location.country.currency_used; location.country.first_level_divisions; location.country.form_of_government; location.country.internet_tld; location.country.languages_spoken; location.country.official_language; location.location.containedby; location.location.containedby; location.location.contains; location.location.contains; location.location.events; location.location.nearby_airports; location.location.people_born_here; location.location.time_zones; meteorology.tropical_cyclone.affected_areas; music.artist.origin; olympics.olympic_athlete_affiliation.country; olympics.olympic_medal_honor.country; organization.organization.geographic_scope; organization.organization.place_founded; organization.organization_member.member_of; organization.organization_membership.member; people.deceased_person.place_of_death; people.family.country; people.person.nationality; people.person.place_of_birth; royalty.kingdom.rulers; royalty.monarch.kingdom; sports.sports_team.location; sports.sports_team_location.teams; time.event.locations; time.time_zone.locations_in_this_time_zone; travel.tourist_attraction.near_travel_destination; travel.travel_destination.tourist_attractions; type.object.name
+
+A2: '
+
+###########result###########
+
+'1. {location.country.languages_spoken (Score: 0.5)}: This relation is highly relevant as it directly provides information about the languages spoken in Jamaica.
+2. {location.country.official_language (Score: 0.4)}: This relation is also very relevant as it provides information about the official language of Jamaica, which is likely to be the language most Jamaicans speak.
+3. {people.person.nationality (Score: 0.1)}: This relation is less relevant but can provide some context about the nationality of people in Jamaica, which could indirectly indicate the language they speak.'
+#################################################################################################################################################
+
+****************************** Entity Scoring ******************************
+entity_candidates: ['Jamaican English', 'Jamaican Patois']
+relation: 'location.country.languages_spoken'
+
+Prompt:
+
+'Please score the entities\' contribution to the question on a scale from 0 to 1 (the sum of the scores of all entities is 1).
+Q: The movie featured Miley Cyrus and was produced by Tobin Armbrust?
+Relation: film.producer.film
+Entites: The Resident; So Undercover; Let Me In; Begin Again; The Quiet Ones; A Walk Among the Tombstones
+Score: 0.0, 1.0, 0.0, 0.0, 0.0, 0.0
+
+The movie that matches the given criteria is "So Undercover" with Miley Cyrus and produced by Tobin Armbrust. Therefore, the score for "So Undercover" would be 1, and the scores for all other entities would be 0.\
+
+Q: what does jamaican people speak 
+Relation: location.country.languages_spoken
+Entites: Jamaican English; Jamaican Patois
+Score:'
+
+###########result###########
+'0.5, 0.5
+Both Jamaican English and Jamaican Patois are spoken in Jamaica, so both entities contribute equally to the answer.
+ Therefore, the score for each would be 0.5.'
+
+
+
+#################################################################################################################################################
+****************************** Entity Pruning ******************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################################################################################################################################
+****************************** Reasoning ******************************
+
+'Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it\'s sufficient for you to answer the question with these triplets and your knowledge (Yes or No).
+
+Q: Find the person who said "Taste cannot be controlled by law", what did this person die from?
+Knowledge Triplets: Taste cannot be controlled by law., media_common.quotation.author, Thomas Jefferson
+A: {No}. Based on the given knowledge triplets, it\'s not sufficient to answer the entire question. The triplets only provide information about the person who said "Taste cannot be controlled by law," which is Thomas Jefferson. To answer the second part of the question, it\'s necessary to have additional knowledge about where Thomas Jefferson\'s dead.
+
+Q: The artist nominated for The Long Winter lived where?
+Knowledge Triplets: The Long Winter, book.written_work.author, Laura Ingalls Wilder
+Laura Ingalls Wilder, people.person.places_lived, Unknown-Entity
+Unknown-Entity, people.place_lived.location, De Smet
+A: {Yes}. Based on the given knowledge triplets, the author of The Long Winter, Laura Ingalls Wilder, lived in De Smet. Therefore, the answer to the question is {De Smet}.
+
+Q: Who is the coach of the team owned by Steve Bisciotti?
+Knowledge Triplets: Steve Bisciotti, sports.professional_sports_team.owner_s, Baltimore Ravens
+Steve Bisciotti, sports.sports_team_owner.teams_owned, Baltimore Ravens
+Steve Bisciotti, organization.organization_founder.organizations_founded, Allegis Group
+A: {No}. Based on the given knowledge triplets, the coach of the team owned by Steve Bisciotti is not explicitly mentioned. However, it can be inferred that the team owned by Steve Bisciotti is the Baltimore Ravens, a professional sports team. Therefore, additional knowledge about the current coach of the Baltimore Ravens can be used to answer the question
+
+Q: Rift Valley Province is located in a nation that uses which form of currency?
+Knowledge Triplets: Rift Valley Province, location.administrative_division.country, Kenya
+Rift Valley Province, location.location.geolocation, UnName_Entity
+Rift Valley Province, location.mailing_address.state_province_region, UnName_Entity
+Kenya, location.country.currency_used, Kenyan shilling
+A: {Yes}. Based on the given knowledge triplets, Rift Valley Province is located in Kenya, which uses the Kenyan shilling as its currency. Therefore, the answer to the question is {Kenyan shilling}.
+
+Q: The country with the National Anthem of Bolivia borders which nations?
+Knowledge Triplets: National Anthem of Bolivia, government.national_anthem_of_a_country.anthem, UnName_Entity
+National Anthem of Bolivia, music.composition.composer, Leopoldo Benedetto Vincenti
+National Anthem of Bolivia, music.composition.lyricist, José Ignacio de Sanjinés
+UnName_Entity, government.national_anthem_of_a_country.country, Bolivia
+Bolivia, location.country.national_anthem, UnName_Entity
+
+A: {No}. Based on the given knowledge triplets, we can infer that the National Anthem of Bolivia is the anthem of Bolivia. Therefore, the country with the National Anthem of Bolivia is Bolivia itself. However, the given knowledge triplets do not provide information about which nations border Bolivia. To answer this question, we need additional knowledge about the geography of Bolivia and its neighboring countries.
+
+Q5: what does jamaican people speak 
+
+

@@ -1,0 +1,20 @@
+what does jamaican people speak [m.03_r3]	m.01428y|m.04ygk0	location.country.languages_spoken
+what did james k polk do before he was president [m.042f1]	m.02_bcst|m.04x_n9q|m.0cgqx	people.person.profession
+who plays ken barlow in coronation street [m.01_2n]	m.01j_gs	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+where is jamarcus russell from [m.0cjcdj]	m.058cm	people.person.place_of_birth
+where was george washington carver from [m.03djm]	m.0xhsh	people.person.place_of_birth
+what else did ben franklin invent [m.019fz]	m.0135nr|m.013cqs|m.01zh8g|m.029mmz	law.inventor.inventions
+who was richard nixon married to [m.06c97]	m.023v03	people.person.spouse_s|people.marriage.spouse
+who is governor of ohio 2011 [m.05kkh]	m.02zzm_|m.0340r0|m.039rqy	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+who was vice president after kennedy died [m.0d3k14]	m.0f7fy	government.us_president.vice_president
+where is the fukushima daiichi nuclear plant located [m.02vkzy2]	m.03_3d|m.03k_g5	location.location.containedby
+what countries are part of the uk [m.07ssc]	m.02jx1|m.05bcl|m.06q1r|m.0j5g9	base.aareas.schema.administrative_area.administrative_children
+what is my timezone in louisiana [m.04ly1]	m.02fqwt	location.location.time_zones
+what did st augustine do [m.0w6w]	m.02h6fbs|m.05t4q|m.0cbd2	people.person.profession
+who is keyshia cole dad [m.01pkxs9]	m.0n9hj_f|m.0n9hk0h|m.0wq93rk	people.person.parents
+what kind government does egypt have [m.02k54]	m.01dw03|m.02tz3y	location.country.form_of_government
+what town was martin luther king assassinated in [m.051cc]	m.0c_m3	people.deceased_person.place_of_death
+where did edgar allan poe died [m.02lt8]	m.094jv	people.deceased_person.place_of_death
+what to do today in atlanta with kids [m.013yq]	m.0130ft|m.020fp1|m.027r6hr|m.027t71h|m.029fnx|m.02jnft|m.02wl1b|m.02xmrp|m.030pkm|m.033h7k|m.038bv6|m.038gvs|m.039xmp|m.03cspcp|m.03l1zc|m.03q1hw|m.03sm22|m.03spbl|m.03wm34|m.03xrf5|m.04_mbv|m.04d135|m.04htb5|m.04jny9|m.04qrhq|m.050m_5|m.050mtz|m.050my1|m.050n0y|m.05c25f2|m.06bxs4|m.0b5g4p|m.0c3cp2|m.0fpmfg|m.0gln9p|m.0j28sdt	travel.travel_destination.tourist_attractions
+what electorate does anna bligh represent [m.072_m3]	m.026q11g	government.politician.government_positions_held|government.government_position_held.district_represented
+where did andy murray started playing tennis [m.03wc52]	2005	tennis.tennis_player.year_turned_pro

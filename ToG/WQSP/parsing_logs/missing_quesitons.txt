@@ -1,0 +1,182 @@
+who is governor of ohio 2011 [m.05kkh]	m.02zzm_|m.0340r0|m.039rqy	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+what highschool did harper lee go to [m.01bq7x]	m.0crdc8g	people.person.education|education.education.institution
+who plays the voice of kitt in knight rider [m.0bvxv]	m.0309r1	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+who are the colorado representatives [m.01n4w]	m.024zbx|m.05b60qf	government.political_district.representatives|government.government_position_held.office_holder
+what was thomas jefferson role in the declaration of independence [m.07cbs]	m.016fc2|m.01d30f|m.02h6fbs|m.02h6pd1|m.03sbb|m.04gc2|m.0cbd2|m.0g0vx|m.0kyk|m.0mn6	people.person.profession
+what super bowl did peyton manning win [m.027jv8]	m.04k5qm
+what team did david beckham play for in 2011 [m.02d9k]	m.01k2yr	sports.pro_athlete.teams|sports.sports_team_roster.team
+what all does google now do [m.045c7b]	m.010pkp62|m.03w9g0f|m.064qgt0|m.06ny5h|m.0b6g2kz|m.0dm258|m.0fpj3tb|m.0j7m2zm|m.0k0p036|m.0k2998k|m.0nb7n8f|m.0pb8gtr|m.0wf0rgl	business.consumer_company.products|business.company_product_relationship.consumer_product
+what are the four main languages spoken in spain [m.06mkj]	m.017k6|m.01m69|m.01q5d9|m.05l0r|m.06nm1	location.country.languages_spoken
+what team does jordan own [m.03__y]	m.0452m3|m.08htl1	sports.sports_team_location.teams
+what time in hilo hawaii [m.0r_ch]	m.02lctm	location.location.time_zones
+what countries does greece share borders with [m.035qy]	m.015qh|m.01znc_|m.0bjv6|m.0jdx	location.location.adjoin_s|location.adjoining_relationship.adjoins
+what do you call members of the senate [m.07t58]	m.01hvfh|m.01t7n9|m.025whr1|m.02p31rg|m.048zv9l|m.05k99t	government.governmental_body.members|government.government_position_held.basic_title
+who was the leader of the us during wwii [m.081pw]	m.02yy8|m.09bg4l
+which continents were part of the roman empire [m.06cmp]	m.02j9z|m.04wsz|m.05g2v	location.location.partially_contained_by|location.partial_containment_relationship.partially_contained_by
+when did florida marlins join mlb [m.02__x]	m.02h7s8p	baseball.baseball_team.team_stats|baseball.baseball_team_stats.season
+where did flemish people come from [m.018hlv]	m.0154j|m.015fr|m.09c7w0|m.0chghy|m.0d060g|m.0f8l9c|m.0hzlz	people.ethnicity.geographic_distribution
+who was the soviet leader during world war ii [m.05vz3zq]	m.0bphp|m.0d8xy	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+which of the following does australia export the most [m.0chghy]	m.02h66y8|m.0hkf	location.statistical_region.major_exports|location.imports_exports_by_industry.industry
+which countries share a border with russia [m.06bnz]	m.0163v|m.02kmm|m.02vzc|m.047lj|m.04g5k|m.04gzd|m.04w8f|m.05b4w|m.05b7q|m.05qhw|m.07t21|m.0d05w3|m.0d0kn|m.0jhd	location.location.adjoin_s|location.adjoining_relationship.adjoins
+where did the latin language originate from [m.04h9h]	m.03t28|m.03v09	language.human_language.language_family
+where does bradley walsh live [m.05h48b]	m.030qb3t|m.0h7h6	people.person.places_lived|people.place_lived.location
+who is the head coach of inter milan [m.03x6m]	m.026g1wf	sports.sports_team.coaches|sports.sports_team_coach_tenure.coach
+where was country singer george jones born [m.01hb9p]	m.0f9hl3	people.person.place_of_birth
+what countries share borders with spain [m.06mkj]	m.035hm|m.04wgh|m.05r4w|m.0f8l9c|m.0hg5	location.location.adjoin_s|location.adjoining_relationship.adjoins
+what international organizations is china part of [m.0d05w3]	m.0_2v|m.01027r|m.013w27|m.02vk52z|m.03m6lb|m.05yg8kx|m.06vxc9|m.07t65|m.0b6css	organization.organization_member.member_of|organization.organization_membership.organization
+when did conflict start in ireland [m.012wgb]	m.016j83|m.01gqg3|m.037pbp|m.03kz35|m.03r8xj|m.03xvj|m.03ymyvf|m.0455n7|m.0467ph|m.046d2r|m.04qbccl|m.053997|m.0554yw|m.05cfx7|m.05ch2v|m.05mwtnl|m.08zy1f|m.08zyvy|m.08zz2w|m.09gdz49|m.09qgbg|m.0bh75th|m.0bmf9lh|m.0c414c|m.0c43s6|m.0c9_fj|m.0cffgq|m.0cnvmv|m.0ddfcvb|m.0fmqqy|m.0fzqxy|m.0gmdvwg	location.location.events
+when was the last time the toronto maple leafs were in the stanley cup finals [m.0cc8tt9]	m.03by199	time.recurring_event.instances
+who was the first president of the afl [m.0ysy]	m.01wtr5|m.035yc3	organization.organization.founders
+where did giuliana rancic grow up [m.0b0tw3]	m.0fhsz	people.person.place_of_birth
+who does brian dawkins play for 2011 [m.04m4p5]	m.0289q	sports.pro_athlete.teams|sports.sports_team_roster.team
+who plays kenneth [m.0272jt5]	m.0h27vc	tv.tv_character.appeared_in_tv_program|tv.regular_tv_appearance.actor
+what part did winona ryder play in star trek [m.086sj]	m.02thlt	film.actor.film|film.performance.character
+what time is it in texas houston right now [m.03l2n]	m.02fqwt	location.location.time_zones
+what team did ronaldo play for in 2003 [m.0hhqw]	m.01352_|m.06l22	sports.pro_athlete.teams|sports.sports_team_roster.team
+what team did adrian peterson play for in college [m.095xk6]	m.01vs5c	sports.drafted_athlete.drafted|sports.sports_league_draft_pick.school
+who plays blaine in batman [m.01hp5]	m.0115x7ps|m.01xllf|m.02hblj|m.05xf75
+where did al qaeda attack [m.0v74]	m.0c6cwg|m.0d0vp3	base.disaster2.attacker.attack_s|base.disaster2.attack_process.attack_event
+who was philip in acts chapter 8 [m.012tjy]	m.075pg8m	fictional_universe.person_in_fiction.representations_in_fiction
+what is the largest nation in europe [m.02j9z]	m.06bnz	base.locations.continents.countries_within
+who are the senators of virginia 2013 [m.07z1m]	m.024mm1|m.053f8h|m.0574xy	government.political_district.representatives|government.government_position_held.office_holder
+what is the second biggest state in the united states [m.09c7w0]	m.07b_l	location.location.contains
+what has charlie hunnam been in [m.057yk8]	g.11b6gq6dl2|m.02cbhg|m.02z0nhq|m.04y5gz|m.079s_7|m.0bk88p|m.0fh2v5|m.0g55y4p|m.0gx0plf|m.0gyffmd|m.0h0yd81|m.0zn1hg0	film.actor.film|film.performance.film
+what did drew barrymore go to rehab for [m.026c1]	m.012mj|m.0256b	celebrities.celebrity.substance_abuse_problems|celebrities.substance_abuse_problem.substance
+when was abe lincoln president [m.0gzh]	m.05brd51|m.05brd5c	base.inaugurations.inauguration_speaker.inauguration
+what are the 7 countries that are part of central america [m.01tzh]	m.0164b|m.01p8s|m.02k8k|m.0345_|m.03h2c|m.05qx1|m.0dkz7x	location.location.contains
+when did liverpool fc last win the champions league [m.04ltf]	m.0h_b67k	sports.sports_team.championships
+who does jeremy shockey play for in 2012 [m.076ltd]	m.01y3c	base.schemastaging.athlete_extra.salary|base.schemastaging.athlete_salary.team
+where did the taliban began [m.07jqh]	m.0jdd	organization.organization.geographic_scope
+what company does nike own [m.0lwkh]	m.0_yyy0j|m.0140d2|m.05j1g6|m.08qt1l|m.09l_qsh|m.09l_qsq|m.09l_qsy|m.09m_6y0|m.09m_82n|m.09m_8xp|m.09m_933|m.09m_ptr|m.09m_qf6|m.09m04cp|m.09m0mrr|m.09m12g4|m.09m12pm|m.09m1knm|m.09m1m2f|m.09m2_gr|m.09m2_gz|m.09m3gg9|m.09m3ggj|m.09m3gw1|m.09m3ydc|m.09m3ydl|m.09m4dd7|m.09m5tqw|m.09m5vf0|m.09m67_9|m.09m7733|m.09m773b|m.09m77sg|m.09m7p_d|m.09m7p_w|m.09m84_6|m.09m84_f|m.09m84_n|m.09m8lqy|m.09m8m24|m.09m8n9d|m.09m9l86|m.09m9lj7|m.09mb0fr|m.09mb2c9|m.09mbk23|m.09mc11v|m.09mchdq|m.09mcj4c|m.09mcybt|m.09mdfnq|m.09mdfny|m.09mdfp4|m.09mdxf_|m.09mdxp6|m.09mdygz|m.09mg9yx|m.09mgs5z|m.09mgsym|m.09mh80r|m.09mh80z|m.09mj4t7|m.09mj55s|m.09mj74b|m.09mk4jh|m.09mk4jq|m.09ml2ln|m.09ml2lw|m.09mm1kl|m.09mmhhw|m.09mmhj2|m.09mmhj9|m.09mmzcd|m.09mnf8p|m.09mnf8x|m.09mnf93|m.09mnx33|m.09mnx3b|m.09mnxz3|m.09mpfwh|m.09mpfwq|m.09mpxh9|m.09mpy3t|m.09mqvs1|m.09mqvs8|m.09mqvsh|m.09ms8bg|m.09mt6xj|m.09mt6xr|m.09mtq62|m.09mtq69|m.09mtq6j|m.09mv4rv|m.09mv5h1|m.09mx070|m.09mxgzn|m.09mxgzw|m.09mxykn|m.09mxykw|m.09mxyl2|m.09mxzbb|m.09mxzcf|m.09myf89|m.09n05q3|m.09n05qb|m.09n05qk|m.09n0nbn|m.09n12q_|m.09n1kjv|m.09n20nr|m.09n2h_r|m.09n2hc5|m.09n2hcl|m.09n2hct|m.09n2z87|m.09n2z8g|m.09n3f3q|m.09n3fsz|m.09n3w10|m.09n4brj|m.09n4brr|m.09n4brz|m.09n4sfr|m.09n5867|m.09n586g|m.09n586p|m.09n65_6|m.09n65z_|m.09n65zs|m.09n6p3w|m.09n6p42|m.09n6pt6|m.09n73w1|m.09n73w8|m.09n80p_|m.09n9ftf|m.09n9ftn|m.0b4zbb|m.0bq0k3|m.0cnsqj1	organization.organization.child|organization.organization_relationship.child
+what did dr josef mengele do [m.0lhsd]	m.05t4q	people.person.profession
+who are the senators of hawaii 2012 [m.03gh4]	m.0357cd	government.political_district.representatives|government.government_position_held.office_holder
+what did the akkadian empire include [m.0q_7]	m.0n541jb	location.location.contains
+what year was kenya moore crowned miss usa [m.03lp2g]	m.02vmzrl	time.recurring_event.instances
+where does chef ina garten live [m.0315fl]	m.0cr3d	people.person.places_lived|people.place_lived.location
+what school did miley cyrus [m.0bdxs5]	m.0d_s7d	people.person.education|education.education.institution
+who is the prime minister of jamaica west indies [m.01sm66]	m.0bpvhb	government.government_office_or_title.office_holders|government.government_position_held.office_holder
+who won fa cup 1976 [m.02_p0]	m.0k_l4	sports.sports_award_type.winners|sports.sports_award.award_winner
+who plays chuck bass in gossip girl [m.0g0jx7]	m.02w4x29	base.gossipgirl.character.played_by
+who plays stanley hudson [m.026nx7k]	m.0cnl09	tv.tv_character.appeared_in_tv_program|tv.regular_tv_appearance.actor
+who was selena gomez in barney and friends [m.0gs6vr]	m.0gx3b6x	tv.tv_actor.starring_roles|tv.regular_tv_appearance.character
+who plays caesar flickerman in the hunger games [m.0gkz15s]	m.02bj6k	film.film.starring|film.performance.actor
+what was augustus caesar famous for [m.0ngg]	m.01g14w|m.0fj9f	people.person.profession
+who is the governor of indiana 2009 [m.04f_xd8]	m.048v04	government.government_office_or_title.office_holders|government.government_position_held.office_holder
+who is the newly elected governor of california [m.01n7q]	m.0tc7	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+who does michael keaton play in cars [m.01j5ws]	m.0dtcs2	film.actor.film|film.performance.character
+when did roth ira originate [m.023_lp]	m.023xsb	symbols.namesake.named_after
+what war did the us lose the most soldiers [m.09c7w0]	m.081pw	military.military_combatant.casualties|military.casualties.military_conflict
+what musical instruments does justin bieber play [m.06w2sn5]	m.0290ngj	music.artist.track_contributions|music.track_contribution.role
+what is the current time in bangalore india [m.09c17]	m.02k8gd	location.location.time_zones
+what are the names of harry potter movies in order [m.02676m4]	m.02pth35|m.03176f|m.031778|m.03177r|m.031786|m.031hcx|m.03hxsv|m.0gvsynb	film.film_series.films_in_series
+who are the virginia senators 2013 [m.07z1m]	m.024mm1|m.053f8h|m.0574xy	government.political_district.representatives|government.government_position_held.office_holder
+what countries are members of the security council [m.07vnr]	m.01699|m.01crd5|m.01p8s|m.01pj7|m.06bnz|m.07ssc|m.09c7w0|m.0d05w3|m.0f8l9c	base.unitednations.united_nations_body.members|base.unitednations.united_nations_body_membership.member
+what other states border florida [m.02xry]	m.0d0x8|m.0gyh	location.location.adjoin_s|location.adjoining_relationship.adjoins
+who is the governor of pennsylvania state now [m.05tbn]	m.0gx9n2	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+where does toronto get its water from [m.0h7h6]	m.02vnl7x	base.infrastructure.infrastructural_municipality.sewage_treatment_plant
+where was jesus after he died on the cross [m.045m1_]	m.065sh7	people.deceased_person.place_of_death
+what 5 countries border switzerland [m.06mzp]	m.0345h|m.03rjj|m.04j53|m.0f8l9c|m.0h7x	location.location.adjoin_s|location.adjoining_relationship.adjoins
+what date did sally pearson won gold [m.0287hgn]	m.06sks6	olympics.olympic_athlete.medals_won|olympics.olympic_medal_honor.olympics
+where turkish people originate [m.0hb7h_z]	m.0154j|m.015qh|m.0166b|m.01nx28|m.01znc_|m.0345h|m.047lj|m.04fh3|m.059j2|m.05b4w|m.06vbd|m.07ssc|m.09c7w0|m.0d05q4|m.0d060g|m.0d0vqn|m.0f8l9c|m.0h3y|m.0h7x|m.0jhd|m.0jt3tjf|m.0k6nt	people.ethnicity.geographic_distribution
+what state is barack obama from [m.02mjmr]	m.03gh4
+where were greek temples built [m.03f34_]	m.01swlf|m.02p8r|m.04f_hwc|m.04ygm3|m.09lgkz|m.0n2z
+who plays dwight in the office [m.08jgk1]	m.083chw	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+who is the miami dolphins quarterback [m.04vn5]	m.027n35s|m.04q9syl	sports.sports_team.roster|sports.sports_team_roster.player
+when is the last time the denver broncos won the superbowl [m.0289q]	m.076y0	sports.sports_team.championships
+what part did jeff conaway play in grease [m.026mzh]	m.0h5nhp7	film.actor.film|film.performance.character
+what was scottie pippen good at [m.01vpgl]	m.018w8	sports.pro_athlete.sports_played_professionally|sports.pro_sports_played.sport
+when was the last time the dallas cowboys won the superbowl [m.02896]	m.076wz	sports.sports_team.championships
+what has angelina jolie accomplished [m.0f4vbz]	m.01d_h8|m.02hrh1q|m.02jknp|m.0cbd2|m.0d1pc|m.0dxtg|m.0kyk|m.0np9r	people.person.profession
+who does mila kunis play on family guy [m.019nnl]	m.035szd	tv.tv_program.regular_cast|tv.regular_tv_appearance.character
+who played denver in four christmases [m.03gttvn]	m.01twdk	film.film.starring|film.performance.actor
+who is the current governor of arizona 2010 [m.0vmt]	m.02pkb1c	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+who is lamar odom playing for this year [m.02_nkp]	m.05s9mb|m.0jm3v|m.0jmcv|m.0jmjr|m.0jmk7	sports.pro_athlete.teams|sports.sports_team_roster.team
+who originally voiced meg on family guy [m.019nnl]	m.02k4b2	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+what radio station is npr on in nyc [m.0c0sl]	m.01_3by	broadcast.radio_network.affiliates|broadcast.radio_affiliation_duration.station
+when did mark mcgwire retired [m.0550x]	m.02h7sdf	baseball.baseball_player.lifetime_batting_statistics|baseball.lifetime_batting_statistics.ending_season
+what is colorado technical university [m.0c_5g9]	m.01y2hnl	common.topic.notable_types
+what is real name of santa claus [m.027g6wt]	m.0f9q7	fictional_universe.fictional_character.based_on
+what are the major trading partners of germany [m.0345h]	m.016zwt|m.04sj3|m.06q1r|m.07dzf|m.07fsv|m.09c7w0|m.0h3y|m.0jdd|m.0jdx|m.0l3h
+who did johnny depp play in corpse bride [m.0jfx1]	m.04fllb9	film.actor.film|film.performance.character
+who is the mother of prince michael jackson [m.09889g]	m.0524pr	people.person.parents
+what rainforest is in south america [m.06n3y]	m.0cx4p	location.location.contains
+who is the governor of virginia 2011 [m.07z1m]	m.09dvvy	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+what sarah dessen books are movies [m.052s_8]	m.04y364	film.film_story_contributor.film_story_credits
+what is the current time in kauai hawaii [m.03gh4]	m.02lctm	location.location.time_zones
+who played carlton lassiter on psych [m.0ds5jv]	m.0f8yw1	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+who plays harley quinn [m.01t93k]	m.032m91|m.07vqwg|m.08nvh9	tv.tv_character.appeared_in_tv_program|tv.regular_tv_appearance.actor
+what was francis bacon contributions [m.030dr]	g.125_hzb47|m.016fc2|m.02h6fbs|m.06q2q|m.0kyk	people.person.profession
+what did mark zuckerberg study [m.086dny]	m.01mf_|m.01mkq|m.05qfh	people.person.education|education.education.major_field_of_study
+what is monta ellis career high points [m.06rsnl]	m.06js8m	sports.sports_award_winner.awards|sports.sports_award.award
+what year was albert pujols rookie year [m.035gcb]	m.02h7sdf	sports.sports_award_winner.awards|sports.sports_award.season
+who plays eowyn in lord of the rings [m.017jd9]	m.0294fd	film.film.starring|film.performance.actor
+what part of the country is ohio considered [m.05kkh]	m.03pzys|m.0q76g	location.location.containedby
+what did romo do [m.04cyz8g]	m.02h664g	people.person.profession
+when did carolina panthers go to superbowl [m.01y3c]	m.0277y8	sports.sports_team.championships
+when are the summer and winter olympics held [m.05nd_]	m.04q0_4f	time.recurring_event.current_frequency
+what country did hitler invade that started ww2 [m.081pw]	m.0gmbk71	time.event.includes_event
+what is the most populated state in united states [m.09c7w0]	m.059rby	base.aareas.schema.administrative_area.administrative_children
+who did tom hanks play in apollo 13 [m.0bxtg]	m.02nw821	film.actor.film|film.performance.character
+what are the four nations of the united kingdom [m.07ssc]	m.02jx1|m.05bcl|m.06q1r|m.0j5g9	base.aareas.schema.administrative_area.administrative_children
+who is the state governor of florida [m.02xry]	m.0btx2g	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+who does kellan lutz play in prom night [m.02pjwn5]	m.0gyg58j	film.actor.film|film.performance.character
+what other countries border argentina [m.0jgd]	m.015fr|m.0165v|m.01p1v|m.05v10|m.07twz	location.location.adjoin_s|location.adjoining_relationship.adjoins
+who was canadian prime minister in 1993 [m.060m4]	m.0bwz5|m.0h0zn|m.0k0y0|m.0n4t	government.government_office_or_title.office_holders|government.government_position_held.office_holder
+who is the current ohio state senator [m.07t58]	m.0343xg|m.034s80	government.governmental_body.members|government.government_position_held.office_holder
+what does monsanto own [m.0n8m6]	m.02ntf00|m.09dh0|m.0g10z|m.0hkf	business.business_operation.industry
+who did woody harrelson play on cheers [m.0170s4]	m.065xmv	tv.tv_actor.starring_roles|tv.regular_tv_appearance.character
+where does michelle pfeiffer live now [m.0gx_p]	m.0cb4j	people.person.places_lived|people.place_lived.location
+what was gregor mendel contribution [m.039c5]	m.0266rh|m.02h6p1f|m.06q2q	people.person.profession
+who is running for vice president with barack obama 2012 [m.02mjmr]	m.012gx2	government.us_president.vice_president
+who are the 9 justices of the supreme court 2011 [m.07sz1]	m.01_4j|m.0166zk|m.016m0v|m.0199pk|m.019s7r|m.04gnxk|m.066vhq|m.06lnfm|m.06lvrr	law.court.judges|law.judicial_tenure.judge
+who is dustin johnson the golfer [m.04n4sw4]	m.025smyp	people.person.profession
+who played carmen cortez in spy kids [m.02rrfzf]	m.02z7h0|m.0zfn9cs	film.film.starring|film.performance.actor
+where does the city of paris get its name [m.05qtj]	m.0283_dl	symbols.namesake.named_after
+when is the last time the pittsburgh steelers won a superbowl [m.05tfm]	m.04n7r5	sports.sports_team.championships
+who were we fighting in the gulf war [m.018w0j]	m.01z215|m.07ssc|m.09c7w0|m.0chghy|m.0d05q4|m.0f8l9c|m.0jgd	military.military_conflict.combatants|military.military_combatant_group.combatants
+what political party does barack obama represent [m.02mjmr]	m.0d075m	government.politician.party|government.political_party_tenure.party
+what are all the countries in north africa [m.05g2v]	m.02jbz2|m.02vkl1t|m.02wvgjs|m.04q7yp|m.06frc|m.06tw8|m.0c75f	location.location.contains
+what is sir isaac newton theory [m.03s9v]	m.01kffn	base.argumentmaps.innovator.original_ideas
+who did cliff lee play for last year [m.05bz_j]	m.05xvj	sports.pro_athlete.teams|sports.sports_team_roster.team
+what time in china hong kong [m.03h64]	m.04qqww	location.location.time_zones
+what are the most popular religions in israel [m.03spz]	m.03_gx	location.statistical_region.religions|location.religion_percentage.religion
+what new movies is robert pattinson in [m.062dn7]	m.0_s30t6|m.012sdm5f|m.031786|m.031hcx|m.03nm_fh|m.047fhg8|m.04m_qkz|m.04qk12|m.05pdh86|m.065_t2_|m.06w67tn|m.075wx7_|m.075wx89|m.09v9mks|m.0bpkq4|m.0c1sgd3|m.0crwqwj|m.0djz0rc|m.0fsmw2|m.0g57n3s|m.0gtvrv3|m.0gx3vhy|m.0j310_v|m.0k24hpb|m.0ngns90|m.0ngxkxx|m.0w1yhhx	film.actor.film|film.performance.film
+what ocean is around hawaii [m.0jbt3]	m.05rgl	geography.island.body_of_water
+who wrote st trinians [m.01nxmb]	m.01v2jh	fictional_universe.fictional_universe.created_by
+who is the texas state senator [m.07b_l]	m.016l53|m.01rpmr|m.01xcqs|m.02050j|m.021nlp|m.028356y|m.02dcc4|m.02pv3w|m.02wv_6|m.037_c0|m.037f5r|m.03r6tl|m.03w4ln|m.03x_db|m.03yvp9|m.0452c9|m.04l_mk|m.053fln|m.053zcg|m.06j9dp|m.06yjdd|m.06yjq_|m.06ym7b|m.07j6ty|m.07jjx6|m.07k6x2|m.07p913|m.084vl0|m.089hd7|m.08fbq9|m.0f7fy|m.0gbjz	government.political_district.representatives|government.government_position_held.office_holder
+what are the catholic holy days [m.0c8wxp]	m.0_kv0v5|m.0_kvb49|m.0_kvbh6|m.0_l_d7h|m.0_lpd56|m.0_lsyyw|m.0_m1438|m.0_m14vv|m.0_mrbts|m.011ncb1h|m.011ncyv_|m.011nk6vg|m.011nkz4p|m.0148r6|m.016s_l|m.016v69|m.01cqmf|m.01v147|m.03nlrrk|m.0497bm|m.04mrs1|m.04qnzg|m.04sy0c|m.058_lf|m.0581_5|m.05b22_z|m.060_r|m.0604_c|m.0cpnkn|m.0dsq86|m.0f6l2j|m.0fdm1h|m.0k0c|m.0k5y347|m.0n_fbc8	religion.religion.holidays
+what are bigos [m.06815z]	m.0jnxw	food.dish.type_of_dish1
+when did shaq come into the nba [m.012xdf]	m.06jnjz	sports.drafted_athlete.drafted|sports.sports_league_draft_pick.draft
+where did benjamin franklin went to school [m.019fz]	m.02kj7g	people.person.education|education.education.institution
+who is the governor of arizona 2009 [m.0vmt]	m.01kf06|m.02pkb1c	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+what county is st paul minnesota in [m.0b2lw]	m.0nh57	location.location.containedby
+where was franz ferdinand from [m.02ft60]	m.0hyxv	music.artist.origin
+who plays lex luthor on smallville [m.03g9xj]	m.0q1lp	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+what was the name of henry viii first wife [m.03p77]	m.01_tz	people.person.spouse_s|people.marriage.spouse
+what countries does tomtom western europe include [m.03p3m2y]	m.0154j|m.06mzp|m.07ssc|m.09c7w0|m.0chghy|m.0d060g|m.0f8l9c	base.schemastaging.organization_extra.phone_number|base.schemastaging.phone_sandbox.service_location
+who ruled after king henry viii died [m.03p77]	m.02s82	people.person.children
+who are the st louis cardinals coaches [m.06x68]	m.0271dv6|m.02p7knr|m.03_507|m.07sckg|m.07vcky|m.0glr18	baseball.baseball_team.current_coaches|baseball.current_coaching_tenure.baseball_coach
+where does egypt export to [m.02k54]	m.06tw8	location.statistical_region.places_exported_to|location.imports_and_exports.exported_to
+what is john edwards indicted for [m.01651q]	m.0hj49	base.crime.acquitted_person.acquittal|base.crime.acquittal.crime_type
+where does marta play soccer [m.09fr69]	m.0755sb|m.0h9814q	sports.pro_athlete.teams|sports.sports_team_roster.team
+what year was first world series [m.0fjp3]	m.018n8	time.recurring_event.instances
+who are the senators of new jersey now [m.05fjf]	m.033d3p|m.06p430	government.political_district.representatives|government.government_position_held.office_holder
+where does kurdish people live [m.04c28]	m.0j0k	people.ethnicity.geographic_distribution
+who does alyson stoner play in camp rock [m.02bwjv]	m.0h5vd14	film.actor.film|film.performance.character
+who is my representative in illinois house [m.03j8g1]	m.0102ldy5|m.0105s6hr|m.0128186x|m.01281c93|m.012j2m79|m.012j2nvc|m.012j2rng|m.012j2s0k|m.012j2y3j|m.012kc8bx|m.012kczhw|m.02w7qby|m.0dsb8fw|m.0hhqr_y|m.0lq0c4x|m.0rpjdpn|m.0wxs6vt|m.0wxvvxx|m.0zm_9br|m.0ztkk62	government.governmental_body.members|government.government_position_held.office_holder
+what does god shiva represent [m.074l5]	m.03j6c	religion.deity.deity_of
+what year did the milwaukee brewers go to the world series [m.0fjp3]	m.04j78h
+what voices does seth macfarlane play on family guy [m.019nnl]	g.120yrd_6|g.12245v14|m.01sxhc|m.026q0lb|m.028b1c8|m.02m29p|m.02nw87f|m.03n6jv|m.03pcvr|m.05sr4_d|m.05sr4_s|m.05sr4x5|m.05sr4zg|m.05srj40|m.05ss3k_	tv.tv_program.regular_cast|tv.regular_tv_appearance.character
+which country in europe has the largest land area [m.02j9z]	m.06bnz
+where is chris rock from [m.016_mj]	m.013l1h	people.person.place_of_birth
+what was the last movie sean connery was in [m.06mr6]	m.0crscdw	film.actor.film|film.performance.film
+who is number 22 on miami dolphins [m.04vn5]	m.0q3yxb2	sports.sports_team.roster|sports.sports_team_roster.player
+what materials did eduardo paolozzi use in his work [m.03fncl]	m.01brf	visual_art.visual_artist.artworks
+what part of the country is ohio in [m.05kkh]	m.03pzys|m.0q76g	location.location.containedby
+what did whoopi goldberg won a grammy for [m.0fb1q]	m.019bnn	award.award_winner.awards_won|award.award_honor.award
+who won the 2000 fa cup final [m.02_p0]	m.023fb	sports.sports_award_type.winners|sports.sports_award.award_winner
+what race is vanessa carlton [m.02sj66]	m.05t0ydg|m.0g6ff	people.person.ethnicity
+what degrees does romney have [m.0271_s]	m.013zdg|m.014mlp|m.07s6fsf	people.person.education|education.education.degree
+where to stay in chicago tourist [m.01_d4]	m.0ldv2s1	travel.travel_destination.accommodation
+what type of breast cancer did sheryl crow have [m.06rgq]	m.03z_9l	medicine.notable_person_with_medical_condition.condition
+when was father chris riley born [m.03d8_d9]	m.0h3p0	people.person.place_of_birth

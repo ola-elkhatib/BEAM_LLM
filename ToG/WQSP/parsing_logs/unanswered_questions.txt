@@ -1,0 +1,28 @@
+who is governor of ohio 2011 [m.05kkh]	m.02zzm_|m.0340r0|m.039rqy	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+who plays the voice of kitt in knight rider [m.0bvxv]	m.0309r1	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+what super bowl did peyton manning win [m.027jv8]	m.04k5qm
+what time in hilo hawaii [m.0r_ch]	m.02lctm	location.location.time_zones
+when did florida marlins join mlb [m.02__x]	m.02h7s8p	baseball.baseball_team.team_stats|baseball.baseball_team_stats.season
+who plays kenneth [m.0272jt5]	m.0h27vc	tv.tv_character.appeared_in_tv_program|tv.regular_tv_appearance.actor
+when was abe lincoln president [m.0gzh]	m.05brd51|m.05brd5c	base.inaugurations.inauguration_speaker.inauguration
+who plays chuck bass in gossip girl [m.0g0jx7]	m.02w4x29	base.gossipgirl.character.played_by
+who is the newly elected governor of california [m.01n7q]	m.0tc7	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+what war did the us lose the most soldiers [m.09c7w0]	m.081pw	military.military_combatant.casualties|military.casualties.military_conflict
+what other states border florida [m.02xry]	m.0d0x8|m.0gyh	location.location.adjoin_s|location.adjoining_relationship.adjoins
+who is the governor of pennsylvania state now [m.05tbn]	m.0gx9n2	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+what 5 countries border switzerland [m.06mzp]	m.0345h|m.03rjj|m.04j53|m.0f8l9c|m.0h7x	location.location.adjoin_s|location.adjoining_relationship.adjoins
+who plays dwight in the office [m.08jgk1]	m.083chw	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+who originally voiced meg on family guy [m.019nnl]	m.02k4b2	tv.tv_program.regular_cast|tv.regular_tv_appearance.actor
+who is the mother of prince michael jackson [m.09889g]	m.0524pr	people.person.parents
+who is the governor of virginia 2011 [m.07z1m]	m.09dvvy	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+what is the current time in kauai hawaii [m.03gh4]	m.02lctm	location.location.time_zones
+who is the state governor of florida [m.02xry]	m.0btx2g	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+who was canadian prime minister in 1993 [m.060m4]	m.0bwz5|m.0h0zn|m.0k0y0|m.0n4t	government.government_office_or_title.office_holders|government.government_position_held.office_holder
+who played carmen cortez in spy kids [m.02rrfzf]	m.02z7h0|m.0zfn9cs	film.film.starring|film.performance.actor
+what are all the countries in north africa [m.05g2v]	m.02jbz2|m.02vkl1t|m.02wvgjs|m.04q7yp|m.06frc|m.06tw8|m.0c75f	location.location.contains
+who is the texas state senator [m.07b_l]	m.016l53|m.01rpmr|m.01xcqs|m.02050j|m.021nlp|m.028356y|m.02dcc4|m.02pv3w|m.02wv_6|m.037_c0|m.037f5r|m.03r6tl|m.03w4ln|m.03x_db|m.03yvp9|m.0452c9|m.04l_mk|m.053fln|m.053zcg|m.06j9dp|m.06yjdd|m.06yjq_|m.06ym7b|m.07j6ty|m.07jjx6|m.07k6x2|m.07p913|m.084vl0|m.089hd7|m.08fbq9|m.0f7fy|m.0gbjz	government.political_district.representatives|government.government_position_held.office_holder
+what are the catholic holy days [m.0c8wxp]	m.0_kv0v5|m.0_kvb49|m.0_kvbh6|m.0_l_d7h|m.0_lpd56|m.0_lsyyw|m.0_m1438|m.0_m14vv|m.0_mrbts|m.011ncb1h|m.011ncyv_|m.011nk6vg|m.011nkz4p|m.0148r6|m.016s_l|m.016v69|m.01cqmf|m.01v147|m.03nlrrk|m.0497bm|m.04mrs1|m.04qnzg|m.04sy0c|m.058_lf|m.0581_5|m.05b22_z|m.060_r|m.0604_c|m.0cpnkn|m.0dsq86|m.0f6l2j|m.0fdm1h|m.0k0c|m.0k5y347|m.0n_fbc8	religion.religion.holidays
+when did shaq come into the nba [m.012xdf]	m.06jnjz	sports.drafted_athlete.drafted|sports.sports_league_draft_pick.draft
+who is the governor of arizona 2009 [m.0vmt]	m.01kf06|m.02pkb1c	government.governmental_jurisdiction.governing_officials|government.government_position_held.office_holder
+who ruled after king henry viii died [m.03p77]	m.02s82	people.person.children
+which country in europe has the largest land area [m.02j9z]	m.06bnz
