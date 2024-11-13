@@ -13,7 +13,7 @@ depth: 2 #choose the search depth of ToG.
 remove_unnecessary_rel: False #whether removing unnecessary relations.
 relation_search_tool: 'rel_entity_dict' #llm Or of path_generation or rel_entity_dict
 LLM_type: 'gpt-4'    #'gpt-3.5-turbo'
-opeani_api_keys: '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'
+opeani_api_keys: 'xxxxxx'
 num_retain_entity: 5 #Number of entities retained during entities search.
 prune_tools: "llm" #prune tools for ToG, can be llm (same as LLM_type), bm25 or sentencebert.
 traversal_space: embedding_space #graph_path or embedding_space
