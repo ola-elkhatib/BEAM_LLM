@@ -10638,3 +10638,1036 @@ INFO:root:True Path: people.person.children
 INFO:root:True answer: ['m.01ghr4', 'm.02pv75j', 'm.02w6dpm', 'm.03xqw', 'm.08flgy', 'm.0b__3p', 'm.0c05cp', 'm.0ch5jk5'],  Labels: ['Ishmael', 'Ishbak', 'Shuah', 'Isaac', 'Zimran', 'Jokshan', 'Medan', 'Midian']
 INFO:root:	 At depth: 1
 INFO:root:		Topic entity: m.0pwb
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0pwb', 'relation': 'people.person.children', 'score': 0.6, 'head': True}, {'entity': 'm.0pwb', 'relation': 'people.person.religion', 'score': 0.2, 'head': True}, {'entity': 'm.0pwb', 'relation': 'common.topic.notable_types', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0pwb', 'relation': 'people.person.children', 'score': 0.6, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.01ghr4', 0.6), ('m.03xqw', 0.6), ('m.0c05cp', 0.6), ('m.0ch5jk5', 0.6), ('m.0b__3p', 0.6)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01ghr4', 'm.03xqw', 'm.0c05cp', 'm.0ch5jk5', 'm.0b__3p'] and Scores: [0.6, 0.6, 0.6, 0.6, 0.6]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0pwb', 'relation': 'people.person.religion', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.03_gx', 0.2), ('m.0jcnk60', 0.18783265352249146), ('m.0w1s2dn', 0.008001763373613358), ('m.0sm89cd', 0.0011587858200073243), ('m.04y7_yr', 0.0008177543990314008)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.03_gx', 'm.0jcnk60', 'm.0w1s2dn', 'm.04y7_yr'] and Scores: [0.2, 0.18783265352249146, 0.008001763373613358, 0.0008177543990314008]
+INFO:root:				"Deleted Candidates: ['m.0sm89cd'] and Scores: [0.0011587858200073243]
+INFO:root:		Relation Path of : {'entity': 'm.0pwb', 'relation': 'common.topic.notable_types', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02knxzt', 0.2), ('m.0v3cp34', 0.19999959468841555), ('m.03h_y9p', 3.085344815190183e-07), ('m.0f5t7y', 9.817588306759718e-08), ('m.04j2sm1', 4.5779717794403045e-10)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02knxzt', 'm.0v3cp34', 'm.03h_y9p', 'm.0f5t7y'] and Scores: [0.2, 0.19999959468841555, 3.085344815190183e-07, 9.817588306759718e-08]
+INFO:root:				"Deleted Candidates: ['m.04j2sm1'] and Scores: [4.5779717794403045e-10]
+INFO:root:		"Total Entity Candidates: ['Ishmael', 'Isaac', 'Medan', 'Midian', 'Jokshan', 'Judaism', 'Djaduk Ferianto', 'Giorgos Teltzidis', 'Ivan Lietava', 'Religious Leader', 'K. V. Dominic', 'Beenie Man', 'Nawa'] and Scores: [0.6, 0.6, 0.6, 0.6, 0.6, 0.2, 0.18783265352249146, 0.008001763373613358, 0.0008177543990314008, 0.2, 0.19999959468841555, 3.085344815190183e-07, 9.817588306759718e-08]
+INFO:root:		After entity pruning:
+ 					[('Abraham', 'people.person.children', 'Ishmael'), ('Abraham', 'people.person.children', 'Isaac'), ('Abraham', 'people.person.children', 'Medan'), ('Abraham', 'people.person.children', 'Midian'), ('Abraham', 'people.person.children', 'Jokshan')]
+INFO:root:		 Cluster chain: [('Abraham', 'people.person.children', 'Ishmael'), ('Abraham', 'people.person.children', 'Isaac'), ('Abraham', 'people.person.children', 'Medan'), ('Abraham', 'people.person.children', 'Midian'), ('Abraham', 'people.person.children', 'Jokshan')]
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, Abraham's sons are Jokshan, Ishmael, Isaac, Midian, and Medan. Therefore, the answer to the question is {Jokshan, Ishmael, Isaac, Midian, Medan}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['Ishmael', 'Ishbak', 'Shuah', 'Isaac', 'Zimran', 'Jokshan', 'Medan', 'Midian'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, Abraham's sons are Jokshan, Ishmael, Isaac, Midian, and Medan. Therefore, the answer to the question is {Jokshan, Ishmael, Isaac, Midian, Medan}.
+INFO:root:			 CORRECT ANSWER: Jokshan
+INFO:root:			 Total questions: 103 pure_LLM_answers: 9 ToG_answers: 80 Failing_answers: 13 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8640776699029126
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: who wrote the jana gana mana
+INFO:root:Topic Entity: m.0fl44
+INFO:root:True Path: music.composition.composer
+INFO:root:True answer: ['m.02vx721', 'm.0d0mbj'],  Labels: ['Ram Singh Thakur', 'Rabindranath Tagore']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.0fl44
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0fl44', 'relation': 'common.topic.notable_types', 'score': 1, 'head': True}, {'entity': 'm.0fl44', 'relation': 'music.composition.composer', 'score': 1, 'head': True}, {'entity': 'm.0fl44', 'relation': 'common.topic.notable_for', 'score': 1, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0fl44', 'relation': 'common.topic.notable_types', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02_5d4_', 1.0), ('m.04y7_yr', 0.9999707937240601), ('m.04dpdl', 2.0269771994207986e-05), ('m.06t4q7j', 7.686907338211313e-06), ('m.0c9cpt', 8.898648502508877e-07)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02_5d4_', 'm.04y7_yr', 'm.04dpdl', 'm.0c9cpt'] and Scores: [1.0, 0.9999707937240601, 2.0269771994207986e-05, 8.898648502508877e-07]
+INFO:root:				"Deleted Candidates: ['m.06t4q7j'] and Scores: [7.686907338211313e-06]
+INFO:root:		Relation Path of : {'entity': 'm.0fl44', 'relation': 'music.composition.composer', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02vx721', 1.0), ('m.0d0mbj', 1.0), ('m.02ps_k5', 0.9642310738563538), ('m.03h64', 0.015569121576845646), ('g.1hhzgnm89', 0.005681741517037153)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02vx721', 'm.0d0mbj', 'm.02ps_k5', 'm.03h64'] and Scores: [1.0, 1.0, 0.9642310738563538, 0.015569121576845646]
+INFO:root:				"Deleted Candidates: ['g.1hhzgnm89'] and Scores: [0.005681741517037153]
+INFO:root:		Relation Path of : {'entity': 'm.0fl44', 'relation': 'common.topic.notable_for', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.06b3g4', 0.9958710074424744), ('m.0342h', 0.003963277209550142), ('m.0nk9p39', 0.0001553198671899736), ('m.0114m2yp', 6.698363904433791e-06), ('m.010qwsnw', 1.3832087688570027e-06)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.06b3g4', 'm.0342h', 'm.0114m2yp'] and Scores: [0.9958710074424744, 0.003963277209550142, 6.698363904433791e-06]
+INFO:root:				"Deleted Candidates: ['m.0nk9p39', 'm.010qwsnw'] and Scores: [0.0001553198671899736, 1.3832087688570027e-06]
+INFO:root:		"Total Entity Candidates: ['National Anthem', 'Ivan Lietava', 'Indian Institute of Engineering Science and Technology, Shibpur', 'Jennifer Roberson', 'Ram Singh Thakur', 'Rabindranath Tagore', 'Cresco', 'Hong Kong', 'M.C. Gainey', 'guitar', 'Hall, Montana'] and Scores: [1.0, 0.9999707937240601, 2.0269771994207986e-05, 8.898648502508877e-07, 1.0, 1.0, 0.9642310738563538, 0.015569121576845646, 0.9958710074424744, 0.003963277209550142, 6.698363904433791e-06]
+INFO:root:		After entity pruning:
+ 					[('Jana Gana Mana', 'common.topic.notable_types', 'National Anthem'), ('Jana Gana Mana', 'music.composition.composer', 'Ram Singh Thakur'), ('Jana Gana Mana', 'music.composition.composer', 'Rabindranath Tagore'), ('Jana Gana Mana', 'common.topic.notable_types', 'Ivan Lietava'), ('Jana Gana Mana', 'common.topic.notable_for', 'M.C. Gainey')]
+INFO:root:		 Cluster chain: [('Jana Gana Mana', 'common.topic.notable_types', 'National Anthem'), ('Jana Gana Mana', 'music.composition.composer', 'Ram Singh Thakur'), ('Jana Gana Mana', 'music.composition.composer', 'Rabindranath Tagore'), ('Jana Gana Mana', 'common.topic.notable_types', 'Ivan Lietava'), ('Jana Gana Mana', 'common.topic.notable_for', 'M.C. Gainey')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, 'Jana Gana Mana' was composed by Rabindranath Tagore. Therefore, the answer to the question is {Rabindranath Tagore}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['Ram Singh Thakur', 'Rabindranath Tagore'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, 'Jana Gana Mana' was composed by Rabindranath Tagore. Therefore, the answer to the question is {Rabindranath Tagore}.
+INFO:root:			 CORRECT ANSWER: Rabindranath Tagore
+INFO:root:			 Total questions: 104 pure_LLM_answers: 9 ToG_answers: 81 Failing_answers: 13 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8653846153846154
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: what type of cancer did gilda radner die of
+INFO:root:Topic Entity: m.0mj4n
+INFO:root:True Path: people.deceased_person.cause_of_death
+INFO:root:True answer: ['m.025hl8'],  Labels: ['ovarian cancer']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.0mj4n
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0mj4n', 'relation': 'people.deceased_person.cause_of_death', 'score': 0.6, 'head': True}, {'entity': 'm.0mj4n', 'relation': 'medicine.notable_person_with_medical_condition.condition', 'score': 0.3, 'head': True}, {'entity': 'm.0mj4n', 'relation': 'people.person.employment_history', 'score': 0.1, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0mj4n', 'relation': 'people.deceased_person.cause_of_death', 'score': 0.6, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.025hl8', 0.6), ('m.011_tnq4', 0.5740852117538452), ('m.04dpdl', 0.018289945274591445), ('m.02q1fqt', 0.003544815257191658), ('m.0bd31kj', 0.0015313851647078991)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.025hl8', 'm.04dpdl', 'm.02q1fqt'] and Scores: [0.6, 0.018289945274591445, 0.003544815257191658]
+INFO:root:				"Deleted Candidates: ['m.011_tnq4', 'm.0bd31kj'] and Scores: [0.5740852117538452, 0.0015313851647078991]
+INFO:root:		Relation Path of : {'entity': 'm.0mj4n', 'relation': 'medicine.notable_person_with_medical_condition.condition', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.016khw', 0.3), ('m.0w7q6n6', 0.2264470875263214), ('m.0499xh1', 0.06499200314283371), ('m.08c939', 0.008428314328193664), ('m.0bd31kj', 6.296864594332873e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.016khw', 'm.0w7q6n6', 'm.0499xh1', 'm.08c939'] and Scores: [0.3, 0.2264470875263214, 0.06499200314283371, 0.008428314328193664]
+INFO:root:				"Deleted Candidates: ['m.0bd31kj'] and Scores: [6.296864594332873e-05]
+INFO:root:		Relation Path of : {'entity': 'm.0mj4n', 'relation': 'people.person.employment_history', 'score': 0.1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02hnl', 0.0918211042881012), ('m.02ps_k5', 0.004607648402452469), ('m.03y99qn', 0.0015593532472848893), ('m.0jt737y', 0.0005255466792732478), ('m.0byg8h', 0.00017548830946907402)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02hnl', 'm.02ps_k5', 'm.03y99qn', 'm.0jt737y', 'm.0byg8h'] and Scores: [0.0918211042881012, 0.004607648402452469, 0.0015593532472848893, 0.0005255466792732478, 0.00017548830946907402]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		"Total Entity Candidates: ['ovarian cancer', 'Indian Institute of Engineering Science and Technology, Shibpur', 'Dollnstein', 'Bulimia nervosa', 'Dagný Brynjarsdóttir', 'Edgewood Hills', 'Prepple Houmb', 'drum kit', 'Cresco', 'Kotulpur (community development block)', 'Martina Stoessel', 'Gwalleuk'] and Scores: [0.6, 0.018289945274591445, 0.003544815257191658, 0.3, 0.2264470875263214, 0.06499200314283371, 0.008428314328193664, 0.0918211042881012, 0.004607648402452469, 0.0015593532472848893, 0.0005255466792732478, 0.00017548830946907402]
+INFO:root:		After entity pruning:
+ 					[('Gilda Radner', 'people.deceased_person.cause_of_death', 'ovarian cancer'), ('Gilda Radner', 'medicine.notable_person_with_medical_condition.condition', 'Bulimia nervosa'), ('Gilda Radner', 'medicine.notable_person_with_medical_condition.condition', 'Dagný Brynjarsdóttir'), ('Gilda Radner', 'people.person.employment_history', 'drum kit'), ('Gilda Radner', 'medicine.notable_person_with_medical_condition.condition', 'Edgewood Hills')]
+INFO:root:		 Cluster chain: [('Gilda Radner', 'people.deceased_person.cause_of_death', 'ovarian cancer'), ('Gilda Radner', 'medicine.notable_person_with_medical_condition.condition', 'Bulimia nervosa'), ('Gilda Radner', 'medicine.notable_person_with_medical_condition.condition', 'Dagný Brynjarsdóttir'), ('Gilda Radner', 'people.person.employment_history', 'drum kit'), ('Gilda Radner', 'medicine.notable_person_with_medical_condition.condition', 'Edgewood Hills')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, Gilda Radner died from ovarian cancer. Therefore, the answer to the question is {ovarian cancer}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['ovarian cancer'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, Gilda Radner died from ovarian cancer. Therefore, the answer to the question is {ovarian cancer}.
+INFO:root:			 CORRECT ANSWER: ovarian cancer
+INFO:root:			 Total questions: 105 pure_LLM_answers: 9 ToG_answers: 82 Failing_answers: 13 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8666666666666667
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: who plays juni cortez
+INFO:root:Topic Entity: m.02ql73
+INFO:root:True Path: film.film_character.portrayed_in_films|film.performance.actor
+INFO:root:True answer: ['m.042ldz'],  Labels: ['Daryl Sabara']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.02ql73
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.02ql73', 'relation': 'film.film_character.portrayed_in_films', 'score': 0.5, 'head': True}, {'entity': 'm.02ql73', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.3, 'head': True}, {'entity': 'm.02ql73', 'relation': 'tv.tv_character.appeared_in_tv_episodes', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.02ql73', 'relation': 'film.film_character.portrayed_in_films', 'score': 0.5, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0g51m5_', 0.5), ('m.02s9trw', 0.5), ('m.02s9ttl', 0.5), ('m.02s9tvb', 0.5), ('m.0x1y7', 0.23415088653564453)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0x1y7'] and Scores: [0.23415088653564453]
+INFO:root:				"Deleted Candidates: ['m.0g51m5_', 'm.02s9trw', 'm.02s9ttl', 'm.02s9tvb'] and Scores: [0.5, 0.5, 0.5, 0.5]
+INFO:root:		Relation Path of : {'entity': 'm.02ql73', 'relation': 'tv.tv_character.appeared_in_tv_program', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('g.11b7vvcxwb', 0.3), ('m.0110grfv', 0.2937979459762573), ('m.016wzw', 0.004128183703869581), ('m.0dzt9', 0.001234042178839445), ('m.0c39nw', 0.0003085461328737438)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0110grfv', 'm.016wzw', 'm.0dzt9', 'm.0c39nw'] and Scores: [0.2937979459762573, 0.004128183703869581, 0.001234042178839445, 0.0003085461328737438]
+INFO:root:				"Deleted Candidates: ['g.11b7vvcxwb'] and Scores: [0.3]
+INFO:root:		Relation Path of : {'entity': 'm.02ql73', 'relation': 'tv.tv_character.appeared_in_tv_episodes', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0jx70yr', 0.08120713829994203), ('m.02z9318', 0.07628151774406433), ('m.03_f0', 0.038065811991691595), ('m.04j362s', 0.0013736173510551454), ('m.04c377b', 0.001012026984244585)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02z9318', 'm.03_f0', 'm.04j362s', 'm.04c377b'] and Scores: [0.07628151774406433, 0.038065811991691595, 0.0013736173510551454, 0.001012026984244585]
+INFO:root:				"Deleted Candidates: ['m.0jx70yr'] and Scores: [0.08120713829994203]
+INFO:root:		"Total Entity Candidates: ['Bozeman', 'Visar Morina', 'Peru', 'Richmond', 'Franz Beyer', 'Poza de la Vega', 'Johann Sebastian Bach', 'Isi Ka Naam Zindagi', 'Nob Hill, Virginia'] and Scores: [0.23415088653564453, 0.2937979459762573, 0.004128183703869581, 0.001234042178839445, 0.0003085461328737438, 0.07628151774406433, 0.038065811991691595, 0.0013736173510551454, 0.001012026984244585]
+INFO:root:		After entity pruning:
+ 					[('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'Visar Morina'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'Bozeman'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_episodes', 'Poza de la Vega'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_episodes', 'Johann Sebastian Bach'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'Peru')]
+INFO:root:		 Cluster chain: [('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'Visar Morina'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'Bozeman'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_episodes', 'Poza de la Vega'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_episodes', 'Johann Sebastian Bach'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'Peru')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, there is no information about who played the character Juni Cortez. Therefore, additional information is needed to answer this question.
+INFO:root:depth 1 still not find the answer.
+INFO:root:		Entity Pruning after adding the unNanme and rescoring:
+INFO:root:		[('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'UnName_Entity')]
+INFO:root:		The new cluster of entities list is: [('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'Visar Morina'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'Bozeman'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_episodes', 'Poza de la Vega'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_episodes', 'Johann Sebastian Bach'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'Peru'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'UnName_Entity')]
+INFO:root:	 At depth: 2
+INFO:root:		Topic entity: m.0g51m5_
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0g51m5_', 'relation': 'film.performance.character', 'score': 0.4, 'head': True}, {'entity': 'm.0g51m5_', 'relation': 'film.performance.actor', 'score': 0.4, 'head': True}, {'entity': 'm.0g51m5_', 'relation': 'film.performance.film', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.02s9trw
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.02s9trw', 'relation': 'film.performance.character', 'score': 0.4, 'head': True}, {'entity': 'm.02s9trw', 'relation': 'film.performance.actor', 'score': 0.4, 'head': True}, {'entity': 'm.02s9trw', 'relation': 'film.performance.film', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.02s9ttl
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.02s9ttl', 'relation': 'film.performance.character', 'score': 0.4, 'head': True}, {'entity': 'm.02s9ttl', 'relation': 'film.performance.actor', 'score': 0.4, 'head': True}, {'entity': 'm.02s9ttl', 'relation': 'film.performance.film', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.02s9tvb
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.02s9tvb', 'relation': 'film.performance.character', 'score': 0.4, 'head': True}, {'entity': 'm.02s9tvb', 'relation': 'film.performance.actor', 'score': 0.4, 'head': True}, {'entity': 'm.02s9tvb', 'relation': 'film.performance.film', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: g.11b7vvcxwb
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'g.11b7vvcxwb', 'relation': 'tv.regular_tv_appearance.character', 'score': 0.4, 'head': True}, {'entity': 'g.11b7vvcxwb', 'relation': 'tv.regular_tv_appearance.actor', 'score': 0.4, 'head': True}, {'entity': 'g.11b7vvcxwb', 'relation': 'tv.regular_tv_appearance.series', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0g51m5_', 'relation': 'film.performance.character', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02ql73', 0.4), ('m.0pqlxsh', 0.3999954700469971), ('m.09shb2l', 7.825870852684603e-07), ('m.09908d', 2.2563733637070982e-07), ('m.030qb3t', 2.2226586224860514e-07)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02ql73', 'm.09908d', 'm.030qb3t'] and Scores: [0.4, 2.2563733637070982e-07, 2.2226586224860514e-07]
+INFO:root:				"Deleted Candidates: ['m.0pqlxsh', 'm.09shb2l'] and Scores: [0.3999954700469971, 7.825870852684603e-07]
+INFO:root:		Relation Path of : {'entity': 'm.0g51m5_', 'relation': 'film.performance.actor', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.042ldz', 0.4), ('m.01mjq', 0.3777477741241455), ('m.08084yt', 0.01662844866514206), ('m.01t32p', 0.0013058759272098542), ('m.076_50r', 0.0012415797449648381)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.042ldz', 'm.01mjq', 'm.08084yt', 'm.01t32p', 'm.076_50r'] and Scores: [0.4, 0.3777477741241455, 0.01662844866514206, 0.0013058759272098542, 0.0012415797449648381]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0g51m5_', 'relation': 'film.performance.film', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0ds67cb', 0.2), ('m.043mpzh', 0.014574837684631348), ('m.0_hlydg', 0.013316409289836885), ('m.047qy8q', 0.010084830969572068), ('m.02wzxlz', 0.008568064868450164)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0ds67cb', 'm.043mpzh', 'm.0_hlydg', 'm.047qy8q', 'm.02wzxlz'] and Scores: [0.2, 0.014574837684631348, 0.013316409289836885, 0.010084830969572068, 0.008568064868450164]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.02s9trw', 'relation': 'film.performance.character', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02ql73', 0.4), ('m.0hqxf', 0.3947903394699097), ('m.02h7sch', 0.00420076996088028), ('m.02ps_k5', 0.000771040702238679), ('m.026gm6c', 8.143187151290477e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02ql73', 'm.0hqxf', 'm.02h7sch', 'm.02ps_k5', 'm.026gm6c'] and Scores: [0.4, 0.3947903394699097, 0.00420076996088028, 0.000771040702238679, 8.143187151290477e-05]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.02s9trw', 'relation': 'film.performance.actor', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.042ldz', 0.4), ('m.02ps_k5', 0.3633072137832642), ('m.0j4vrw2', 0.03523200452327729), ('m.011_tnq4', 0.00035752814728766684), ('m.03_d0', 0.00032761790789663796)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.042ldz', 'm.02ps_k5', 'm.03_d0'] and Scores: [0.4, 0.3633072137832642, 0.00032761790789663796]
+INFO:root:				"Deleted Candidates: ['m.0j4vrw2', 'm.011_tnq4'] and Scores: [0.03523200452327729, 0.00035752814728766684]
+INFO:root:		Relation Path of : {'entity': 'm.02s9trw', 'relation': 'film.performance.film', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02rrfzf', 0.2), ('m.01xryvt', 0.19706555604934695), ('m.02_286', 0.0010358778759837152), ('m.0cnnj9q', 0.0007322896271944046), ('m.0f8l9c', 0.00042754504829645157)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02rrfzf', 'm.01xryvt', 'm.02_286', 'm.0f8l9c'] and Scores: [0.2, 0.19706555604934695, 0.0010358778759837152, 0.00042754504829645157]
+INFO:root:				"Deleted Candidates: ['m.0cnnj9q'] and Scores: [0.0007322896271944046]
+INFO:root:		Relation Path of : {'entity': 'm.02s9ttl', 'relation': 'film.performance.character', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02ql73', 0.4), ('m.04w22v7', 0.3830331563949585), ('m.0df3pd', 0.007810336351394654), ('g.11h1tsfvy', 0.006732186675071717), ('m.0jtbvf', 0.0006307471543550492)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02ql73', 'm.04w22v7', 'm.0df3pd', 'm.0jtbvf'] and Scores: [0.4, 0.3830331563949585, 0.007810336351394654, 0.0006307471543550492]
+INFO:root:				"Deleted Candidates: ['g.11h1tsfvy'] and Scores: [0.006732186675071717]
+INFO:root:		Relation Path of : {'entity': 'm.02s9ttl', 'relation': 'film.performance.actor', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.042ldz', 0.4), ('m.09c7w0', 0.1723985314369202), ('m.06qsh0', 0.10286397933959962), ('m.048pyxd', 0.058166444301605225), ('m.08q_30', 0.024367508292198182)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.042ldz', 'm.09c7w0', 'm.06qsh0', 'm.048pyxd', 'm.08q_30'] and Scores: [0.4, 0.1723985314369202, 0.10286397933959962, 0.058166444301605225, 0.024367508292198182]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.02s9ttl', 'relation': 'film.performance.film', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.025s1wg', 0.2), ('m.0_x90qk', 0.18656257390975953), ('m.06t4q7j', 0.008666318655014039), ('m.0f1bm9', 0.0016554256901144982), ('m.0gdl9k8', 0.0013176395557820799)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.025s1wg', 'm.0_x90qk', 'm.0f1bm9', 'm.0gdl9k8'] and Scores: [0.2, 0.18656257390975953, 0.0016554256901144982, 0.0013176395557820799]
+INFO:root:				"Deleted Candidates: ['m.06t4q7j'] and Scores: [0.008666318655014039]
+INFO:root:		Relation Path of : {'entity': 'm.02s9tvb', 'relation': 'film.performance.character', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02ql73', 0.4), ('m.0bfmht4', 0.00015600974438712), ('m.0sl5wpj', 0.00014677958097308874), ('m.03gbs5v', 0.00012113905977457763), ('m.05f5gxy', 8.99274426046759e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02ql73', 'm.03gbs5v', 'm.05f5gxy'] and Scores: [0.4, 0.00012113905977457763, 8.99274426046759e-05]
+INFO:root:				"Deleted Candidates: ['m.0bfmht4', 'm.0sl5wpj'] and Scores: [0.00015600974438712, 0.00014677958097308874]
+INFO:root:		Relation Path of : {'entity': 'm.02s9tvb', 'relation': 'film.performance.actor', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.042ldz', 0.4), ('m.02qlltx', 0.3677287817001343), ('m.06tptb', 0.016930484771728517), ('m.012vdvdf', 0.006627582013607025), ('m.059f4', 0.003295925259590149)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.042ldz', 'm.02qlltx', 'm.06tptb', 'm.059f4'] and Scores: [0.4, 0.3677287817001343, 0.016930484771728517, 0.003295925259590149]
+INFO:root:				"Deleted Candidates: ['m.012vdvdf'] and Scores: [0.006627582013607025]
+INFO:root:		Relation Path of : {'entity': 'm.02s9tvb', 'relation': 'film.performance.film', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.025skpr', 0.2), ('m.0_6h773', 0.08559707403182984), ('m.0xwhs', 0.03055129647254944), ('m.0115s5qw', 0.020779331028461457), ('m.0crg61b', 0.008665311336517335)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.025skpr', 'm.0_6h773', 'm.0xwhs', 'm.0115s5qw', 'm.0crg61b'] and Scores: [0.2, 0.08559707403182984, 0.03055129647254944, 0.020779331028461457, 0.008665311336517335]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'g.11b7vvcxwb', 'relation': 'tv.regular_tv_appearance.character', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02ql73', 0.4), ('m.04y7_yr', 0.3738208055496216), ('m.0wqmkj_', 0.016460512578487397), ('m.06zj7r6', 0.003191380947828293), ('m.0257lx', 0.0017234673723578453)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02ql73', 'm.04y7_yr', 'm.0wqmkj_', 'm.0257lx'] and Scores: [0.4, 0.3738208055496216, 0.016460512578487397, 0.0017234673723578453]
+INFO:root:				"Deleted Candidates: ['m.06zj7r6'] and Scores: [0.003191380947828293]
+INFO:root:		Relation Path of : {'entity': 'g.11b7vvcxwb', 'relation': 'tv.regular_tv_appearance.actor', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.042ldz', 0.4), ('m.027kx1w', 0.3253295183181763), ('m.08c939', 0.059062993526458746), ('m.04bxgg_', 0.013520163297653199), ('m.063yhbv', 0.000557729322463274)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.042ldz', 'm.027kx1w', 'm.08c939', 'm.04bxgg_', 'm.063yhbv'] and Scores: [0.4, 0.3253295183181763, 0.059062993526458746, 0.013520163297653199, 0.000557729322463274]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'g.11b7vvcxwb', 'relation': 'tv.regular_tv_appearance.series', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02nxqmh', 0.03498771786689758), ('m.05b7q', 0.021805463731288912), ('m.06s7lc0', 0.004431164264678955), ('m.0f5m7h', 0.003660156950354576), ('m.02vy32_', 0.0033806297928094865)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02nxqmh', 'm.05b7q', 'm.0f5m7h', 'm.02vy32_'] and Scores: [0.03498771786689758, 0.021805463731288912, 0.003660156950354576, 0.0033806297928094865]
+INFO:root:				"Deleted Candidates: ['m.06s7lc0'] and Scores: [0.004431164264678955]
+INFO:root:		"Total Entity Candidates: ['Juni Cortez', 'Tara Kemp', 'Los Angeles', 'Daryl Sabara', 'Czech Republic', 'Ron Korb', 'Carrot Top', 'Pledge Class 4', 'Spy Kids: All the Time in the World', 'Nagesh Bhonsle', 'Youngjae Lee', 'David Gewirtz', 'Maisamma IPS', 'Juni Cortez', 'Family', '1998 Major League Baseball Season', 'Cresco', 'Prathap C. Reddy', 'Daryl Sabara', 'Cresco', 'jazz', 'Spy Kids', 'Author', 'New York City', 'France', 'Juni Cortez', 'The Ramachandra Guha Omnibus', 'Mateus Galiano da Costa', 'Marc Moss', 'Daryl Sabara', 'United States of America', 'Jill Soloway', 'Lone Star', 'Roy McFarland', 'Spy Kids 3-D: Game Over', "Holly Finale' Finley", 'Gilad Shalit', 'John Procaccino', 'Juni Cortez', 'NetWavz Radio', 'One Week', 'Daryl Sabara', 'Jim Kelly', 'Mały Szyszak', 'New Hampshire', 'Spy Kids 2: The Island of Lost Dreams', 'Pay to Play', 'Madrid', 'Giorgi Charkviani', 'Rajzel Żychlińsky', 'Juni Cortez', 'Ivan Lietava', 'Sami Hazinses', 'Aguascalientes', 'Daryl Sabara', 'Epanochori', 'Prepple Houmb', 'Biry', 'Robert J. Sinclair', 'Painter', 'North Korea', 'Melathiruppanthuruthi', 'Arslan Satubaldin'] and Scores: [0.4, 2.2563733637070982e-07, 2.2226586224860514e-07, 0.4, 0.3777477741241455, 0.01662844866514206, 0.0013058759272098542, 0.0012415797449648381, 0.2, 0.014574837684631348, 0.013316409289836885, 0.010084830969572068, 0.008568064868450164, 0.4, 0.3947903394699097, 0.00420076996088028, 0.000771040702238679, 8.143187151290477e-05, 0.4, 0.3633072137832642, 0.00032761790789663796, 0.2, 0.19706555604934695, 0.0010358778759837152, 0.00042754504829645157, 0.4, 0.3830331563949585, 0.007810336351394654, 0.0006307471543550492, 0.4, 0.1723985314369202, 0.10286397933959962, 0.058166444301605225, 0.024367508292198182, 0.2, 0.18656257390975953, 0.0016554256901144982, 0.0013176395557820799, 0.4, 0.00012113905977457763, 8.99274426046759e-05, 0.4, 0.3677287817001343, 0.016930484771728517, 0.003295925259590149, 0.2, 0.08559707403182984, 0.03055129647254944, 0.020779331028461457, 0.008665311336517335, 0.4, 0.3738208055496216, 0.016460512578487397, 0.0017234673723578453, 0.4, 0.3253295183181763, 0.059062993526458746, 0.013520163297653199, 0.000557729322463274, 0.03498771786689758, 0.021805463731288912, 0.003660156950354576, 0.0033806297928094865]
+INFO:root:		After entity pruning:
+ 					[('UnName_Entity', 'film.performance.character', 'Juni Cortez'), ('UnName_Entity', 'film.performance.actor', 'Daryl Sabara'), ('UnName_Entity', 'film.performance.character', 'Juni Cortez'), ('UnName_Entity', 'film.performance.actor', 'Daryl Sabara'), ('UnName_Entity', 'film.performance.character', 'Juni Cortez')]
+INFO:root:			 Force to answer: who plays juni cortez
+INFO:root:			 cluster_chain_of_entities: [('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'Visar Morina'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'Bozeman'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_episodes', 'Poza de la Vega'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_episodes', 'Johann Sebastian Bach'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'Peru'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'film.film_character.portrayed_in_films', 'UnName_Entity'), ('Juni Cortez', 'tv.tv_character.appeared_in_tv_program', 'UnName_Entity'), ('UnName_Entity', 'film.performance.character', 'Juni Cortez'), ('UnName_Entity', 'film.performance.actor', 'Daryl Sabara'), ('UnName_Entity', 'film.performance.character', 'Juni Cortez'), ('UnName_Entity', 'film.performance.actor', 'Daryl Sabara'), ('UnName_Entity', 'film.performance.character', 'Juni Cortez')]
+INFO:root:"No new knowledge added during search depth 2 or max depth is reached, stop searching. 
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			 results: Based on the given knowledge triplets, the character Juni Cortez is portrayed by Daryl Sabara. Therefore, the answer to the question is {Daryl Sabara}.
+INFO:root:			 CORRECT ANSWER: Daryl Sabara
+INFO:root:			 Total questions: 106 pure_LLM_answers: 9 ToG_answers: 83 Failing_answers: 13  Not answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8679245283018868
+INFO:root:			 Question  not answered through graph.
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: what was lucille ball
+INFO:root:Topic Entity: m.04nw9
+INFO:root:True Path: people.person.profession
+INFO:root:True answer: ['m.018gz8', 'm.02hrh1q', 'm.03gjzk', 'm.09l65', 'm.0d1pc'],  Labels: ['comedian', 'actor', 'television producer', 'singer', 'model']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.04nw9
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.04nw9', 'relation': 'people.person.profession', 'score': 0.4, 'head': True}, {'entity': 'm.04nw9', 'relation': 'film.actor.film', 'score': 0.3, 'head': True}, {'entity': 'm.04nw9', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.3, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.04nw9', 'relation': 'people.person.profession', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02hrh1q', 0.4), ('m.03gjzk', 0.4), ('m.018gz8', 0.4), ('m.0d1pc', 0.4), ('m.09l65', 0.4)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02hrh1q', 'm.03gjzk', 'm.018gz8', 'm.0d1pc', 'm.09l65'] and Scores: [0.4, 0.4, 0.4, 0.4, 0.4]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.04nw9', 'relation': 'film.actor.film', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02vb6hz', 0.3), ('m.0k8b_t', 0.3), ('m.0zfgt_m', 0.19757648706436157), ('m.012rbprk', 0.040970532596111296), ('m.04j3140', 0.040282295644283296)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: [] and Scores: []
+INFO:root:				"Deleted Candidates: ['m.02vb6hz', 'm.0k8b_t', 'm.0zfgt_m', 'm.012rbprk', 'm.04j3140'] and Scores: [0.3, 0.3, 0.19757648706436157, 0.040970532596111296, 0.040282295644283296]
+INFO:root:		Relation Path of : {'entity': 'm.04nw9', 'relation': 'tv.tv_actor.starring_roles', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02t91ws', 0.3), ('m.04c2xsh', 0.2583547174930572), ('m.0df3pd', 0.03725972771644592), ('m.0cnnj9q', 0.004383221548050642), ('m.0ryvcly', 1.5822173736523836e-06)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04c2xsh', 'm.0df3pd', 'm.0ryvcly'] and Scores: [0.2583547174930572, 0.03725972771644592, 1.5822173736523836e-06]
+INFO:root:				"Deleted Candidates: ['m.02t91ws', 'm.0cnnj9q'] and Scores: [0.3, 0.004383221548050642]
+INFO:root:		"Total Entity Candidates: ['actor', 'television producer', 'comedian', 'model', 'singer', 'Van Buren Furnace', 'Mateus Galiano da Costa', 'The Blue Peter'] and Scores: [0.4, 0.4, 0.4, 0.4, 0.4, 0.2583547174930572, 0.03725972771644592, 1.5822173736523836e-06]
+INFO:root:		After entity pruning:
+ 					[('Lucille Ball', 'people.person.profession', 'actor'), ('Lucille Ball', 'people.person.profession', 'television producer'), ('Lucille Ball', 'people.person.profession', 'comedian'), ('Lucille Ball', 'people.person.profession', 'model'), ('Lucille Ball', 'people.person.profession', 'singer')]
+INFO:root:		 Cluster chain: [('Lucille Ball', 'people.person.profession', 'actor'), ('Lucille Ball', 'people.person.profession', 'television producer'), ('Lucille Ball', 'people.person.profession', 'comedian'), ('Lucille Ball', 'people.person.profession', 'model'), ('Lucille Ball', 'people.person.profession', 'singer')]
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, Lucille Ball was a singer, television producer, actor, model, and comedian. Therefore, the answer to the question is {singer, television producer, actor, model, comedian}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['comedian', 'actor', 'television producer', 'singer', 'model'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, Lucille Ball was a singer, television producer, actor, model, and comedian. Therefore, the answer to the question is {singer, television producer, actor, model, comedian}.
+INFO:root:			 CORRECT ANSWER: singer
+INFO:root:			 Total questions: 107 pure_LLM_answers: 9 ToG_answers: 84 Failing_answers: 13 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8691588785046729
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: who inspired obama
+INFO:root:Topic Entity: m.02mjmr
+INFO:root:True Path: influence.influence_node.influenced_by
+INFO:root:True answer: ['m.018q7p', 'm.01d1nj', 'm.04ct6p'],  Labels: ['Saul Alinsky', 'Reinhold Niebuhr', 'Nipsey Russell']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.02mjmr
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.02mjmr', 'relation': 'influence.influence_node.influenced_by', 'score': 0.5, 'head': True}, {'entity': 'm.02mjmr', 'relation': 'people.person.education', 'score': 0.3, 'head': True}, {'entity': 'm.02mjmr', 'relation': 'people.person.employment_history', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.02mjmr', 'relation': 'influence.influence_node.influenced_by', 'score': 0.5, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.018q7p', 0.5), ('m.04ct6p', 0.5), ('m.01d1nj', 0.5), ('m.05q12m', 0.33624398708343506), ('m.02rv2c_', 0.1013910174369812)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.018q7p', 'm.04ct6p', 'm.01d1nj', 'm.05q12m', 'm.02rv2c_'] and Scores: [0.5, 0.5, 0.5, 0.33624398708343506, 0.1013910174369812]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.02mjmr', 'relation': 'people.person.education', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02nqgmw', 0.3), ('m.0nbyhqc', 0.3), ('m.02nqgp6', 0.3), ('m.0nbyj44', 0.3), ('m.02nqgpk', 0.3)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: [] and Scores: []
+INFO:root:				"Deleted Candidates: ['m.02nqgmw', 'm.0nbyhqc', 'm.02nqgp6', 'm.0nbyj44', 'm.02nqgpk'] and Scores: [0.3, 0.3, 0.3, 0.3, 0.3]
+INFO:root:		Relation Path of : {'entity': 'm.02mjmr', 'relation': 'people.person.employment_history', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02nqgsc', 0.2), ('m.02nxqmh', 0.1999013662338257), ('m.02lcqs', 2.396602649241686e-05), ('m.0n1tj0s', 1.779614976840094e-05), ('m.06b3g4', 1.0796957940328867e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02nxqmh', 'm.02lcqs', 'm.0n1tj0s', 'm.06b3g4'] and Scores: [0.1999013662338257, 2.396602649241686e-05, 1.779614976840094e-05, 1.0796957940328867e-05]
+INFO:root:				"Deleted Candidates: ['m.02nqgsc'] and Scores: [0.2]
+INFO:root:		"Total Entity Candidates: ['Saul Alinsky', 'Nipsey Russell', 'Reinhold Niebuhr', 'Swift Current Broncos', 'Alexander Spence', 'Painter', 'Pacific Time Zone', 'Adam Rosenblatt', 'M.C. Gainey'] and Scores: [0.5, 0.5, 0.5, 0.33624398708343506, 0.1013910174369812, 0.1999013662338257, 2.396602649241686e-05, 1.779614976840094e-05, 1.0796957940328867e-05]
+INFO:root:		After entity pruning:
+ 					[('Barack Obama', 'influence.influence_node.influenced_by', 'Saul Alinsky'), ('Barack Obama', 'influence.influence_node.influenced_by', 'Nipsey Russell'), ('Barack Obama', 'influence.influence_node.influenced_by', 'Reinhold Niebuhr'), ('Barack Obama', 'influence.influence_node.influenced_by', 'Swift Current Broncos'), ('Barack Obama', 'people.person.employment_history', 'Painter')]
+INFO:root:		 Cluster chain: [('Barack Obama', 'influence.influence_node.influenced_by', 'Saul Alinsky'), ('Barack Obama', 'influence.influence_node.influenced_by', 'Nipsey Russell'), ('Barack Obama', 'influence.influence_node.influenced_by', 'Reinhold Niebuhr'), ('Barack Obama', 'influence.influence_node.influenced_by', 'Swift Current Broncos'), ('Barack Obama', 'people.person.employment_history', 'Painter')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, Barack Obama was influenced by Saul Alinsky, Nipsey Russell, Reinhold Niebuhr, and Swift Current Broncos. Therefore, the answer to the question is {Saul Alinsky, Nipsey Russell, Reinhold Niebuhr, Swift Current Broncos}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['Saul Alinsky', 'Reinhold Niebuhr', 'Nipsey Russell'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, Barack Obama was influenced by Saul Alinsky, Nipsey Russell, Reinhold Niebuhr, and Swift Current Broncos. Therefore, the answer to the question is {Saul Alinsky, Nipsey Russell, Reinhold Niebuhr, Swift Current Broncos}.
+INFO:root:			 CORRECT ANSWER: Saul Alinsky
+INFO:root:			 Total questions: 108 pure_LLM_answers: 9 ToG_answers: 85 Failing_answers: 13 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8703703703703703
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: who is michael j fox wife
+INFO:root:Topic Entity: m.0hz_1
+INFO:root:True Path: people.person.spouse_s|people.marriage.spouse
+INFO:root:True answer: ['m.03gpck'],  Labels: ['Tracy Pollan']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.0hz_1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0hz_1', 'relation': 'people.person.spouse_s', 'score': 0.7, 'head': True}, {'entity': 'm.0hz_1', 'relation': 'people.person.date_of_birth', 'score': 0.2, 'head': True}, {'entity': 'm.0hz_1', 'relation': 'people.person.places_lived', 'score': 0.1, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0hz_1', 'relation': 'people.person.spouse_s', 'score': 0.7, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02kkmrn', 0.7), ('m.03cgqts', 0.22221757769584655), ('m.01vx3m', 0.14722857624292374), ('m.0jsvrv', 0.05636862888932228), ('m.0gcz8bw', 0.03180854469537735)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.03cgqts', 'm.01vx3m', 'm.0jsvrv', 'm.0gcz8bw'] and Scores: [0.22221757769584655, 0.14722857624292374, 0.05636862888932228, 0.03180854469537735]
+INFO:root:				"Deleted Candidates: ['m.02kkmrn'] and Scores: [0.7]
+INFO:root:		Relation Path of : {'entity': 'm.0hz_1', 'relation': 'people.person.date_of_birth', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('XMLSchema#date', 0.2), ('m.0110grfv', 0.12551326751708985), ('m.07kcjg3', 0.057415956258773805), ('m.0499xh1', 0.009841915220022202), ('m.059j2', 0.004046709463000298)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0110grfv', 'm.07kcjg3', 'm.0499xh1', 'm.059j2'] and Scores: [0.12551326751708985, 0.057415956258773805, 0.009841915220022202, 0.004046709463000298]
+INFO:root:				"Deleted Candidates: ['XMLSchema#date'] and Scores: [0.2]
+INFO:root:		Relation Path of : {'entity': 'm.0hz_1', 'relation': 'people.person.places_lived', 'score': 0.1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0znm9l7', 0.1), ('m.0gxtzpk', 0.1), ('m.0gxtzhd', 0.1), ('m.02qmjy_', 0.09899147748947144), ('m.01xryvt', 0.0006270697340369225)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02qmjy_', 'm.01xryvt'] and Scores: [0.09899147748947144, 0.0006270697340369225]
+INFO:root:				"Deleted Candidates: ['m.0znm9l7', 'm.0gxtzpk', 'm.0gxtzhd'] and Scores: [0.1, 0.1, 0.1]
+INFO:root:		"Total Entity Candidates: ['Roque Avallay', 'Woking', 'Michelien Pialat', 'Vincenzo Musolino', 'Visar Morina', 'Artur Adamyan', 'Edgewood Hills', 'Netherlands', 'Meinir Gwilym', 'Author'] and Scores: [0.22221757769584655, 0.14722857624292374, 0.05636862888932228, 0.03180854469537735, 0.12551326751708985, 0.057415956258773805, 0.009841915220022202, 0.004046709463000298, 0.09899147748947144, 0.0006270697340369225]
+INFO:root:		After entity pruning:
+ 					[('Michael J. Fox', 'people.person.spouse_s', 'Roque Avallay'), ('Michael J. Fox', 'people.person.spouse_s', 'Woking'), ('Michael J. Fox', 'people.person.date_of_birth', 'Visar Morina'), ('Michael J. Fox', 'people.person.places_lived', 'Meinir Gwilym'), ('Michael J. Fox', 'people.person.date_of_birth', 'Artur Adamyan')]
+INFO:root:		 Cluster chain: [('Michael J. Fox', 'people.person.spouse_s', 'Roque Avallay'), ('Michael J. Fox', 'people.person.spouse_s', 'Woking'), ('Michael J. Fox', 'people.person.date_of_birth', 'Visar Morina'), ('Michael J. Fox', 'people.person.places_lived', 'Meinir Gwilym'), ('Michael J. Fox', 'people.person.date_of_birth', 'Artur Adamyan')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, the wife of Michael J. Fox is not explicitly mentioned. Therefore, additional knowledge is needed to answer the question.
+INFO:root:depth 1 still not find the answer.
+INFO:root:		Entity Pruning after adding the unNanme and rescoring:
+INFO:root:		[('Michael J. Fox', 'people.person.spouse_s', 'UnName_Entity'), ('Michael J. Fox', 'people.person.spouse_s', 'Roque Avallay'), ('Michael J. Fox', 'people.person.date_of_birth', 'UnName_Entity'), ('Michael J. Fox', 'people.person.spouse_s', 'Woking'), ('Michael J. Fox', 'people.person.date_of_birth', 'Visar Morina')]
+INFO:root:		The new cluster of entities list is: [('Michael J. Fox', 'people.person.spouse_s', 'Roque Avallay'), ('Michael J. Fox', 'people.person.spouse_s', 'Woking'), ('Michael J. Fox', 'people.person.date_of_birth', 'Visar Morina'), ('Michael J. Fox', 'people.person.places_lived', 'Meinir Gwilym'), ('Michael J. Fox', 'people.person.date_of_birth', 'Artur Adamyan'), ('Michael J. Fox', 'people.person.spouse_s', 'UnName_Entity'), ('Michael J. Fox', 'people.person.spouse_s', 'Roque Avallay'), ('Michael J. Fox', 'people.person.date_of_birth', 'UnName_Entity'), ('Michael J. Fox', 'people.person.spouse_s', 'Woking'), ('Michael J. Fox', 'people.person.date_of_birth', 'Visar Morina')]
+INFO:root:	 At depth: 2
+INFO:root:		Topic entity: m.02kkmrn
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.02kkmrn', 'relation': 'people.marriage.spouse', 'score': 1, 'head': True}, {'entity': 'm.02kkmrn', 'relation': 'people.marriage.location_of_ceremony', 'score': 1, 'head': True}]
+INFO:root:		Topic entity: m.03cgqts
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.03cgqts', 'relation': 'people.person.spouse_s', 'score': 0.7, 'head': True}, {'entity': 'm.03cgqts', 'relation': 'people.person.date_of_birth', 'score': 0.2, 'head': True}, {'entity': 'm.03cgqts', 'relation': 'people.person.employment_history', 'score': 0.1, 'head': True}]
+INFO:root:		Topic entity: XMLSchema#date
+INFO:root:		Relation scoring by LLM: []
+INFO:root:		Topic entity: m.01vx3m
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: []
+INFO:root:		Topic entity: m.0110grfv
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0110grfv', 'relation': 'people.person.spouse_s', 'score': 0.7, 'head': True}, {'entity': 'm.0110grfv', 'relation': 'people.person.date_of_birth', 'score': 0.2, 'head': True}, {'entity': 'm.0110grfv', 'relation': 'people.person.employment_history', 'score': 0.1, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.02kkmrn', 'relation': 'people.marriage.spouse', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0hz_1', 1.0), ('m.03gpck', 1.0), ('m.0c1n2sw', 0.7345914244651794), ('m.03cgqts', 0.052366748452186584), ('m.076_50r', 0.044795922935009)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0hz_1', 'm.03gpck', 'm.0c1n2sw', 'm.03cgqts', 'm.076_50r'] and Scores: [1.0, 1.0, 0.7345914244651794, 0.052366748452186584, 0.044795922935009]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.02kkmrn', 'relation': 'people.marriage.location_of_ceremony', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0hqxf', 0.9302793741226196), ('m.02h7sch', 0.05090939626097679), ('m.0b894q', 0.0075838821940124035), ('m.01xryvt', 0.006070804316550493), ('m.0155w', 0.0018621792551130056)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0hqxf', 'm.02h7sch', 'm.0b894q', 'm.01xryvt', 'm.0155w'] and Scores: [0.9302793741226196, 0.05090939626097679, 0.0075838821940124035, 0.006070804316550493, 0.0018621792551130056]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.03cgqts', 'relation': 'people.person.spouse_s', 'score': 0.7, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0fn5fn', 0.33381636440753937), ('m.03_f0', 0.3082660049200058), ('m.0fq3s_x', 0.026867124438285827), ('m.01t32p', 0.003615523455664515), ('m.0gc2g_l', 0.0034402708057314157)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0fn5fn', 'm.03_f0', 'm.0fq3s_x', 'm.01t32p', 'm.0gc2g_l'] and Scores: [0.33381636440753937, 0.3082660049200058, 0.026867124438285827, 0.003615523455664515, 0.0034402708057314157]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.03cgqts', 'relation': 'people.person.date_of_birth', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0_hlydg', 0.06983892321586609), ('m.02h7sch', 0.015487727522850037), ('m.02ps_k5', 0.010929302871227266), ('m.0dzt9', 0.00156623050570488), ('m.0b894q', 0.0012762688100337984)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0_hlydg', 'm.02h7sch', 'm.02ps_k5', 'm.0dzt9', 'm.0b894q'] and Scores: [0.06983892321586609, 0.015487727522850037, 0.010929302871227266, 0.00156623050570488, 0.0012762688100337984]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.03cgqts', 'relation': 'people.person.employment_history', 'score': 0.1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0dzt9', 0.09299066662788391), ('m.059j2', 0.006419257074594498), ('m.0dgffkf', 0.00014070573961362244), ('m.03zxj1', 0.00013867312809452416), ('m.0c00_sd', 0.0001287499559111893)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0dzt9', 'm.059j2', 'm.03zxj1', 'm.0c00_sd'] and Scores: [0.09299066662788391, 0.006419257074594498, 0.00013867312809452416, 0.0001287499559111893]
+INFO:root:				"Deleted Candidates: ['m.0dgffkf'] and Scores: [0.00014070573961362244]
+INFO:root:		Relation Path of : {'entity': 'm.0110grfv', 'relation': 'people.person.spouse_s', 'score': 0.7, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.08c939', 0.002568755531683564), ('m.02k905', 0.0018543615471571682), ('m.0l14md', 0.00037253448390401895), ('m.0kd9_42', 0.00025325714086648076), ('m.0gjvt1', 0.00012468504719436168)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.08c939', 'm.02k905', 'm.0l14md', 'm.0gjvt1'] and Scores: [0.002568755531683564, 0.0018543615471571682, 0.00037253448390401895, 0.00012468504719436168]
+INFO:root:				"Deleted Candidates: ['m.0kd9_42'] and Scores: [0.00025325714086648076]
+INFO:root:		Relation Path of : {'entity': 'm.0110grfv', 'relation': 'people.person.date_of_birth', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.01_d4', 0.07641346454620362), ('m.0r62z9g', 0.03149507641792298), ('m.09s0l9x', 0.023289193212985993), ('m.0b894q', 0.009205324202775955), ('m.0hjy', 0.008971970528364182)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01_d4', 'm.0r62z9g', 'm.0b894q', 'm.0hjy'] and Scores: [0.07641346454620362, 0.03149507641792298, 0.009205324202775955, 0.008971970528364182]
+INFO:root:				"Deleted Candidates: ['m.09s0l9x'] and Scores: [0.023289193212985993]
+INFO:root:		Relation Path of : {'entity': 'm.0110grfv', 'relation': 'people.person.employment_history', 'score': 0.1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0cw896', 0.04243853390216828), ('m.095l0', 0.025472629070281985), ('g.1236mv4k', 0.010495521873235703), ('m.03b_5w7', 0.0050313610583543784), ('m.07kc1bw', 0.0049909215420484545)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0cw896', 'm.095l0', 'm.03b_5w7', 'm.07kc1bw'] and Scores: [0.04243853390216828, 0.025472629070281985, 0.0050313610583543784, 0.0049909215420484545]
+INFO:root:				"Deleted Candidates: ['g.1236mv4k'] and Scores: [0.010495521873235703]
+INFO:root:		"Total Entity Candidates: ['Michael J. Fox', 'Tracy Pollan', 'Cinzia Mascoli', 'Roque Avallay', 'Pledge Class 4', 'Family', '1998 Major League Baseball Season', 'Bristol Cathedral Choir School', 'Author', 'blues', 'Port Walter', 'Johann Sebastian Bach', 'Mathias Schlung', 'Carrot Top', 'Pako Revueltas', 'Youngjae Lee', '1998 Major League Baseball Season', 'Cresco', 'Richmond', 'Bristol Cathedral Choir School', 'Richmond', 'Netherlands', 'Amitai Etzioni', 'Dehue, West Virginia', 'Prepple Houmb', 'Luapula River', 'Percussion', 'Gerald Green', 'Chicago', 'Chauncey B. Raglin-Washington', 'Bristol Cathedral Choir School', 'Alaska', "Geraldine's Fortune", 'Bristol', 'Alex Govan', 'Hemvadi'] and Scores: [1.0, 1.0, 0.7345914244651794, 0.052366748452186584, 0.044795922935009, 0.9302793741226196, 0.05090939626097679, 0.0075838821940124035, 0.006070804316550493, 0.0018621792551130056, 0.33381636440753937, 0.3082660049200058, 0.026867124438285827, 0.003615523455664515, 0.0034402708057314157, 0.06983892321586609, 0.015487727522850037, 0.010929302871227266, 0.00156623050570488, 0.0012762688100337984, 0.09299066662788391, 0.006419257074594498, 0.00013867312809452416, 0.0001287499559111893, 0.002568755531683564, 0.0018543615471571682, 0.00037253448390401895, 0.00012468504719436168, 0.07641346454620362, 0.03149507641792298, 0.009205324202775955, 0.008971970528364182, 0.04243853390216828, 0.025472629070281985, 0.0050313610583543784, 0.0049909215420484545]
+INFO:root:		After entity pruning:
+ 					[('UnName_Entity', 'people.marriage.spouse', 'Michael J. Fox'), ('UnName_Entity', 'people.marriage.spouse', 'Tracy Pollan'), ('UnName_Entity', 'people.marriage.location_of_ceremony', 'Family'), ('UnName_Entity', 'people.marriage.spouse', 'Cinzia Mascoli'), ('Roque Avallay', 'people.person.spouse_s', 'Port Walter')]
+INFO:root:			 Force to answer: who is michael j fox wife
+INFO:root:			 cluster_chain_of_entities: [('Michael J. Fox', 'people.person.spouse_s', 'Roque Avallay'), ('Michael J. Fox', 'people.person.spouse_s', 'Woking'), ('Michael J. Fox', 'people.person.date_of_birth', 'Visar Morina'), ('Michael J. Fox', 'people.person.places_lived', 'Meinir Gwilym'), ('Michael J. Fox', 'people.person.date_of_birth', 'Artur Adamyan'), ('Michael J. Fox', 'people.person.spouse_s', 'UnName_Entity'), ('Michael J. Fox', 'people.person.spouse_s', 'Roque Avallay'), ('Michael J. Fox', 'people.person.date_of_birth', 'UnName_Entity'), ('Michael J. Fox', 'people.person.spouse_s', 'Woking'), ('Michael J. Fox', 'people.person.date_of_birth', 'Visar Morina'), ('UnName_Entity', 'people.marriage.spouse', 'Michael J. Fox'), ('UnName_Entity', 'people.marriage.spouse', 'Tracy Pollan'), ('UnName_Entity', 'people.marriage.location_of_ceremony', 'Family'), ('UnName_Entity', 'people.marriage.spouse', 'Cinzia Mascoli'), ('Roque Avallay', 'people.person.spouse_s', 'Port Walter')]
+INFO:root:"No new knowledge added during search depth 2 or max depth is reached, stop searching. 
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			 results: Based on the given knowledge triplets, Michael J. Fox's wife is Tracy Pollan. Therefore, the answer to the question is {Tracy Pollan}.
+INFO:root:			 CORRECT ANSWER: Tracy Pollan
+INFO:root:			 Total questions: 109 pure_LLM_answers: 9 ToG_answers: 86 Failing_answers: 13  Not answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8715596330275229
+INFO:root:			 Question  not answered through graph.
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: where did dolly parton grow up
+INFO:root:Topic Entity: m.02f1c
+INFO:root:True Path: people.person.place_of_birth
+INFO:root:True answer: ['m.0_wrs'],  Labels: ['Sevierville']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.02f1c
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.02f1c', 'relation': 'people.person.place_of_birth', 'score': 0.4, 'head': True}, {'entity': 'm.02f1c', 'relation': 'people.person.places_lived', 'score': 0.4, 'head': True}, {'entity': 'm.02f1c', 'relation': 'people.person.employment_history', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.02f1c', 'relation': 'people.person.place_of_birth', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0_wrs', 0.4), ('m.0412swx', 0.38378419876098635), ('m.06zqdyd', 0.006480086594820023), ('m.02qc0j7', 0.00183609277009964), ('m.05wylh1', 0.0011662904173135758)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0_wrs', 'm.0412swx', 'm.06zqdyd', 'm.02qc0j7', 'm.05wylh1'] and Scores: [0.4, 0.38378419876098635, 0.006480086594820023, 0.00183609277009964, 0.0011662904173135758]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.02f1c', 'relation': 'people.person.places_lived', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.03pkvzp', 0.4), ('m.01ly5m', 0.35717866420745853), ('m.060ybr', 0.03603838384151459), ('m.0nk9p39', 0.006707397103309632), ('m.06s7gl', 5.674893618561328e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01ly5m', 'm.060ybr', 'm.06s7gl'] and Scores: [0.35717866420745853, 0.03603838384151459, 5.674893618561328e-05]
+INFO:root:				"Deleted Candidates: ['m.03pkvzp', 'm.0nk9p39'] and Scores: [0.4, 0.006707397103309632]
+INFO:root:		Relation Path of : {'entity': 'm.02f1c', 'relation': 'people.person.employment_history', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0bd31kj', 0.04964275062084198), ('m.060ybr', 0.041765451431274414), ('m.0cw896', 0.03508534729480744), ('m.09c7w0', 0.03372458517551422), ('m.06s7gl', 0.019914041459560397)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.060ybr', 'm.0cw896', 'm.09c7w0', 'm.06s7gl'] and Scores: [0.041765451431274414, 0.03508534729480744, 0.03372458517551422, 0.019914041459560397]
+INFO:root:				"Deleted Candidates: ['m.0bd31kj'] and Scores: [0.04964275062084198]
+INFO:root:		"Total Entity Candidates: ['Sevierville', 'Wolf Hudson', 'Skuhrov', "Alexander's Ragtime Band", 'Jim Gibbs', 'Buenos Aires', 'Roberto Ivens', 'Richard Blade', 'Roberto Ivens', "Geraldine's Fortune", 'United States of America', 'Richard Blade'] and Scores: [0.4, 0.38378419876098635, 0.006480086594820023, 0.00183609277009964, 0.0011662904173135758, 0.35717866420745853, 0.03603838384151459, 5.674893618561328e-05, 0.041765451431274414, 0.03508534729480744, 0.03372458517551422, 0.019914041459560397]
+INFO:root:		After entity pruning:
+ 					[('Dolly Parton', 'people.person.place_of_birth', 'Sevierville'), ('Dolly Parton', 'people.person.place_of_birth', 'Wolf Hudson'), ('Dolly Parton', 'people.person.places_lived', 'Buenos Aires'), ('Dolly Parton', 'people.person.employment_history', 'Roberto Ivens'), ('Dolly Parton', 'people.person.places_lived', 'Roberto Ivens')]
+INFO:root:		 Cluster chain: [('Dolly Parton', 'people.person.place_of_birth', 'Sevierville'), ('Dolly Parton', 'people.person.place_of_birth', 'Wolf Hudson'), ('Dolly Parton', 'people.person.places_lived', 'Buenos Aires'), ('Dolly Parton', 'people.person.employment_history', 'Roberto Ivens'), ('Dolly Parton', 'people.person.places_lived', 'Roberto Ivens')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, we know that Dolly Parton was born in Sevierville and has lived in Buenos Aires and Roberto Ivens. However, these triplets do not explicitly state where she grew up. Therefore, additional information is needed to answer this question.
+INFO:root:depth 1 still not find the answer.
+INFO:root:		Entity Pruning after adding the unNanme and rescoring:
+INFO:root:		[('Dolly Parton', 'people.person.places_lived', 'UnName_Entity'), ('Dolly Parton', 'people.person.place_of_birth', 'Sevierville'), ('Dolly Parton', 'people.person.place_of_birth', 'Wolf Hudson'), ('Dolly Parton', 'people.person.places_lived', 'Buenos Aires'), ('Dolly Parton', 'people.person.employment_history', 'UnName_Entity')]
+INFO:root:		The new cluster of entities list is: [('Dolly Parton', 'people.person.place_of_birth', 'Sevierville'), ('Dolly Parton', 'people.person.place_of_birth', 'Wolf Hudson'), ('Dolly Parton', 'people.person.places_lived', 'Buenos Aires'), ('Dolly Parton', 'people.person.employment_history', 'Roberto Ivens'), ('Dolly Parton', 'people.person.places_lived', 'Roberto Ivens'), ('Dolly Parton', 'people.person.places_lived', 'UnName_Entity'), ('Dolly Parton', 'people.person.place_of_birth', 'Sevierville'), ('Dolly Parton', 'people.person.place_of_birth', 'Wolf Hudson'), ('Dolly Parton', 'people.person.places_lived', 'Buenos Aires'), ('Dolly Parton', 'people.person.employment_history', 'UnName_Entity')]
+INFO:root:	 At depth: 2
+INFO:root:		Topic entity: m.03pkvzp
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.03pkvzp', 'relation': 'people.place_lived.location', 'score': 1, 'head': True}]
+INFO:root:		Topic entity: m.0_wrs
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0_wrs', 'relation': 'location.location.people_born_here', 'score': 0.5, 'head': True}, {'entity': 'm.0_wrs', 'relation': 'location.location.containedby', 'score': 0.3, 'head': True}, {'entity': 'm.0_wrs', 'relation': 'common.topic.notable_types', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.0412swx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0412swx', 'relation': 'people.person.place_of_birth', 'score': 0.4, 'head': True}, {'entity': 'm.0412swx', 'relation': 'people.person.places_lived', 'score': 0.4, 'head': True}, {'entity': 'm.0412swx', 'relation': 'people.person.employment_history', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.01ly5m
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.01ly5m', 'relation': 'location.location.people_born_here', 'score': 0.4, 'head': True}, {'entity': 'm.01ly5m', 'relation': 'location.location.containedby', 'score': 0.3, 'head': True}, {'entity': 'm.01ly5m', 'relation': 'location.administrative_division.first_level_division_of', 'score': 0.3, 'head': True}]
+INFO:root:		Topic entity: m.0bd31kj
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0bd31kj', 'relation': 'music.group_membership.role', 'score': 1, 'head': True}, {'entity': 'm.0bd31kj', 'relation': 'music.group_membership.member', 'score': 1, 'head': True}, {'entity': 'm.0bd31kj', 'relation': 'music.group_membership.group', 'score': 1, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.03pkvzp', 'relation': 'people.place_lived.location', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.07h34', 1.0), ('m.0hpp1z2', 0.6314932107925415), ('m.0gkys6r', 0.08182669430971146), ('m.0b789k', 0.06655210256576538), ('m.06w7rx2', 0.012932103127241135)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.07h34', 'm.0hpp1z2', 'm.0gkys6r', 'm.0b789k', 'm.06w7rx2'] and Scores: [1.0, 0.6314932107925415, 0.08182669430971146, 0.06655210256576538, 0.012932103127241135]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0_wrs', 'relation': 'location.location.people_born_here', 'score': 0.5, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0zcpd8r', 0.5), ('m.02f1c', 0.5), ('m.03xp9r9', 0.5), ('m.07p7jf', 0.5), ('m.0270_yz', 0.5)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02f1c', 'm.03xp9r9', 'm.07p7jf', 'm.0270_yz'] and Scores: [0.5, 0.5, 0.5, 0.5]
+INFO:root:				"Deleted Candidates: ['m.0zcpd8r'] and Scores: [0.5]
+INFO:root:		Relation Path of : {'entity': 'm.0_wrs', 'relation': 'location.location.containedby', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.07h34', 0.3), ('m.0msyp', 0.3), ('m.08c939', 0.2961670160293579), ('m.0155w', 0.0038313958793878555), ('m.0r62z9g', 1.4050821391720091e-06)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.07h34', 'm.0msyp', 'm.08c939', 'm.0155w', 'm.0r62z9g'] and Scores: [0.3, 0.3, 0.2961670160293579, 0.0038313958793878555, 1.4050821391720091e-06]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0_wrs', 'relation': 'common.topic.notable_types', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.01m9', 0.2), ('m.06hnh14', 0.1858212947845459), ('g.1hhzgnm89', 0.002351823076605797), ('m.02pj_dz', 0.0016571715474128724), ('m.075fsv', 0.0012997914105653764)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01m9', 'm.06hnh14', 'm.02pj_dz', 'm.075fsv'] and Scores: [0.2, 0.1858212947845459, 0.0016571715474128724, 0.0012997914105653764]
+INFO:root:				"Deleted Candidates: ['g.1hhzgnm89'] and Scores: [0.002351823076605797]
+INFO:root:		Relation Path of : {'entity': 'm.0412swx', 'relation': 'people.person.place_of_birth', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02_286', 0.4), ('m.03_f0', 0.39586882591247563), ('m.06r82bz', 0.001310549769550562), ('m.0h_0qmg', 0.0011636589653789998), ('m.08c939', 0.0006320372223854065)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02_286', 'm.03_f0', 'm.08c939'] and Scores: [0.4, 0.39586882591247563, 0.0006320372223854065]
+INFO:root:				"Deleted Candidates: ['m.06r82bz', 'm.0h_0qmg'] and Scores: [0.001310549769550562, 0.0011636589653789998]
+INFO:root:		Relation Path of : {'entity': 'm.0412swx', 'relation': 'people.person.places_lived', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.08c939', 0.22451570034027102), ('m.026fh1b', 0.061349332332611084), ('m.02qn0j8', 0.026021769642829897), ('m.05q7g7f', 0.012160595506429672), ('m.049b_37', 0.004318636283278466)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.08c939', 'm.026fh1b', 'm.02qn0j8', 'm.05q7g7f', 'm.049b_37'] and Scores: [0.22451570034027102, 0.061349332332611084, 0.026021769642829897, 0.012160595506429672, 0.004318636283278466]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0412swx', 'relation': 'people.person.employment_history', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.09s2cql', 0.07930233478546143), ('m.06pwq', 0.03308885395526886), ('m.0njrtbb', 0.02469572573900223), ('m.0h651zq', 0.011724099516868591), ('m.0263trv', 0.005369148030877114)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.06pwq', 'm.0h651zq', 'm.0263trv'] and Scores: [0.03308885395526886, 0.011724099516868591, 0.005369148030877114]
+INFO:root:				"Deleted Candidates: ['m.09s2cql', 'm.0njrtbb'] and Scores: [0.07930233478546143, 0.02469572573900223]
+INFO:root:		Relation Path of : {'entity': 'm.01ly5m', 'relation': 'location.location.people_born_here', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04mk5v8', 0.4), ('m.0k6nx6h', 0.4), ('m.02p_5hk', 0.4), ('m.09ggqd8', 0.4), ('m.0jt737y', 0.4)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04mk5v8', 'm.0k6nx6h', 'm.02p_5hk', 'm.09ggqd8', 'm.0jt737y'] and Scores: [0.4, 0.4, 0.4, 0.4, 0.4]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.01ly5m', 'relation': 'location.location.containedby', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.01ly8d', 0.3), ('m.0jgd', 0.3), ('m.03387k', 0.3), ('m.06n3y', 0.3), ('m.0342h', 0.2950519144535065)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01ly8d', 'm.0jgd', 'm.03387k', 'm.06n3y', 'm.0342h'] and Scores: [0.3, 0.3, 0.3, 0.3, 0.2950519144535065]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.01ly5m', 'relation': 'location.administrative_division.first_level_division_of', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0jgd', 0.3), ('m.02y_gt4', 0.00013726317265536637), ('m.0gc440', 0.00012055124680045992), ('m.045x_f', 8.415251795668155e-05), ('m.0rsl8jy', 7.717221742495894e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0jgd', 'm.02y_gt4', 'm.0gc440', 'm.045x_f'] and Scores: [0.3, 0.00013726317265536637, 0.00012055124680045992, 8.415251795668155e-05]
+INFO:root:				"Deleted Candidates: ['m.0rsl8jy'] and Scores: [7.717221742495894e-05]
+INFO:root:		Relation Path of : {'entity': 'm.0bd31kj', 'relation': 'music.group_membership.role', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04rzd', 1.0), ('m.0342h', 1.0), ('m.0290ngj', 1.0), ('m.03qjg', 1.0), ('m.05148p4', 1.0)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04rzd', 'm.0342h', 'm.0290ngj', 'm.03qjg', 'm.05148p4'] and Scores: [1.0, 1.0, 1.0, 1.0, 1.0]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0bd31kj', 'relation': 'music.group_membership.member', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.03j17x0', 0.999064028263092), ('m.0kns99b', 0.0005634070839732885), ('m.04y7_yr', 0.00012901084846816957), ('m.01wy6', 9.202842193190008e-05), ('m.03ct63b', 7.396793807856739e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.03j17x0', 'm.0kns99b', 'm.04y7_yr', 'm.01wy6', 'm.03ct63b'] and Scores: [0.999064028263092, 0.0005634070839732885, 0.00012901084846816957, 9.202842193190008e-05, 7.396793807856739e-05]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0bd31kj', 'relation': 'music.group_membership.group', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0dzt9', 0.565911591053009), ('m.03_f0', 0.43391600251197815), ('m.0977qb', 6.3530337683914695e-06), ('m.0cw896', 2.841507239281782e-06), ('m.02k905', 9.585154430169496e-07)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0dzt9', 'm.03_f0', 'm.0977qb', 'm.0cw896', 'm.02k905'] and Scores: [0.565911591053009, 0.43391600251197815, 6.3530337683914695e-06, 2.841507239281782e-06, 9.585154430169496e-07]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		"Total Entity Candidates: ['Tennessee', 'Tommy Kelly', 'Paige Omartian', 'Bryn McAuley', 'Tehov (Prague-East District)', 'Dolly Parton', 'James Clell Summey', 'Stella Parton', 'Willadeene Parton', 'Tennessee', 'Sevier County', 'Prepple Houmb', 'blues', 'Chauncey B. Raglin-Washington', 'City/Town/Village', 'The Civil War Battle of Fredericktown, Missouri', 'Dave Osborn', 'New Orleans Jazz National Historical Park', 'New York City', 'Johann Sebastian Bach', 'Prepple Houmb', 'Prepple Houmb', 'Jonathan Goodwin', 'Harry Schwarz', 'Emma Hamilton', 'Stab', 'Stanford University', 'Rick Todd', 'Patrick Noble', 'Guillermo Arengo', 'Jimena Blanco', 'Martín Rejtman', 'Ezequiel Schelotto', 'Martina Stoessel', 'Buenos Aires Province', 'Argentina', 'Greater Buenos Aires', 'South America', 'guitar', 'Argentina', 'Zhang Wenkang', 'Nima Ghavidel', 'Midhat Pasha', 'mandolin', 'guitar', 'Vocals', 'harmonica', 'keyboard instrument', 'Alela Diane', 'Hissatsu: Sure Death', 'Ivan Lietava', 'clarinet', 'Joseph DiNapoli', 'Richmond', 'Johann Sebastian Bach', 'Straz Center for the Performing Arts', "Geraldine's Fortune", 'Luapula River'] and Scores: [1.0, 0.6314932107925415, 0.08182669430971146, 0.06655210256576538, 0.012932103127241135, 0.5, 0.5, 0.5, 0.5, 0.3, 0.3, 0.2961670160293579, 0.0038313958793878555, 1.4050821391720091e-06, 0.2, 0.1858212947845459, 0.0016571715474128724, 0.0012997914105653764, 0.4, 0.39586882591247563, 0.0006320372223854065, 0.22451570034027102, 0.061349332332611084, 0.026021769642829897, 0.012160595506429672, 0.004318636283278466, 0.03308885395526886, 0.011724099516868591, 0.005369148030877114, 0.4, 0.4, 0.4, 0.4, 0.4, 0.3, 0.3, 0.3, 0.3, 0.2950519144535065, 0.3, 0.00013726317265536637, 0.00012055124680045992, 8.415251795668155e-05, 1.0, 1.0, 1.0, 1.0, 1.0, 0.999064028263092, 0.0005634070839732885, 0.00012901084846816957, 9.202842193190008e-05, 7.396793807856739e-05, 0.565911591053009, 0.43391600251197815, 6.3530337683914695e-06, 2.841507239281782e-06, 9.585154430169496e-07]
+INFO:root:		After entity pruning:
+ 					[('UnName_Entity', 'people.place_lived.location', 'Tennessee'), ('UnName_Entity', 'music.group_membership.role', 'mandolin'), ('UnName_Entity', 'music.group_membership.role', 'guitar'), ('UnName_Entity', 'music.group_membership.role', 'Vocals'), ('UnName_Entity', 'music.group_membership.role', 'harmonica')]
+INFO:root:			 Force to answer: where did dolly parton grow up
+INFO:root:			 cluster_chain_of_entities: [('Dolly Parton', 'people.person.place_of_birth', 'Sevierville'), ('Dolly Parton', 'people.person.place_of_birth', 'Wolf Hudson'), ('Dolly Parton', 'people.person.places_lived', 'Buenos Aires'), ('Dolly Parton', 'people.person.employment_history', 'Roberto Ivens'), ('Dolly Parton', 'people.person.places_lived', 'Roberto Ivens'), ('Dolly Parton', 'people.person.places_lived', 'UnName_Entity'), ('Dolly Parton', 'people.person.place_of_birth', 'Sevierville'), ('Dolly Parton', 'people.person.place_of_birth', 'Wolf Hudson'), ('Dolly Parton', 'people.person.places_lived', 'Buenos Aires'), ('Dolly Parton', 'people.person.employment_history', 'UnName_Entity'), ('UnName_Entity', 'people.place_lived.location', 'Tennessee'), ('UnName_Entity', 'music.group_membership.role', 'mandolin'), ('UnName_Entity', 'music.group_membership.role', 'guitar'), ('UnName_Entity', 'music.group_membership.role', 'Vocals'), ('UnName_Entity', 'music.group_membership.role', 'harmonica')]
+INFO:root:"No new knowledge added during search depth 2 or max depth is reached, stop searching. 
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			 results: Based on the given knowledge triplets, Dolly Parton was born in Sevierville and lived in a place associated with Tennessee. Therefore, the answer to the question is {Sevierville, Tennessee}.
+INFO:root:			 CORRECT ANSWER: Sevierville
+INFO:root:			 Total questions: 110 pure_LLM_answers: 9 ToG_answers: 87 Failing_answers: 13  Not answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8727272727272727
+INFO:root:			 Question  not answered through graph.
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: what type of books did agatha christie wrote
+INFO:root:Topic Entity: m.0ldd
+INFO:root:True Path: people.person.profession
+INFO:root:True answer: ['m.02hv44_', 'm.02xhgwq', 'm.05z96', 'm.0cbd2', 'm.0dxtg'],  Labels: ['playwright', 'Novelist', 'poet', 'Writer', 'screenwriter']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.0ldd
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0ldd', 'relation': 'book.author.works_written', 'score': 0.5, 'head': True}, {'entity': 'm.0ldd', 'relation': 'book.author.book_editions_published', 'score': 0.3, 'head': True}, {'entity': 'm.0ldd', 'relation': 'common.topic.notable_types', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0ldd', 'relation': 'book.author.works_written', 'score': 0.5, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.07218q', 0.5), ('m.021n4y', 0.5), ('m.02nb20', 0.5), ('m.06yl49', 0.5), ('m.071f3b', 0.5)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.07218q', 'm.021n4y', 'm.02nb20', 'm.06yl49', 'm.071f3b'] and Scores: [0.5, 0.5, 0.5, 0.5, 0.5]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0ldd', 'relation': 'book.author.book_editions_published', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04v7wdn', 0.3), ('m.04w00x6', 0.3), ('m.04vc88_', 0.3), ('m.04v_18_', 0.3), ('m.04vkxnj', 0.3)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04v7wdn', 'm.04w00x6', 'm.04vc88_', 'm.04v_18_', 'm.04vkxnj'] and Scores: [0.3, 0.3, 0.3, 0.3, 0.3]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0ldd', 'relation': 'common.topic.notable_types', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.01xryvt', 0.2), ('m.0105l3sq', 0.16901577711105348), ('m.01tfq1', 0.030628961324691773), ('m.016clz', 0.00019671919289976358), ('m.02_286', 4.435882437974215e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01xryvt', 'm.0105l3sq', 'm.01tfq1', 'm.016clz', 'm.02_286'] and Scores: [0.2, 0.16901577711105348, 0.030628961324691773, 0.00019671919289976358, 4.435882437974215e-05]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		"Total Entity Candidates: ['Endless Night', 'The Secret Adversary', 'The Secret of Chimneys', "Hercule Poirot's Christmas", 'A Murder Is Announced', 'A Caribbean Mystery (Miss Marple Mysteries)', 'Sad Cypress', 'Death in the clouds', 'The mysterious affair at Styles', 'And Then There Were None', 'Author', 'Tharai Thappattai', 'William Stamps Farish II', 'alternative rock', 'New York City'] and Scores: [0.5, 0.5, 0.5, 0.5, 0.5, 0.3, 0.3, 0.3, 0.3, 0.3, 0.2, 0.16901577711105348, 0.030628961324691773, 0.00019671919289976358, 4.435882437974215e-05]
+INFO:root:		After entity pruning:
+ 					[('Agatha Christie', 'book.author.works_written', 'Endless Night'), ('Agatha Christie', 'book.author.works_written', 'The Secret Adversary'), ('Agatha Christie', 'book.author.works_written', 'The Secret of Chimneys'), ('Agatha Christie', 'book.author.works_written', "Hercule Poirot's Christmas"), ('Agatha Christie', 'book.author.works_written', 'A Murder Is Announced')]
+INFO:root:		 Cluster chain: [('Agatha Christie', 'book.author.works_written', 'Endless Night'), ('Agatha Christie', 'book.author.works_written', 'The Secret Adversary'), ('Agatha Christie', 'book.author.works_written', 'The Secret of Chimneys'), ('Agatha Christie', 'book.author.works_written', "Hercule Poirot's Christmas"), ('Agatha Christie', 'book.author.works_written', 'A Murder Is Announced')]
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, Agatha Christie wrote books such as 'Endless Night', 'The Secret Adversary', 'A Murder Is Announced', 'Hercule Poirot's Christmas', and 'The Secret of Chimneys'. These books are typically categorized as mystery and detective fiction. Therefore, the answer to the question is {mystery and detective fiction}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['playwright', 'Novelist', 'poet', 'Writer', 'screenwriter'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, Agatha Christie wrote books such as 'Endless Night', 'The Secret Adversary', 'A Murder Is Announced', 'Hercule Poirot's Christmas', and 'The Secret of Chimneys'. These books are typically categorized as mystery and detective fiction. Therefore, the answer to the question is {mystery and detective fiction}.
+INFO:root:			 WRONG ANSWER: ['mystery', 'detective fiction']
+INFO:root:			 Total questions: 111 pure_LLM_answers: 9 ToG_answers: 87 Failing_answers: 14 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8648648648648649
+INFO:root:Dumping cache files: PG_relation_prune_cache_list:0, generate_answer_cache_list: 0, reasoning_cache_list: 6, force_answer_list: 3, full_relation_prune_cache_list: 0, dictionary_relation_prune_cache_list:166
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: what are the four main languages spoken in spain
+INFO:root:Topic Entity: m.06mkj
+INFO:root:True Path: location.country.languages_spoken
+INFO:root:True answer: ['m.017k6', 'm.01m69', 'm.01q5d9', 'm.05l0r', 'm.06nm1'],  Labels: ['Basque Language', 'Catalan language', 'Galician Language', 'Occitan language', 'Spanish']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.06mkj
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.06mkj', 'relation': 'location.country.languages_spoken', 'score': 0.4, 'head': True}, {'entity': 'm.06mkj', 'relation': 'location.country.official_language', 'score': 0.35, 'head': True}, {'entity': 'm.06mkj', 'relation': 'location.location.containedby', 'score': 0.25, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.06mkj', 'relation': 'location.country.languages_spoken', 'score': 0.4, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.05l0r', 0.4), ('m.017k6', 0.4), ('m.01m69', 0.4), ('m.01q5d9', 0.4), ('m.06nm1', 0.4)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.05l0r', 'm.017k6', 'm.01m69', 'm.01q5d9', 'm.06nm1'] and Scores: [0.4, 0.4, 0.4, 0.4, 0.4]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.06mkj', 'relation': 'location.country.official_language', 'score': 0.35, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.06nm1', 0.35), ('m.0qt6sgy', 0.29274222254753113), ('m.0473rs', 0.023605497926473616), ('m.0r2bf', 0.006761347409337759), ('m.027d333', 0.005241503333672881)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.06nm1', 'm.0473rs', 'm.0r2bf', 'm.027d333'] and Scores: [0.35, 0.023605497926473616, 0.006761347409337759, 0.005241503333672881]
+INFO:root:				"Deleted Candidates: ['m.0qt6sgy'] and Scores: [0.29274222254753113]
+INFO:root:		Relation Path of : {'entity': 'm.06mkj', 'relation': 'location.location.containedby', 'score': 0.25, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02j9z', 0.25), ('m.0852h', 0.25), ('m.05k3k', 0.25), ('m.02ps_k5', 0.14459247887134552), ('m.0g2dnh', 0.08126109093427658)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02j9z', 'm.0852h', 'm.05k3k', 'm.02ps_k5', 'm.0g2dnh'] and Scores: [0.25, 0.25, 0.25, 0.14459247887134552, 0.08126109093427658]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		"Total Entity Candidates: ['Occitan language', 'Basque Language', 'Catalan language', 'Galician Language', 'Spanish', 'Spanish', 'Alexander Chancellor', 'Buena Park', 'Peter van Nieuwenhuizen', 'Europe', 'Western Europe', 'Northern Hemisphere', 'Cresco', 'Brian Haner'] and Scores: [0.4, 0.4, 0.4, 0.4, 0.4, 0.35, 0.023605497926473616, 0.006761347409337759, 0.005241503333672881, 0.25, 0.25, 0.25, 0.14459247887134552, 0.08126109093427658]
+INFO:root:		After entity pruning:
+ 					[('Spain', 'location.country.languages_spoken', 'Occitan language'), ('Spain', 'location.country.languages_spoken', 'Basque Language'), ('Spain', 'location.country.languages_spoken', 'Catalan language'), ('Spain', 'location.country.languages_spoken', 'Galician Language'), ('Spain', 'location.country.languages_spoken', 'Spanish')]
+INFO:root:		 Cluster chain: [('Spain', 'location.country.languages_spoken', 'Occitan language'), ('Spain', 'location.country.languages_spoken', 'Basque Language'), ('Spain', 'location.country.languages_spoken', 'Catalan language'), ('Spain', 'location.country.languages_spoken', 'Galician Language'), ('Spain', 'location.country.languages_spoken', 'Spanish')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, the four main languages spoken in Spain are Occitan, Basque, Catalan, Galician, and Spanish. Therefore, the answer to the question is {Occitan, Basque, Catalan, Galician, and Spanish}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['Basque Language', 'Catalan language', 'Galician Language', 'Occitan language', 'Spanish'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, the four main languages spoken in Spain are Occitan, Basque, Catalan, Galician, and Spanish. Therefore, the answer to the question is {Occitan, Basque, Catalan, Galician, and Spanish}.
+INFO:root:			 CORRECT ANSWER: Occitan
+INFO:root:			 Total questions: 112 pure_LLM_answers: 9 ToG_answers: 88 Failing_answers: 14 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8660714285714286
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: where is the nra headquarters located
+INFO:root:Topic Entity: m.0j6f9
+INFO:root:True Path: organization.organization.headquarters|location.mailing_address.citytown
+INFO:root:True answer: ['m.0mnzd'],  Labels: ['Fairfax']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.0j6f9
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0j6f9', 'relation': 'organization.organization.headquarters', 'score': 0.6, 'head': True}, {'entity': 'm.0j6f9', 'relation': 'organization.organization.place_founded', 'score': 0.3, 'head': True}, {'entity': 'm.0j6f9', 'relation': 'organization.organization.geographic_scope', 'score': 0.1, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0j6f9', 'relation': 'organization.organization.headquarters', 'score': 0.6, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04300ty', 0.6), ('m.063yhbv', 0.5773058295249939), ('m.08c939', 0.022469016909599304), ('m.0dzt9', 0.00014657261199317871), ('m.0cw896', 2.9845473181921986e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.063yhbv', 'm.08c939', 'm.0dzt9', 'm.0cw896'] and Scores: [0.5773058295249939, 0.022469016909599304, 0.00014657261199317871, 2.9845473181921986e-05]
+INFO:root:				"Deleted Candidates: ['m.04300ty'] and Scores: [0.6]
+INFO:root:		Relation Path of : {'entity': 'm.0j6f9', 'relation': 'organization.organization.place_founded', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.026mj', 0.2999984264373779), ('m.011__x1r', 1.4884764823364093e-06), ('m.06c62', 4.1242205384151017e-08), ('m.0d7_n', 7.837490656470436e-09), ('m.03p0qz3', 5.013764869943315e-09)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.026mj', 'm.011__x1r', 'm.06c62', 'm.0d7_n', 'm.03p0qz3'] and Scores: [0.2999984264373779, 1.4884764823364093e-06, 4.1242205384151017e-08, 7.837490656470436e-09, 5.013764869943315e-09]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0j6f9', 'relation': 'organization.organization.geographic_scope', 'score': 0.1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.01xryvt', 0.09939564466476442), ('m.0631_', 0.00047475770115852357), ('m.02qb4y9', 9.49480978306383e-05), ('m.0g970', 1.6601910465396942e-05), ('m.0cnnj9q', 1.1114618973806501e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01xryvt', 'm.0631_', 'm.02qb4y9', 'm.0g970'] and Scores: [0.09939564466476442, 0.00047475770115852357, 9.49480978306383e-05, 1.6601910465396942e-05]
+INFO:root:				"Deleted Candidates: ['m.0cnnj9q'] and Scores: [1.1114618973806501e-05]
+INFO:root:		"Total Entity Candidates: ['Robert J. Sinclair', 'Prepple Houmb', 'Richmond', "Geraldine's Fortune", 'Delaware', 'Salvatore Della Pepa', 'Rome', 'Lviv', '1.FM One Live', 'Author', 'Presbyterianism', 'Remember the Day', 'North Vietnam'] and Scores: [0.5773058295249939, 0.022469016909599304, 0.00014657261199317871, 2.9845473181921986e-05, 0.2999984264373779, 1.4884764823364093e-06, 4.1242205384151017e-08, 7.837490656470436e-09, 5.013764869943315e-09, 0.09939564466476442, 0.00047475770115852357, 9.49480978306383e-05, 1.6601910465396942e-05]
+INFO:root:		After entity pruning:
+ 					[('National Rifle Association', 'organization.organization.headquarters', 'Robert J. Sinclair'), ('National Rifle Association', 'organization.organization.place_founded', 'Delaware'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Author'), ('National Rifle Association', 'organization.organization.headquarters', 'Prepple Houmb'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Presbyterianism')]
+INFO:root:		 Cluster chain: [('National Rifle Association', 'organization.organization.headquarters', 'Robert J. Sinclair'), ('National Rifle Association', 'organization.organization.place_founded', 'Delaware'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Author'), ('National Rifle Association', 'organization.organization.headquarters', 'Prepple Houmb'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Presbyterianism')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, the specific location of the National Rifle Association (NRA) headquarters is not provided. Therefore, additional information is needed to answer the question.
+INFO:root:depth 1 still not find the answer.
+INFO:root:		Entity Pruning after adding the unNanme and rescoring:
+INFO:root:		[('National Rifle Association', 'organization.organization.headquarters', 'UnName_Entity'), ('National Rifle Association', 'organization.organization.headquarters', 'Robert J. Sinclair'), ('National Rifle Association', 'organization.organization.place_founded', 'Delaware'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Author'), ('National Rifle Association', 'organization.organization.headquarters', 'Prepple Houmb')]
+INFO:root:		The new cluster of entities list is: [('National Rifle Association', 'organization.organization.headquarters', 'Robert J. Sinclair'), ('National Rifle Association', 'organization.organization.place_founded', 'Delaware'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Author'), ('National Rifle Association', 'organization.organization.headquarters', 'Prepple Houmb'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Presbyterianism'), ('National Rifle Association', 'organization.organization.headquarters', 'UnName_Entity'), ('National Rifle Association', 'organization.organization.headquarters', 'Robert J. Sinclair'), ('National Rifle Association', 'organization.organization.place_founded', 'Delaware'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Author'), ('National Rifle Association', 'organization.organization.headquarters', 'Prepple Houmb')]
+INFO:root:	 At depth: 2
+INFO:root:		Topic entity: m.04300ty
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.04300ty', 'relation': 'location.mailing_address.state_province_region', 'score': 1, 'head': True}, {'entity': 'm.04300ty', 'relation': 'location.mailing_address.citytown', 'score': 1, 'head': True}, {'entity': 'm.04300ty', 'relation': 'location.mailing_address.country', 'score': 1, 'head': True}]
+INFO:root:		Topic entity: m.063yhbv
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: []
+INFO:root:		Topic entity: m.026mj
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.026mj', 'relation': 'location.location.street_address', 'score': 0.5, 'head': True}, {'entity': 'm.026mj', 'relation': 'location.location.containedby', 'score': 0.3, 'head': True}, {'entity': 'm.026mj', 'relation': 'location.administrative_division.first_level_division_of', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.01xryvt
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.01xryvt', 'relation': 'type.object.name', 'score': 1, 'head': True}]
+INFO:root:		Topic entity: m.08c939
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: []
+INFO:root:		Relation Path of : {'entity': 'm.04300ty', 'relation': 'location.mailing_address.state_province_region', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0djbxg', 0.9058099389076233), ('m.016wzw', 0.08793853223323822), ('m.03c7vpw', 0.004849713295698166), ('m.03_zz5', 0.000714265217538923), ('m.02qfgjq', 0.000388460757676512)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0djbxg', 'm.016wzw', 'm.03c7vpw', 'm.03_zz5', 'm.02qfgjq'] and Scores: [0.9058099389076233, 0.08793853223323822, 0.004849713295698166, 0.000714265217538923, 0.000388460757676512]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.04300ty', 'relation': 'location.mailing_address.citytown', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0mnzd', 1.0), ('m.0h12sqg', 0.9765380024909973), ('m.05q12m', 0.0015705007826909423), ('m.09shb2l', 0.0007379957241937518), ('m.0x1y7', 0.0003373317013029009)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0mnzd', 'm.0h12sqg', 'm.05q12m', 'm.0x1y7'] and Scores: [1.0, 0.9765380024909973, 0.0015705007826909423, 0.0003373317013029009]
+INFO:root:				"Deleted Candidates: ['m.09shb2l'] and Scores: [0.0007379957241937518]
+INFO:root:		Relation Path of : {'entity': 'm.04300ty', 'relation': 'location.mailing_address.country', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0c39nw', 0.7222636938095093), ('m.016wzw', 0.07316502183675766), ('m.01_d4', 0.057462505996227264), ('m.011gs9fc', 0.015653427690267563), ('m.0hjtz', 0.013598481193184853)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0c39nw', 'm.016wzw', 'm.01_d4', 'm.011gs9fc', 'm.0hjtz'] and Scores: [0.7222636938095093, 0.07316502183675766, 0.057462505996227264, 0.015653427690267563, 0.013598481193184853]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.026mj', 'relation': 'location.location.street_address', 'score': 0.5, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02vk75k', 0.03875936195254326), ('m.031_jk', 0.037764787673950195), ('m.027kx1w', 0.03433270379900932), ('m.03wv11', 0.012006036937236786), ('m.01xrwvx', 0.009311708621680737)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02vk75k', 'm.031_jk', 'm.027kx1w', 'm.03wv11', 'm.01xrwvx'] and Scores: [0.03875936195254326, 0.037764787673950195, 0.03433270379900932, 0.012006036937236786, 0.009311708621680737]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.026mj', 'relation': 'location.location.containedby', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04_1l0v', 0.3), ('m.09c7w0', 0.3), ('m.018v5k', 0.3), ('m.03ph5j', 0.3), ('m.0hzc9m5', 0.3)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04_1l0v', 'm.09c7w0', 'm.018v5k', 'm.03ph5j', 'm.0hzc9m5'] and Scores: [0.3, 0.3, 0.3, 0.3, 0.3]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.026mj', 'relation': 'location.administrative_division.first_level_division_of', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.09c7w0', 0.2), ('m.0d64mj', 0.005808766558766366), ('m.07k0k0', 0.0007152973674237729), ('m.0xg9b', 0.000457226112484932), ('m.0v6_7n', 0.0001953612780198455)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.09c7w0', 'm.0d64mj', 'm.07k0k0', 'm.0xg9b'] and Scores: [0.2, 0.005808766558766366, 0.0007152973674237729, 0.000457226112484932]
+INFO:root:				"Deleted Candidates: ['m.0v6_7n'] and Scores: [0.0001953612780198455]
+INFO:root:		Relation Path of : {'entity': 'm.01xryvt', 'relation': 'type.object.name', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04gc2', 0.6219370365142822), ('m.0bfmht4', 0.12029395252466202), ('m.03h_y9p', 0.01435320544987917), ('g.1hhzgnm89', 0.007256065495312214), ('m.09s9vv', 0.004583855625241995)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04gc2', 'm.03h_y9p', 'm.09s9vv'] and Scores: [0.6219370365142822, 0.01435320544987917, 0.004583855625241995]
+INFO:root:				"Deleted Candidates: ['m.0bfmht4', 'g.1hhzgnm89'] and Scores: [0.12029395252466202, 0.007256065495312214]
+INFO:root:		"Total Entity Candidates: ['Marcel Coraș', 'Peru', 'James C. Kennedy', 'Élie Halévy', 'Segart', 'Fairfax', 'Juri Henley-Cohn', 'Swift Current Broncos', 'Bozeman', 'Franz Beyer', 'Peru', 'Chicago', 'Marisa Crespo Abril', 'Battle of Dien Bien Phu', 'Vingåker', 'Henri Nannen', 'Epanochori', 'Johann Kiefuss', 'Chris Maden', 'contiguous United States', 'United States of America', 'Mid-Atlantic states', 'South Atlantic States', 'United States, with Territories', 'United States of America', 'Jan Fridegård', 'Andrés Calamaro', 'Canaan', 'lawyer', 'Beenie Man', 'Brutus de Villeroi'] and Scores: [0.9058099389076233, 0.08793853223323822, 0.004849713295698166, 0.000714265217538923, 0.000388460757676512, 1.0, 0.9765380024909973, 0.0015705007826909423, 0.0003373317013029009, 0.7222636938095093, 0.07316502183675766, 0.057462505996227264, 0.015653427690267563, 0.013598481193184853, 0.03875936195254326, 0.037764787673950195, 0.03433270379900932, 0.012006036937236786, 0.009311708621680737, 0.3, 0.3, 0.3, 0.3, 0.3, 0.2, 0.005808766558766366, 0.0007152973674237729, 0.000457226112484932, 0.6219370365142822, 0.01435320544987917, 0.004583855625241995]
+INFO:root:		After entity pruning:
+ 					[('UnName_Entity', 'location.mailing_address.citytown', 'Fairfax'), ('UnName_Entity', 'location.mailing_address.citytown', 'Juri Henley-Cohn'), ('UnName_Entity', 'location.mailing_address.state_province_region', 'Marcel Coraș'), ('UnName_Entity', 'location.mailing_address.country', 'Franz Beyer'), ('Author', 'type.object.name', 'lawyer')]
+INFO:root:			 Force to answer: where is the nra headquarters located
+INFO:root:			 cluster_chain_of_entities: [('National Rifle Association', 'organization.organization.headquarters', 'Robert J. Sinclair'), ('National Rifle Association', 'organization.organization.place_founded', 'Delaware'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Author'), ('National Rifle Association', 'organization.organization.headquarters', 'Prepple Houmb'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Presbyterianism'), ('National Rifle Association', 'organization.organization.headquarters', 'UnName_Entity'), ('National Rifle Association', 'organization.organization.headquarters', 'Robert J. Sinclair'), ('National Rifle Association', 'organization.organization.place_founded', 'Delaware'), ('National Rifle Association', 'organization.organization.geographic_scope', 'Author'), ('National Rifle Association', 'organization.organization.headquarters', 'Prepple Houmb'), ('UnName_Entity', 'location.mailing_address.citytown', 'Fairfax'), ('UnName_Entity', 'location.mailing_address.citytown', 'Juri Henley-Cohn'), ('UnName_Entity', 'location.mailing_address.state_province_region', 'Marcel Coraș'), ('UnName_Entity', 'location.mailing_address.country', 'Franz Beyer'), ('Author', 'type.object.name', 'lawyer')]
+INFO:root:"No new knowledge added during search depth 2 or max depth is reached, stop searching. 
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			 results: Based on the given knowledge triplets, the headquarters of the National Rifle Association (NRA) is located in the city of Fairfax. Therefore, the answer to the question is {Fairfax}.
+INFO:root:			 CORRECT ANSWER: Fairfax
+INFO:root:			 Total questions: 113 pure_LLM_answers: 9 ToG_answers: 89 Failing_answers: 14  Not answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8672566371681416
+INFO:root:			 Question  not answered through graph.
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: who is gimli s father in the hobbit
+INFO:root:Topic Entity: m.0h34n
+INFO:root:True Path: fictional_universe.fictional_character.parents
+INFO:root:True answer: ['m.0gwn5p0'],  Labels: ['Gloin']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.0h34n
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0h34n', 'relation': 'fictional_universe.fictional_character.parents', 'score': 0.5, 'head': True}, {'entity': 'm.0h34n', 'relation': 'fictional_universe.fictional_character.appears_in_these_fictional_universes', 'score': 0.3, 'head': True}, {'entity': 'm.0h34n', 'relation': 'book.book_character.appears_in_book', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0h34n', 'relation': 'fictional_universe.fictional_character.parents', 'score': 0.5, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0gwn5p0', 0.5), ('m.026mj', 0.49978068470954895), ('m.05q12m', 0.00021666914108209312), ('m.04p5j0y', 2.12950408240431e-06), ('m.06c62', 3.846482456992817e-07)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0gwn5p0', 'm.026mj', 'm.05q12m', 'm.04p5j0y', 'm.06c62'] and Scores: [0.5, 0.49978068470954895, 0.00021666914108209312, 2.12950408240431e-06, 3.846482456992817e-07]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0h34n', 'relation': 'fictional_universe.fictional_character.appears_in_these_fictional_universes', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0d0t_', 0.3), ('m.03_f0', 0.23258258700370787), ('m.06c62', 0.06688076108694076), ('m.0dzt9', 0.00038437937619164583), ('m.0hpstw7', 6.578965840162709e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0d0t_', 'm.03_f0', 'm.06c62', 'm.0dzt9'] and Scores: [0.3, 0.23258258700370787, 0.06688076108694076, 0.00038437937619164583]
+INFO:root:				"Deleted Candidates: ['m.0hpstw7'] and Scores: [6.578965840162709e-05]
+INFO:root:		Relation Path of : {'entity': 'm.0h34n', 'relation': 'book.book_character.appears_in_book', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.07bz5', 0.2), ('m.01gcg3', 0.2), ('m.06pwq', 0.16879355907440186), ('m.0z69h45', 0.01332777887582779), ('m.01vwq70', 0.0032055802643299104)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.07bz5', 'm.01gcg3', 'm.06pwq', 'm.0z69h45', 'm.01vwq70'] and Scores: [0.2, 0.2, 0.16879355907440186, 0.01332777887582779, 0.0032055802643299104]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		"Total Entity Candidates: ['Gloin', 'Delaware', 'Swift Current Broncos', 'Eduardo Jorge', 'Rome', 'Middle-earth', 'Johann Sebastian Bach', 'Rome', 'Richmond', 'The Lord of the Rings', 'Unfinished Tales', 'Stanford University', 'Ringgo Agus Rahman', 'Reda Caire'] and Scores: [0.5, 0.49978068470954895, 0.00021666914108209312, 2.12950408240431e-06, 3.846482456992817e-07, 0.3, 0.23258258700370787, 0.06688076108694076, 0.00038437937619164583, 0.2, 0.2, 0.16879355907440186, 0.01332777887582779, 0.0032055802643299104]
+INFO:root:		After entity pruning:
+ 					[('Gimli', 'fictional_universe.fictional_character.parents', 'Gloin'), ('Gimli', 'fictional_universe.fictional_character.parents', 'Delaware'), ('Gimli', 'fictional_universe.fictional_character.appears_in_these_fictional_universes', 'Middle-earth'), ('Gimli', 'fictional_universe.fictional_character.appears_in_these_fictional_universes', 'Johann Sebastian Bach'), ('Gimli', 'book.book_character.appears_in_book', 'The Lord of the Rings')]
+INFO:root:		 Cluster chain: [('Gimli', 'fictional_universe.fictional_character.parents', 'Gloin'), ('Gimli', 'fictional_universe.fictional_character.parents', 'Delaware'), ('Gimli', 'fictional_universe.fictional_character.appears_in_these_fictional_universes', 'Middle-earth'), ('Gimli', 'fictional_universe.fictional_character.appears_in_these_fictional_universes', 'Johann Sebastian Bach'), ('Gimli', 'book.book_character.appears_in_book', 'The Lord of the Rings')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, Gimli's father in The Hobbit is Gloin. Therefore, the answer to the question is {Gloin}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['Gloin'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, Gimli's father in The Hobbit is Gloin. Therefore, the answer to the question is {Gloin}.
+INFO:root:			 CORRECT ANSWER: Gloin
+INFO:root:			 Total questions: 114 pure_LLM_answers: 9 ToG_answers: 90 Failing_answers: 14 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.868421052631579
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: who developed the tcp ip reference model
+INFO:root:Topic Entity: m.07hzk
+INFO:root:True Path: base.argumentmaps.original_idea.innovator
+INFO:root:True answer: ['m.01_z5v', 'm.07z23'],  Labels: ['Robert  E. Kahn', 'Vint Cerf']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.07hzk
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.07hzk', 'relation': 'law.invention.inventor', 'score': 1, 'head': True}, {'entity': 'm.07hzk', 'relation': 'base.argumentmaps.original_idea.innovator', 'score': 1, 'head': True}, {'entity': 'm.07hzk', 'relation': 'law.invention.date_of_invention', 'score': 1, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.07hzk', 'relation': 'law.invention.inventor', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.07z23', 1.0), ('m.01_z5v', 1.0), ('m.059j2', 0.9995502829551697), ('m.04077v2', 0.00038973931805230677), ('m.030qb3t', 5.70863121538423e-05)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.07z23', 'm.01_z5v', 'm.059j2', 'm.04077v2', 'm.030qb3t'] and Scores: [1.0, 1.0, 0.9995502829551697, 0.00038973931805230677, 5.70863121538423e-05]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.07hzk', 'relation': 'base.argumentmaps.original_idea.innovator', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.07z23', 1.0), ('m.01_z5v', 1.0), ('m.04y7_yr', 0.9757235050201416), ('m.02fw3h', 0.014550651423633099), ('m.010s6ggm', 0.004731695633381605)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.07z23', 'm.01_z5v', 'm.04y7_yr', 'm.02fw3h', 'm.010s6ggm'] and Scores: [1.0, 1.0, 0.9757235050201416, 0.014550651423633099, 0.004731695633381605]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.07hzk', 'relation': 'law.invention.date_of_invention', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: []
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: [] and Scores: []
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		"Total Entity Candidates: ['Vint Cerf', 'Robert  E. Kahn', 'Netherlands', 'Karen David', 'Los Angeles', 'Vint Cerf', 'Robert  E. Kahn', 'Ivan Lietava', 'Grzegorz Rosiński', 'Danielle Heitmuller'] and Scores: [1.0, 1.0, 0.9995502829551697, 0.00038973931805230677, 5.70863121538423e-05, 1.0, 1.0, 0.9757235050201416, 0.014550651423633099, 0.004731695633381605]
+INFO:root:		After entity pruning:
+ 					[('Transmission Control Protocol', 'law.invention.inventor', 'Vint Cerf'), ('Transmission Control Protocol', 'law.invention.inventor', 'Robert  E. Kahn'), ('Transmission Control Protocol', 'base.argumentmaps.original_idea.innovator', 'Vint Cerf'), ('Transmission Control Protocol', 'base.argumentmaps.original_idea.innovator', 'Robert  E. Kahn'), ('Transmission Control Protocol', 'law.invention.inventor', 'Netherlands')]
+INFO:root:		 Cluster chain: [('Transmission Control Protocol', 'law.invention.inventor', 'Vint Cerf'), ('Transmission Control Protocol', 'law.invention.inventor', 'Robert  E. Kahn'), ('Transmission Control Protocol', 'base.argumentmaps.original_idea.innovator', 'Vint Cerf'), ('Transmission Control Protocol', 'base.argumentmaps.original_idea.innovator', 'Robert  E. Kahn'), ('Transmission Control Protocol', 'law.invention.inventor', 'Netherlands')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {Yes}. Based on the given knowledge triplets, the TCP/IP reference model was developed by Vint Cerf and Robert E. Kahn. Therefore, the answer to the question is {Vint Cerf and Robert E. Kahn}.
+INFO:root:ToG stopped at depth 1.
+INFO:root:ans_labels ['Robert  E. Kahn', 'Vint Cerf'].
+INFO:root:			 results: {Yes}. Based on the given knowledge triplets, the TCP/IP reference model was developed by Vint Cerf and Robert E. Kahn. Therefore, the answer to the question is {Vint Cerf and Robert E. Kahn}.
+INFO:root:			 CORRECT ANSWER: Vint Cerf
+INFO:root:			 Total questions: 115 pure_LLM_answers: 9 ToG_answers: 91 Failing_answers: 14 Not_answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8695652173913043
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: what college did albert einstein go to
+INFO:root:Topic Entity: m.0jcx
+INFO:root:True Path: people.person.education|education.education.institution
+INFO:root:True answer: ['m.01dyk8', 'm.01tpvt'],  Labels: ['ETH Zurich', 'University of Zurich']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.0jcx
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0jcx', 'relation': 'people.person.education', 'score': 0.6, 'head': True}, {'entity': 'm.0jcx', 'relation': 'people.person.profession', 'score': 0.2, 'head': True}, {'entity': 'm.0jcx', 'relation': 'people.person.places_lived', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0jcx', 'relation': 'people.person.education', 'score': 0.6, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0k03_k5', 0.6), ('m.0k05ps4', 0.6), ('m.0_hlydg', 0.4176254868507385), ('m.04tgp', 0.028288382291793823), ('m.0g970', 0.021909595280885697)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0_hlydg', 'm.04tgp', 'm.0g970'] and Scores: [0.4176254868507385, 0.028288382291793823, 0.021909595280885697]
+INFO:root:				"Deleted Candidates: ['m.0k03_k5', 'm.0k05ps4'] and Scores: [0.6, 0.6]
+INFO:root:		Relation Path of : {'entity': 'm.0jcx', 'relation': 'people.person.profession', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0cbd2', 0.2), ('m.02h6fbs', 0.2), ('m.06q2q', 0.2), ('m.0kyk', 0.2), ('m.01d30f', 0.2)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0cbd2', 'm.02h6fbs', 'm.06q2q', 'm.0kyk', 'm.01d30f'] and Scores: [0.2, 0.2, 0.2, 0.2, 0.2]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0jcx', 'relation': 'people.person.places_lived', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.03q49rh', 0.2), ('m.03lt7y5', 0.2), ('m.0fpzwf', 0.15950043201446534), ('m.02qn0j8', 0.014824819564819337), ('m.04y7_yr', 0.009877002984285356)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0fpzwf', 'm.02qn0j8', 'm.04y7_yr'] and Scores: [0.15950043201446534, 0.014824819564819337, 0.009877002984285356]
+INFO:root:				"Deleted Candidates: ['m.03q49rh', 'm.03lt7y5'] and Scores: [0.2, 0.2]
+INFO:root:		"Total Entity Candidates: ['Youngjae Lee', 'Mississippi', 'North Vietnam', 'Writer', 'philosopher', 'scientist', 'author', 'teacher', 'Minneapolis', 'Harry Schwarz', 'Ivan Lietava'] and Scores: [0.4176254868507385, 0.028288382291793823, 0.021909595280885697, 0.2, 0.2, 0.2, 0.2, 0.2, 0.15950043201446534, 0.014824819564819337, 0.009877002984285356]
+INFO:root:		After entity pruning:
+ 					[('Albert Einstein', 'people.person.education', 'Youngjae Lee'), ('Albert Einstein', 'people.person.profession', 'Writer'), ('Albert Einstein', 'people.person.profession', 'philosopher'), ('Albert Einstein', 'people.person.profession', 'scientist'), ('Albert Einstein', 'people.person.profession', 'author')]
+INFO:root:		 Cluster chain: [('Albert Einstein', 'people.person.education', 'Youngjae Lee'), ('Albert Einstein', 'people.person.profession', 'Writer'), ('Albert Einstein', 'people.person.profession', 'philosopher'), ('Albert Einstein', 'people.person.profession', 'scientist'), ('Albert Einstein', 'people.person.profession', 'author')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, there is no information about the college that Albert Einstein attended. Therefore, additional information is needed to answer this question.
+INFO:root:depth 1 still not find the answer.
+INFO:root:		Entity Pruning after adding the unNanme and rescoring:
+INFO:root:		[('Albert Einstein', 'people.person.education', 'UnName_Entity'), ('Albert Einstein', 'people.person.education', 'UnName_Entity'), ('Albert Einstein', 'people.person.education', 'Youngjae Lee'), ('Albert Einstein', 'people.person.places_lived', 'UnName_Entity'), ('Albert Einstein', 'people.person.places_lived', 'UnName_Entity')]
+INFO:root:		The new cluster of entities list is: [('Albert Einstein', 'people.person.education', 'Youngjae Lee'), ('Albert Einstein', 'people.person.profession', 'Writer'), ('Albert Einstein', 'people.person.profession', 'philosopher'), ('Albert Einstein', 'people.person.profession', 'scientist'), ('Albert Einstein', 'people.person.profession', 'author'), ('Albert Einstein', 'people.person.education', 'UnName_Entity'), ('Albert Einstein', 'people.person.education', 'UnName_Entity'), ('Albert Einstein', 'people.person.education', 'Youngjae Lee'), ('Albert Einstein', 'people.person.places_lived', 'UnName_Entity'), ('Albert Einstein', 'people.person.places_lived', 'UnName_Entity')]
+INFO:root:	 At depth: 2
+INFO:root:		Topic entity: m.0k03_k5
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0k03_k5', 'relation': 'education.education.institution', 'score': 1, 'head': True}, {'entity': 'm.0k03_k5', 'relation': 'education.education.degree', 'score': 1, 'head': True}, {'entity': 'm.0k03_k5', 'relation': 'education.education.major_field_of_study', 'score': 1, 'head': True}]
+INFO:root:		Topic entity: m.0k05ps4
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0k05ps4', 'relation': 'education.education.institution', 'score': 1, 'head': True}, {'entity': 'm.0k05ps4', 'relation': 'education.education.degree', 'score': 1, 'head': True}, {'entity': 'm.0k05ps4', 'relation': 'education.education.major_field_of_study', 'score': 1, 'head': True}]
+INFO:root:		Topic entity: m.0_hlydg
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0_hlydg', 'relation': 'people.person.education', 'score': 0.6, 'head': True}, {'entity': 'm.0_hlydg', 'relation': 'people.person.employment_history', 'score': 0.2, 'head': True}, {'entity': 'm.0_hlydg', 'relation': 'people.person.place_of_birth', 'score': 0.2, 'head': True}]
+INFO:root:		Topic entity: m.03q49rh
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.03q49rh', 'relation': 'people.place_lived.location', 'score': 1, 'head': True}]
+INFO:root:		Topic entity: m.03lt7y5
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.03lt7y5', 'relation': 'people.place_lived.location', 'score': 1, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.0k03_k5', 'relation': 'education.education.institution', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.01dyk8', 1.0), ('m.02z9318', 0.6746572852134705), ('m.0f8l9c', 0.29774072766304016), ('m.04j3140', 0.00818492379039526), ('m.06c1y', 0.006479168310761452)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01dyk8', 'm.02z9318', 'm.0f8l9c', 'm.06c1y'] and Scores: [1.0, 0.6746572852134705, 0.29774072766304016, 0.006479168310761452]
+INFO:root:				"Deleted Candidates: ['m.04j3140'] and Scores: [0.00818492379039526]
+INFO:root:		Relation Path of : {'entity': 'm.0k03_k5', 'relation': 'education.education.degree', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04y7_yr', 0.9999293088912964), ('m.07kcjg3', 6.609973206650466e-05), ('m.0k3p', 4.268921657057945e-06), ('m.0hpp1z2', 3.3961779877245135e-07), ('m.03p0qz3', 2.513140628934707e-08)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04y7_yr', 'm.07kcjg3', 'm.0k3p', 'm.0hpp1z2', 'm.03p0qz3'] and Scores: [0.9999293088912964, 6.609973206650466e-05, 4.268921657057945e-06, 3.3961779877245135e-07, 2.513140628934707e-08]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0k03_k5', 'relation': 'education.education.major_field_of_study', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04y7_yr', 0.9893091917037964), ('m.03h64', 0.009480463340878487), ('m.011kh46r', 0.0004940341459587216), ('m.098r4j', 0.0004392589326016605), ('m.0djx47n', 0.0001531351445009932)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04y7_yr', 'm.03h64', 'm.098r4j', 'm.0djx47n'] and Scores: [0.9893091917037964, 0.009480463340878487, 0.0004392589326016605, 0.0001531351445009932]
+INFO:root:				"Deleted Candidates: ['m.011kh46r'] and Scores: [0.0004940341459587216]
+INFO:root:		Relation Path of : {'entity': 'm.0k05ps4', 'relation': 'education.education.institution', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.01tpvt', 1.0), ('m.04c2xsh', 0.36918219923973083), ('m.05sb1', 0.17052970826625824), ('m.0kst4t', 0.14683036506175995), ('m.04gc2', 0.14410965144634247)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.01tpvt', 'm.04c2xsh', 'm.05sb1', 'm.0kst4t', 'm.04gc2'] and Scores: [1.0, 0.36918219923973083, 0.17052970826625824, 0.14683036506175995, 0.14410965144634247]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0k05ps4', 'relation': 'education.education.degree', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.04zx3q1', 1.0), ('m.08c939', 0.9998015761375427), ('m.0qt6sgy', 0.000160792245878838), ('m.02z9318', 3.2463009119965136e-05), ('m.0cnnj9q', 1.8369863710177015e-06)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.04zx3q1', 'm.08c939', 'm.02z9318'] and Scores: [1.0, 0.9998015761375427, 3.2463009119965136e-05]
+INFO:root:				"Deleted Candidates: ['m.0qt6sgy', 'm.0cnnj9q'] and Scores: [0.000160792245878838, 1.8369863710177015e-06]
+INFO:root:		Relation Path of : {'entity': 'm.0k05ps4', 'relation': 'education.education.major_field_of_study', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.05qjt', 1.0), ('m.03rk0', 0.9595075249671936), ('m.060ybr', 0.03525570034980774), ('m.09wpt', 0.0013797334395349026), ('m.0h64bjw', 0.00137614575214684)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.05qjt', 'm.03rk0', 'm.060ybr', 'm.09wpt', 'm.0h64bjw'] and Scores: [1.0, 0.9595075249671936, 0.03525570034980774, 0.0013797334395349026, 0.00137614575214684]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.0_hlydg', 'relation': 'people.person.education', 'score': 0.6, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0cnnj9q', 0.5936732411384582), ('m.063yhbv', 0.004259506613016128), ('m.0xg9b', 0.0007168639451265334), ('m.059_w', 0.0006785073783248663), ('m.01f62', 0.00021160489995963871)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.063yhbv', 'm.0xg9b', 'm.059_w', 'm.01f62'] and Scores: [0.004259506613016128, 0.0007168639451265334, 0.0006785073783248663, 0.00021160489995963871]
+INFO:root:				"Deleted Candidates: ['m.0cnnj9q'] and Scores: [0.5936732411384582]
+INFO:root:		Relation Path of : {'entity': 'm.0_hlydg', 'relation': 'people.person.employment_history', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.02vk75k', 0.01270095705986023), ('m.0jcnk60', 0.009018411487340927), ('m.06pn3w3', 0.002480415627360344), ('m.0cw896', 0.0015143286436796188), ('m.06x706', 0.0010154686868190765)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.02vk75k', 'm.0jcnk60', 'm.0cw896', 'm.06x706'] and Scores: [0.01270095705986023, 0.009018411487340927, 0.0015143286436796188, 0.0010154686868190765]
+INFO:root:				"Deleted Candidates: ['m.06pn3w3'] and Scores: [0.002480415627360344]
+INFO:root:		Relation Path of : {'entity': 'm.0_hlydg', 'relation': 'people.person.place_of_birth', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0hsqf', 0.2), ('m.02z9318', 0.11857657432556153), ('m.0dzt9', 0.0393405944108963), ('m.0jwjsd4', 0.02980945110321045), ('m.0f8l9c', 0.009602399170398714)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0hsqf', 'm.02z9318', 'm.0dzt9', 'm.0f8l9c'] and Scores: [0.2, 0.11857657432556153, 0.0393405944108963, 0.009602399170398714]
+INFO:root:				"Deleted Candidates: ['m.0jwjsd4'] and Scores: [0.02980945110321045]
+INFO:root:		Relation Path of : {'entity': 'm.03q49rh', 'relation': 'people.place_lived.location', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0ljsz', 1.0), ('m.06t4q7j', 0.5962710976600647), ('m.04y7_yr', 0.19907507300376892), ('m.03h64', 0.14038963615894318), ('m.0h362', 0.02594664692878723)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0ljsz', 'm.04y7_yr', 'm.03h64', 'm.0h362'] and Scores: [1.0, 0.19907507300376892, 0.14038963615894318, 0.02594664692878723]
+INFO:root:				"Deleted Candidates: ['m.06t4q7j'] and Scores: [0.5962710976600647]
+INFO:root:		Relation Path of : {'entity': 'm.03lt7y5', 'relation': 'people.place_lived.location', 'score': 1, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0345h', 1.0), ('m.0k3p', 0.8500884175300598), ('m.03j17x0', 0.11641019582748413), ('m.06srk', 0.03302890807390213), ('m.0b894q', 0.0001362103212159127)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0345h', 'm.0k3p', 'm.03j17x0', 'm.06srk', 'm.0b894q'] and Scores: [1.0, 0.8500884175300598, 0.11641019582748413, 0.03302890807390213, 0.0001362103212159127]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		"Total Entity Candidates: ['ETH Zurich', 'Poza de la Vega', 'France', 'Romania', 'Ivan Lietava', 'Artur Adamyan', 'Amsterdam', 'Tommy Kelly', '1.FM One Live', 'Ivan Lietava', 'Hong Kong', 'Habibullāh Kalakāni', 'Hans-Jürgen Wittfoht', 'University of Zurich', 'Van Buren Furnace', 'Pakistan', 'Milena Vukotic', 'lawyer', 'Doctor of Philosophy', 'Prepple Houmb', 'Poza de la Vega', 'physics', 'India', 'Roberto Ivens', 'Benedict XVI', 'La Vilella Alta', 'Robert J. Sinclair', 'Canaan', 'Indigenous peoples of the United States', 'Barcelona', 'Vingåker', 'Djaduk Ferianto', "Geraldine's Fortune", 'Margaret Fiedler McGinnis', 'Seoul', 'Poza de la Vega', 'Richmond', 'France', 'Princeton', 'Ivan Lietava', 'Hong Kong', 'The Two Towers', 'Germany', 'Amsterdam', 'Alela Diane', 'Senegal', 'Bristol Cathedral Choir School'] and Scores: [1.0, 0.6746572852134705, 0.29774072766304016, 0.006479168310761452, 0.9999293088912964, 6.609973206650466e-05, 4.268921657057945e-06, 3.3961779877245135e-07, 2.513140628934707e-08, 0.9893091917037964, 0.009480463340878487, 0.0004392589326016605, 0.0001531351445009932, 1.0, 0.36918219923973083, 0.17052970826625824, 0.14683036506175995, 0.14410965144634247, 1.0, 0.9998015761375427, 3.2463009119965136e-05, 1.0, 0.9595075249671936, 0.03525570034980774, 0.0013797334395349026, 0.00137614575214684, 0.004259506613016128, 0.0007168639451265334, 0.0006785073783248663, 0.00021160489995963871, 0.01270095705986023, 0.009018411487340927, 0.0015143286436796188, 0.0010154686868190765, 0.2, 0.11857657432556153, 0.0393405944108963, 0.009602399170398714, 1.0, 0.19907507300376892, 0.14038963615894318, 0.02594664692878723, 1.0, 0.8500884175300598, 0.11641019582748413, 0.03302890807390213, 0.0001362103212159127]
+INFO:root:		After entity pruning:
+ 					[('UnName_Entity', 'education.education.institution', 'ETH Zurich'), ('UnName_Entity', 'education.education.institution', 'University of Zurich'), ('UnName_Entity', 'education.education.degree', 'Doctor of Philosophy'), ('UnName_Entity', 'education.education.major_field_of_study', 'physics'), ('UnName_Entity', 'people.place_lived.location', 'Princeton')]
+INFO:root:			 Force to answer: what college did albert einstein go to
+INFO:root:			 cluster_chain_of_entities: [('Albert Einstein', 'people.person.education', 'Youngjae Lee'), ('Albert Einstein', 'people.person.profession', 'Writer'), ('Albert Einstein', 'people.person.profession', 'philosopher'), ('Albert Einstein', 'people.person.profession', 'scientist'), ('Albert Einstein', 'people.person.profession', 'author'), ('Albert Einstein', 'people.person.education', 'UnName_Entity'), ('Albert Einstein', 'people.person.education', 'UnName_Entity'), ('Albert Einstein', 'people.person.education', 'Youngjae Lee'), ('Albert Einstein', 'people.person.places_lived', 'UnName_Entity'), ('Albert Einstein', 'people.person.places_lived', 'UnName_Entity'), ('UnName_Entity', 'education.education.institution', 'ETH Zurich'), ('UnName_Entity', 'education.education.institution', 'University of Zurich'), ('UnName_Entity', 'education.education.degree', 'Doctor of Philosophy'), ('UnName_Entity', 'education.education.major_field_of_study', 'physics'), ('UnName_Entity', 'people.place_lived.location', 'Princeton')]
+INFO:root:"No new knowledge added during search depth 2 or max depth is reached, stop searching. 
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:			 results: Based on the given knowledge triplets, Albert Einstein attended ETH Zurich and University of Zurich for his education. Therefore, the answer to the question is {ETH Zurich|University of Zurich}.
+INFO:root:			 CORRECT ANSWER: ETH Zurich
+INFO:root:			 Total questions: 116 pure_LLM_answers: 9 ToG_answers: 92 Failing_answers: 14  Not answered: 1 Missing_information: 0 Answer_unknown: 0
+INFO:root:		Hits@1: 0.8706896551724138
+INFO:root:			 Question  not answered through graph.
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:+ ----------------------------------------------------------------- +
+INFO:root:Question: what team does jordan own
+INFO:root:Topic Entity: m.03__y
+INFO:root:True Path: sports.sports_team_location.teams
+INFO:root:True answer: ['m.0452m3', 'm.08htl1'],  Labels: ['Jordan national football team', 'Al-Wehdat SC']
+INFO:root:	 At depth: 1
+INFO:root:		Topic entity: m.03__y
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.03__y', 'relation': 'sports.sports_team_location.teams', 'score': 0.5, 'head': True}, {'entity': 'm.03__y', 'relation': 'organization.organization_member.member_of', 'score': 0.3, 'head': True}, {'entity': 'm.03__y', 'relation': 'common.topic.notable_for', 'score': 0.2, 'head': True}]
+INFO:root:		Relation Path of : {'entity': 'm.03__y', 'relation': 'sports.sports_team_location.teams', 'score': 0.5, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0452m3', 0.5), ('m.08htl1', 0.5), ('m.020d5', 0.4658595323562622), ('m.02ps_k5', 0.011971469037234783), ('m.0g284', 0.008747728541493416)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0452m3', 'm.08htl1', 'm.020d5', 'm.02ps_k5', 'm.0g284'] and Scores: [0.5, 0.5, 0.4658595323562622, 0.011971469037234783, 0.008747728541493416]
+INFO:root:				"Deleted Candidates: [] and Scores: []
+INFO:root:		Relation Path of : {'entity': 'm.03__y', 'relation': 'organization.organization_member.member_of', 'score': 0.3, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.05kyq9c', 0.3), ('m.04p8xmv', 0.3), ('m.0snkj94', 0.2740882158279419), ('m.03h64', 0.019668909162282942), ('m.0bkftm', 0.002758932765573263)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.0snkj94', 'm.03h64', 'm.0bkftm'] and Scores: [0.2740882158279419, 0.019668909162282942, 0.002758932765573263]
+INFO:root:				"Deleted Candidates: ['m.05kyq9c', 'm.04p8xmv'] and Scores: [0.3, 0.3]
+INFO:root:		Relation Path of : {'entity': 'm.03__y', 'relation': 'common.topic.notable_for', 'score': 0.2, 'head': True}
+INFO:root:			From embedding Space: 
+INFO:root:				Entity_candidates: [('m.0bd31kj', 0.07587034106254578), ('m.03zxj1', 0.056478488445281985), ('m.01_d4', 0.05434312224388123), ('m.026k3q5', 0.0028199762105941776), ('m.06pskqw', 0.002691076137125492)]
+INFO:root:			"Removing unNamed entities from list 
+INFO:root:				"Entity Candidates: ['m.03zxj1', 'm.01_d4', 'm.026k3q5'] and Scores: [0.056478488445281985, 0.05434312224388123, 0.0028199762105941776]
+INFO:root:				"Deleted Candidates: ['m.0bd31kj', 'm.06pskqw'] and Scores: [0.07587034106254578, 0.002691076137125492]
+INFO:root:		"Total Entity Candidates: ['Jordan national football team', 'Al-Wehdat SC', 'Confederate States of America', 'Cresco', 'Johannesburg', 'Violin Sonata in B-flat major, K 378: III. Rondeau (Allegro)', 'Hong Kong', 'Nikolay Demyanov', 'Amitai Etzioni', 'Chicago', 'Joseph Henry Sharp'] and Scores: [0.5, 0.5, 0.4658595323562622, 0.011971469037234783, 0.008747728541493416, 0.2740882158279419, 0.019668909162282942, 0.002758932765573263, 0.056478488445281985, 0.05434312224388123, 0.0028199762105941776]
+INFO:root:		After entity pruning:
+ 					[('Jordan', 'sports.sports_team_location.teams', 'Jordan national football team'), ('Jordan', 'sports.sports_team_location.teams', 'Al-Wehdat SC'), ('Jordan', 'sports.sports_team_location.teams', 'Confederate States of America'), ('Jordan', 'organization.organization_member.member_of', 'Violin Sonata in B-flat major, K 378: III. Rondeau (Allegro)'), ('Jordan', 'common.topic.notable_for', 'Amitai Etzioni')]
+INFO:root:		 Cluster chain: [('Jordan', 'sports.sports_team_location.teams', 'Jordan national football team'), ('Jordan', 'sports.sports_team_location.teams', 'Al-Wehdat SC'), ('Jordan', 'sports.sports_team_location.teams', 'Confederate States of America'), ('Jordan', 'organization.organization_member.member_of', 'Violin Sonata in B-flat major, K 378: III. Rondeau (Allegro)'), ('Jordan', 'common.topic.notable_for', 'Amitai Etzioni')]
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		 Reasoning: {No}. Based on the given knowledge triplets, it's not sufficient to answer the question. The triplets provide information about teams located in Jordan or associated with Jordan, but they do not provide information about a team owned by an individual named Jordan. To answer this question, we need additional knowledge about the individual named Jordan and the sports team they own.
+INFO:root:depth 1 still not find the answer.
+INFO:root:		Entity Pruning after adding the unNanme and rescoring:
+INFO:root:		[('Jordan', 'sports.sports_team_location.teams', 'Jordan national football team'), ('Jordan', 'sports.sports_team_location.teams', 'Al-Wehdat SC'), ('Jordan', 'sports.sports_team_location.teams', 'Confederate States of America'), ('Jordan', 'organization.organization_member.member_of', 'UnName_Entity'), ('Jordan', 'organization.organization_member.member_of', 'UnName_Entity')]
+INFO:root:		The new cluster of entities list is: [('Jordan', 'sports.sports_team_location.teams', 'Jordan national football team'), ('Jordan', 'sports.sports_team_location.teams', 'Al-Wehdat SC'), ('Jordan', 'sports.sports_team_location.teams', 'Confederate States of America'), ('Jordan', 'organization.organization_member.member_of', 'Violin Sonata in B-flat major, K 378: III. Rondeau (Allegro)'), ('Jordan', 'common.topic.notable_for', 'Amitai Etzioni'), ('Jordan', 'sports.sports_team_location.teams', 'Jordan national football team'), ('Jordan', 'sports.sports_team_location.teams', 'Al-Wehdat SC'), ('Jordan', 'sports.sports_team_location.teams', 'Confederate States of America'), ('Jordan', 'organization.organization_member.member_of', 'UnName_Entity'), ('Jordan', 'organization.organization_member.member_of', 'UnName_Entity')]
+INFO:root:	 At depth: 2
+INFO:root:		Topic entity: m.0452m3
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:		Relation scoring by LLM: [{'entity': 'm.0452m3', 'relation': 'sports.sports_team.roster', 'score': 0.4, 'head': True}, {'entity': 'm.0452m3', 'relation': 'common.topic.notable_for', 'score': 0.3, 'head': True}, {'entity': 'm.0452m3', 'relation': 'sports.sports_team.founded', 'score': 0.3, 'head': True}]
+INFO:root:		Topic entity: m.08htl1
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
